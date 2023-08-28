@@ -1,0 +1,226 @@
+.seemless--bg {
+    background-color: #606060;
+    padding: 60px 0;
+    border-radius: 0 130px 0 0;
+
+    .seemless__logo {
+        width: 85px;
+        height: auto;
+    }
+
+    .seemless__content {
+        color: var(--color--white);
+        width: 40%;
+
+        .site__heading {
+            h2 {
+                font-size: 48px;
+                font-weight: 700;
+                position: relative;
+
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 70px;
+                    height: 5px;
+                    background-color: #09c8a6;
+                    bottom: -18px;
+                    left: 3px;
+                }
+            }
+        }
+
+        .site__para {
+            p {
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+
+        .view__more--products {
+            a {
+                font-size: 18px;
+                font-weight: 700;
+                color: #09c8a6;
+            }
+
+        }
+    }
+
+    .card {
+        border-radius: 110px;
+
+        .card-img {
+            width: 65%;
+            margin: 10px auto;
+        }
+
+        .card-title {
+            font-size: 60px;
+            font-weight: 700;
+            color: var(--color--darkblue);
+
+        }
+
+        .card-desc {
+            height: 175px;
+
+            p {
+                font-weight: 700;
+                font-size: 18px;
+
+            }
+        }
+
+    }
+
+
+    &.clinician--bg {
+        background: var(--color--white);
+        border-radius: 160px 0 0 0;
+        padding-bottom: 0;
+
+        .seemless__content {
+            width: 100%;
+            color: initial;
+
+            .clincian--title {
+                h3 {
+                    font-size: 34px;
+                    font-weight: 700;
+                }
+            }
+
+            .site__heading {
+                h2 {
+                    color: var(--color--darkblue);
+
+                    &::after {
+                        left: calc(50% - 30px);
+                    }
+                }
+            }
+        }
+
+        .consultant--card {
+            .card {
+                background-color: var(--color--darkblue);
+
+                .card-img {
+                    width: 165px;
+                }
+
+                .card-desc {
+                    height: 240px;
+
+                    p {
+                        font-size: 20px;
+                        color: var(--color--white);
+                    }
+
+                }
+            }
+        }
+
+        .secure__data {
+            margin-top: 50px;
+
+            a {
+                font-size: 18px;
+                font-weight: 700;
+                color: #09c8a6;
+            }
+        }
+    }
+}
+
+.clinician--wrapper {
+    position: relative;
+    top: -250px;
+
+}
+
+
+@media screen and (max-width: 1199.98px) {
+
+    .seemless--bg {
+        .card {
+            border-radius: 90px;
+
+            .card-desc {
+                height: 164px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 991.98px) {
+    .seemless--bg {
+        .seemless__content {
+            width: 75%;
+        }
+
+        .row {
+            row-gap: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .seemless--bg {
+        .seemless__content {
+            width: 100%;
+
+            .site__heading {
+                h2 {
+                    font-size: 36px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .seemless--bg {
+        .seemless__content {
+            .site__heading {
+                h2 {
+                    font-size: 26px;
+                }
+            }
+        }
+
+        &.clinician--bg {
+            .seemless__content {
+                .clincian--title {
+                    h3 {
+                        font-size: 26px;
+                    }
+                }
+            }
+
+            .consultant--card {
+                .card {
+                    border-radius: 70px;
+
+                    .card-desc{
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            .secure__data {
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+
+    }
+}

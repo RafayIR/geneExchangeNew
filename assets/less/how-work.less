@@ -1,0 +1,124 @@
+
+.how__works--wrapper {
+    position: relative;
+    top: -140px;
+.how__works--bg {
+    background-color: var(--color--primary);
+    padding: 70px 0;
+    padding-bottom: 180px;
+    color: var(--color--darkblue);
+    border-radius: 0 140px 0 0;
+
+    .site__heading {
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 70px;
+                height: 5px;
+                background-color: var(--color--white);
+                bottom: -18px;
+                left: 3px;
+            }
+        }
+    }
+
+    .site__para {
+        p {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+    }
+
+    .site__btn {
+        .btn {
+            padding: 10px 0;
+            width: 250px;
+            border-radius: 25px;
+            margin-right: 28px;
+            background-color:var(--color--darkblue);
+            color: var(--color--white);
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+
+
+
+    .search__consultant {
+
+        .search__collapse--wrapper {
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 18px;
+
+            .collapse--content {
+                padding: 24px 20px;
+
+                h3 {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+
+            .accordion {
+                background: transparent;
+                padding-bottom: 25px;
+
+                .accordion-item {
+                    background: none;
+                    border: 0;
+
+
+                    .accordion-header {
+                        border-bottom: 3px solid #fff;
+
+                        .accordion-button {
+                            background-color: transparent;
+                            color: var(--color--darkblue);
+                            font-weight: 700;
+
+                            &:focus {
+                                border: none;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+
+                    .accordion-collapse {
+                        .accordion-body {
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+@media screen and(max-width:767.98px) {
+    .how__works--wrapper{
+        .how__works--bg{
+            .how__works--content{
+                width: 100% !important;
+            }
+
+            .site__heading{
+                h2{
+                    font-size: 36px;
+                }
+            }
+
+            .search__consultant{
+                flex-direction: column-reverse;
+                row-gap: 30px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet/less" type="text/css" href="assets/less/all.less" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Gj Booknow</title>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
+        </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"
+        integrity="sha512-Y+0b10RbVUTf3Mi0EgJue0FoheNzentTMMIE2OreNbqnUPNbQj8zmjK3fs5D2WhQeGWIem2G2UkKjAL/bJ/UXQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+
+</head>
+
+<body class="is-ctl-listing is-ctl-detail">
+    <header>
+        <div class="header__wrapper header__bg pt-2">
+            <div class="header__main">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <nav class="navbar">
+                                <div class="logo--wrapper">
+                                    <a href="index.html" class="logo--link">
+                                        <div class="logo--img">
+                                            <img src="assets/img/logo-img/blue logo.png" alt="logo image">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="searchbox">
+                                    <div class="input-group">
+                                        <input class="form-control border-end-0 border" type="search" value="search"
+                                            id="example-search-input">
+                                        <span class="input-group-append">
+                                            <button
+                                                class="btn btn-outline-secondary bg-white border-start-0  border ms-n5"
+                                                type="button">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="navbar__wrapper d-flex align-items-center justify-content-end">
+                                    <div class="signin__btn btn me-lg-5 me-md-5 me-sm-4 me-3">
+                                        <a href="#">Sign in</a>
+                                    </div>
+
+                                    <div class="cart__btn me-lg-3 me-md-3 me-sm-3 me-2">
+                                        <a href="http://"><span><i class="fa fa-shopping-cart"></i></span>
+                                            <span
+                                                class="price__badge d-flex align-items-center justify-content-center p-2">0</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="navbar__toggler--btn ms-3">
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                                    aria-labelledby="offcanvasExampleLabel">
+                                    <div class="account__wraapper--main d-flex align-items-center pt-3 p-4">
+                                        <div class="account__wrapper--bg ">
+                                            <div class="row align-items-center">
+                                                <div class="col-3 ps-1">
+                                                    <div class="avatar__img">
+                                                        <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="row flex-column">
+                                                        <h5>Hello Guests</h5>
+                                                        <div class="signin__wrapper">
+                                                            <a href="http://">Sign In</a>
+                                                            <a href="http://">Create an account</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="search__wrapper mt-4 pb-4 p-4 border-bottom">
+                                        <div class="input-group">
+                                            <span class="input-group-append">
+                                                <button class="btn" type="button">
+                                                    <i class="fa fa-search "></i> Search
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="navbar__items p-4">
+                                        <ul class="navbar-nav ">
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-1.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Home
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-2.png"></span>
+                                                <a href="./healthfolio.html" class="nav-link">
+                                                    HealthFolio
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-3.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    LabCheck
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-4.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Services
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-5.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Consult
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-6.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Products
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-7.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Xchange
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown__wrapper">
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn dropdown-toggle d-flex align-items-center justify-content-between"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Who should join
+                                                <i class="fas fa-chevron-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu border-0">
+                                                <li><a class="dropdown-item" href="#">Members</a></li>
+                                                <li><a class="dropdown-item" href="#">Members</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- BREADCRUMBS -->
+
+        <div class="breadcrumbs-wrapper">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Consult</a></li>
+                        <li class="breadcrumb-item"><a href="#">Specialities</a></li>
+                        <li class="breadcrumb-item"><a href="#">General Practice</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Mr Dr Strange</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="booknow--wrapper mt-5">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="card booknow-card">
+                            <div class="dr-info">
+                                <div class="card-img">
+                                    <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                </div>
+                                <div class="dr-detial border-bottom p-3">
+                                    <h3 class="card-title">Mr Dr Strange</h3>
+                                    <h5 class="card-subtitle mb-3">(24 years experience)</h5>
+                                    <span>General Practce</span>
+                                </div>
+                                <div class="clinic-detail border-bottom p-3">
+                                    <h3 class="card-title">Marvel Clinic <small>(300011)</small></h3>
+                                    <span>petaliang , selangar , Malaysia</span>
+                                </div>
+                                <div class="booknow-btn p-3 pt-2">
+                                    <button class="btn w-100 btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="general-info-wrapper  border border-bottom-0 pb-4 ps-3 pe-3">
+                            <div class="gene--heading">
+                                <h2 class="title border-bottom">General Info</h2>
+                            </div>
+                            <div class="general-detail">
+                                <div class="general--item d-flex align-items-center">
+                                    <div class="general-item-heading">
+                                        <h5>license no.</h5>
+                                    </div>
+                                    <div class="general-item-desc">
+                                        <span>123456</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="general-detail">
+                                <div class="general--item d-flex align-items-center">
+                                    <div class="general-item-heading">
+                                        <h5>about</h5>
+                                    </div>
+                                    <div class="general-item-desc">
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quam a
+                                            facilis doloremque, molestias aspernatur aliquam quaerat obcaecati hic enim
+                                            ab similique reiciendis, velit sit.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="general-detail">
+                                <div class="general--item d-flex align-items-center">
+                                    <div class="general-item-heading">
+                                        <h5>Qualification & awards</h5>
+                                    </div>
+                                    <div class="general-item-desc">
+                                        <span>marvel college</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="general-detail">
+                                <div class="general--item d-flex align-items-center">
+                                    <div class="general-item-heading">
+                                        <h5>spoken language</h5>
+                                    </div>
+                                    <div class="general-item-desc">
+                                        <span>
+                                            Bahasha Malaysia, English ,Tamil
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="general-detail">
+                                <div class="general--item d-flex align-items-center">
+                                    <div class="general-item-heading">
+                                        <h5>Available Channels</h5>
+                                    </div>
+                                    <div class="general-item-desc">
+                                        <span>Video Call</span>
+                                        <span>Onsite</span>
+                                        <span>Phone</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="general-info-wrapper  border border-top-0 ps-3 pe-3">
+                            <div class="gene--heading ">
+                                <h2 class="title border-bottom border-top">location</h2>
+                            </div>
+                            <div class="locat--info pt-3">
+                                <div class="locat--desc">
+                                    <h4 class="pb-3">Marvel Clinic</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolore nostrum
+                                        eum tempora iusto! Dignissimos officia excepturi numquam eveniet autem
+                                        recusandae optio modi dolor quidem.
+                                    </p>
+                                </div>
+                                <div class="address--wrapper mt-4 mb-3">
+                                    <div class="timings--wrapper d-flex align-items-start justify-content-between ">
+                                        <div class="clinic--location">
+                                            <p>GL 17, jalan SS 7/26. Ss7</p>
+                                            <p>petaling jaya 47301</p>
+                                            <p>Selangar, Malaysia</p>
+                                        </div>
+                                        <div class="opening--hours">
+                                            <ul>
+                                                <li class="gj-hours">09 : 00 AM - 05:00 AM</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="map--wrapper mt-4">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.9607929671083!2d101.60779451470457!3d3.1050698977389404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c08448ae41d%3A0xce8265b6226132cb!2sTadika%20Seaport!5e0!3m2!1sen!2s!4v1669650260621!5m2!1sen!2s"
+                                            height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade">
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- Modal -->
+        <div class="modal--wrapper">
+            <div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Book Consultation</h5>
+                            <span class="subtitle">Marvel Clinic - Mr Dr Strange</span>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="selecdate-tab" data-bs-toggle="pill"
+                                        data-bs-target="#selectdate" type="button" role="tab" aria-controls="selectdate"
+                                        aria-selected="true">1</button>
+                                    <span class="nav-text item-1">Select Date</span>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="selectchannel-tab" data-bs-toggle="pill"
+                                        data-bs-target="#selectchannel" type="button" role="tab"
+                                        aria-controls="selectchannel" aria-selected="false">2</button>
+                                    <span class="nav-text item-2">Select Channel & Time</span>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="booking-tab" data-bs-toggle="pill"
+                                        data-bs-target="#booking" type="button" role="tab" aria-controls="booking"
+                                        aria-selected="false">3</button>
+                                    <span class="nav-text item-3">Booking Questionnaire</span>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="confirmation-tab" data-bs-toggle="pill"
+                                        data-bs-target="#confirmation" type="button" role="tab"
+                                        aria-controls="confirmation" aria-selected="false">4</button>
+                                    <span class="nav-text item-4">confirmation</span>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="selectdate" role="tabpanel"
+                                    aria-labelledby="selecdate-tab">
+                                    <div class="app custom-calender">
+                                        <div class="app__main">
+                                            <div class="calendar">
+                                                <div id="calendar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="selectchannel" role="tabpanel"
+                                    aria-labelledby="selectchannel-tab">
+
+                                    <div class="channel--wrapper">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="video-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#Video" type="button" aria-selected="true"><i class="fas fa-video me-2"></i>Video
+                                                    Call</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="onsite-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#onsite" type="button"
+                                                    aria-selected="false">On-site</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="phone-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#phone" type="button"
+                                                    aria-selected="false">Phone</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="Video" role="tabpanel"
+                                                aria-labelledby="video-tab">
+                                                <div class="timing--wrapper mt-5">
+                                                    <div class="row">
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="onsite" role="tabpanel"
+                                                aria-labelledby="onsite-tab">
+                                                <div class="timing--wrapper mt-5">
+                                                    <div class="row">
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>     <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="tab-pane fade" id="phone" role="tabpanel"
+                                                aria-labelledby="phone-tab">
+                                                <div class="timing--wrapper mt-5">
+                                                    <div class="row">
+                                                        
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>     <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                                            <button type="button"
+                                                                class="timing--card border text-center p-2">
+                                                                <h5>09 : 00 AM</h5>
+                                                                <span>RM30.00</span>
+                                                            </button>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="booking" role="tabpanel" aria-labelledby="booking-tab">
+                                    <div class="booking--wrapper">
+                                        <div class="passport--wrapper border-bottom">
+                                            <h3 class="title">IC/Passport no.</h3>
+                                            <div class="form-group">
+                                                <label for="">Please enter your IC/Passport no.</label>
+                                                <input type="text" name="" id="" class="form-control"
+                                                    placeholder="IC/Passport no. *" required>
+                                            </div>
+                                        </div>
+                                        <div class="concern--wrapper">
+                                            <h3 class="title">Describe your concern or problem</h3>
+                                            <div class="form-group">
+                                                <label for="">Write down why you think you need a consultant</label>
+                                                <input type="text" name="" id="" class="form-control"
+                                                    placeholder="Concern *" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="confirmation" role="tabpanel"
+                                    aria-labelledby="confirmation-tab">
+                                
+                                <div class="gj--confirmation-wrapper">
+                                    <div class="row confirm-main mt-5">
+                                        <div class="col-lg-7 col-md-6">
+                                            <h3 class="card-title">Marvel Clinic <small>(300011)</small></h3>
+                                            <div class="clinic--location">
+                                                <p>GL 17, jalan SS 7/26. Ss7</p>
+                                                <p>petaling jaya 47301</p>
+                                                <p>Selangar, Malaysia</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-md-6">
+                                            <div class="consult--dr d-flex align-items-center justify-content-between">
+                                                <h4>Consult :</h4>
+                                                <span>Mr Dr Stragge</span>
+                                            </div>
+                                            <div class="consult--dr d-flex align-items-center justify-content-between">
+                                                <h4>Date :</h4>
+                                                <span>Tuesday, November 29, 2022</span>
+                                            </div>
+                                            <div class="consult--dr d-flex align-items-center justify-content-between">
+                                                <h4>Channel :</h4>
+                                                <span>Video Call</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row time-main">
+                                        <div class="time-price--header d-flex align-items-center justify-content-between border-bottom">
+                                            <h5>Time</h5>
+                                            <h5>Price</h5>
+                                        </div>
+                                        <div class="confirm-price d-flex align-items-start justify-content-between mt-4 pb-3 border-bottom">
+                                            <div class="discount--info">
+                                                <h4>09 : 30 AM - 10 : 00 AM - Video Call </h4>
+                                                <a href="#">GeneCredit discount Available</a>
+                                                <a href="#">Upto GCI 1.36 (RM 0.60)</a>
+                                            </div>
+                                            <div class="price">
+                                                <span>RM30.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="credit--info flex-wrap d-flex align-items-center justify-content-between mt-4 pb-3 border-bottom">
+                                            <div class="col-lg-7 col-md-7 col-sm-7 col-12">
+                                                <h4>Use GeneCredit (GC 3.07)</h4>
+                                                <span>Upto GC1.36</span>
+                                            </div>
+                                            <div class="col-lg-5 col-md-5 col-sm-5 col-12">
+                                               <div class="form-group d-flex align-items-center border">
+                                                 <input type="number" name="" id="" class="form-control text-end" placeholder="0">
+                                                 <span id="helpId" class="text-muted">GC</span>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row grand--total align-items-center mt-3 justify-content-end">
+                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                            <h3>Grand Total</h3>
+                                        </div>
+                                        <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-lg-end text-md-end text-sm-end text-end">
+                                            <span>RM 30.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="row pyament--wrapper align-items-center mt-4">
+                                        <div class="col-lg-9 col-md-12 col-sm-12 col-12">
+                                            <div class="select--payment  d-flex align-items-center justify-content-center">
+                                                <h4 class="select--heading">Select Payment Method</h4>
+                                                <select class="form-select form-select-sm border-bottom-0" aria-label=".form-select-sm example">
+                                                    <option selected>Visa / Debit Card</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                  </select>
+                                                <div class="code--wrapper">
+                                                    <Span><i class="fab fa-cc-visa"></i> 4242 4242 4242 4242</Span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-11 col-sm-12 col-12 text-lg-center text-end zip">
+                                            <span class="zip-code">12 / 34</span>
+                                            <span  class="zip-code">123</span>
+                                            <span>ZIP</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="modal--footer--btn col-12 d-flex justify-content-between">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Next</button>
+                            </div>
+                            <div class="modal--footer--text text-center border-top p-3 col-12">
+                                <p class="text-center">
+                                    if you're not sure this is the right consultant, or how many sessions you need ,ypu
+                                    can ask
+                                    a question first before booking a session
+                                </p>
+                                <a href="http://">Click here to ask a question</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <script src="assets/js/calender.js"></script>
+</body>
+
+</html>

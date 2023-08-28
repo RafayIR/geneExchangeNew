@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet/less" type="text/css" href="assets/less/all.less" />
+
+    <title>Gj Home</title>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
+        </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <!--============= HEADER =============== -->
+    <header>
+        <div class="header__wrapper header__bg pt-2">
+            <div class="header__main">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <nav class="navbar justify-content-end">
+                                <div class="navbar__wrapper d-flex align-items-center justify-content-end">
+                                    <div class="signin__btn btn me-lg-5 me-md-5 me-sm-4 me-3">
+                                        <a href="#">Sign in</a>
+                                    </div>
+
+                                    <div class="cart__btn me-lg-3 me-md-3 me-sm-3 me-2">
+                                        <a href="http://"><span><i class="fa fa-shopping-cart"></i></span>
+                                            <span
+                                                class="price__badge d-flex align-items-center justify-content-center p-2">0</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="navbar__toggler--btn ms-3">
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                                    aria-labelledby="offcanvasExampleLabel">
+                                    <div class="account__wraapper--main d-flex align-items-center pt-3 p-4">
+                                        <div class="account__wrapper--bg ">
+                                            <div class="row align-items-center">
+                                                <div class="col-3 ps-1">
+                                                    <div class="avatar__img">
+                                                        <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="row flex-column">
+                                                        <h5>Hello Guests</h5>
+                                                        <div class="signin__wrapper">
+                                                            <a href="http://">Sign In</a>
+                                                            <a href="http://">Create an account</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="search__wrapper mt-4 pb-4 p-4 border-bottom">
+                                        <div class="input-group">
+                                            <span class="input-group-append">
+                                                <button class="btn" type="button">
+                                                    <i class="fa fa-search "></i> Search
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="navbar__items p-4">
+                                        <ul class="navbar-nav ">
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-1.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Home
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-2.png"></span>
+                                                <a href="./healthfolio.html" class="nav-link">
+                                                    HealthFolio
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-3.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    LabCheck
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-4.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Services
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-5.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Consult
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-6.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Products
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-7.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Xchange
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown__wrapper">
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn dropdown-toggle d-flex align-items-center justify-content-between"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Who should join
+                                                <i class="fas fa-chevron-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu border-0">
+                                                <li><a class="dropdown-item" href="#">Members</a></li>
+                                                <li><a class="dropdown-item" href="#">Members</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ============ MAIN ==================-->
+    <main>
+        <!-- ==============BANNER=================== -->
+        <div class="banner__wrapper owl-carousel owl-theme banner__slider">
+            <div class="banner__bg">
+                <div class="logo__wrapper">
+                    <a class="logo-link d-block" href="#">
+                        <img src="assets/img/logo-img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="container">
+                    <div class="row align-items-lg-center align-items-md-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="banner__main--content">
+                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorem suscipit
+                                    alias?</h2>
+                                <strong>For Everyone Everywhere</strong>
+                                <div class="signin_btn mt-5">
+                                    <a class="btn" href="http://">Sign up today</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="banner__img--wrapper">
+                                <img src="assets/img/banner-img/banner-img-1.png" alt="banner-img" srcset="">
+                                <a class="banner__icon--link icon__1" href="#" target="_blank">
+                                    <img src="assets/icons/banner-icons/banner-icon-1.png" alt="">
+                                </a>
+                                <a class="banner__icon--link icon__2" href="healthfolio.html" target="_blank">
+                                    <img src="assets/icons/banner-icons/banner-icon-2.png" alt="">
+                                </a>
+                                <a class="banner__icon--link icon__3" href="#" target="_blank">
+                                    <img src="assets/icons/banner-icons/banner-icon-5.png" alt="">
+                                </a>
+                                <a class="banner__icon--link icon__4" href="#" target="_blank">
+                                    <img src="assets/icons/banner-icons/banner-icon-6.png" alt="">
+                                </a>
+                                <a class="banner__icon--link icon__5" href="#" target="_blank">
+                                    <img src="assets/icons/banner-icons/banner-icon-4.png" alt="">
+                                </a>
+                                <a class="banner__icon--link icon__6" href="#" target="_blank">
+                                    <img src="assets/icons/banner-icons/banner-icon-3.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner__bg child__img--wrapper">
+                <div class="logo__wrapper">
+                    <a class="logo-link d-block" href="#">
+                        <img src="assets/img/logo-img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="container">
+                    <div class="row align-items-lg-center align-items-md-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="banner__main--content">
+                                <h2>Subscribe to Healthfolio</h2>
+                                <strong>And Receive A Free Genetic Test worth RM3000</strong>
+                                <div class="signin_btn mt-3">
+                                    <a class="btn" href="http://">Subscribe now !</a>
+                                </div>
+                                <div class="banner__logo mt-3">
+                                    <img src="assets/img/banner-img/banner-logo.png" alt="" srcset="">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="banner__img--wrapper child__img">
+                                <img src="assets/img/banner-img/banner-img-2.png" alt="banner-img" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner__bg bg-white">
+                <div class="logo__wrapper logo__blue">
+                    <a class="logo-link d-block" href="#">
+                        <img src="assets/img/logo-img/blue logo.png" alt="">
+                    </a>
+                </div>
+                <div class="container">
+                    <div class="row align-items-lg-center align-items-md-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="banner__main--content">
+                                <h2>A healthcare community like no other</h2>
+                                <strong>seamless connectivity between healthcare professionals, vendors and you</strong>
+                                <div class="signin_btn mt-5">
+                                    <a class="btn" href="http://">Sign up today</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="banner__img--wrapper">
+                                <img src="assets/img/banner-img/banner-img-3.png" alt="banner-img" srcset="">
+                                <a class="banner__icon--link icon__1" href="members.html" target="_blank">
+                                    <img src="assets/icons/banner-icons/2banner-icon-5.png" alt="Member">
+                                </a>
+                                <a class="banner__icon--link icon__2" href="#" target="_blank">
+                                    <img src="assets/icons/banner-icons/2banner-icon-2.png" alt="">
+                                </a>
+                                <a class="banner__icon--link icon__3" href="recipitents.html" target="_blank">
+                                    <img src="assets/icons/banner-icons/2banner-icon-1.png" alt="">
+                                </a>
+                                <a class="banner__icon--link icon__4" href="#" target="_blank">
+                                    <img src="assets/icons/banner-icons/2banner-icon-3.png" alt="">
+                                </a>
+                                <a class="banner__icon--link icon__5" href="consultant.html" target="_blank">
+                                    <img src="assets/icons/banner-icons/2banner-icon-4.png" alt="consultant">
+                                </a>
+                                <a class="banner__icon--link icon__6" href="#" target="_blank">
+                                    <img src="assets/icons/banner-icons/2banner-icon-6.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========== UNIQUES =============== -->
+        <div class="unique__wrapper">
+            <div class="primary__bg">
+                <div class="container position-relative">
+                    <div class="count__down p-lg-3 p-md-3 p-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <h2>200,000 +</h2>
+                                <label> Happy members</label>
+                            </div>
+                            <div class="col-4">
+                                <h2>100 +</h2>
+                                <label>Healthcare Partners</label>
+                            </div>
+                            <div class="col-4">
+                                <h2>2500 +</h2>
+                                <label>Healthcare Vendors</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="unique__wrapper--main">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="site__heading">
+                                    <h2>What makes <em>unique</em>?</h2>
+                                </div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, beatae.</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="video__wrapper">
+                                    <video controls>
+                                        <source src="mov_bbb.mp4" type="video/mp4">
+                                        <source src="mov_bbb.ogg" type="video/ogg">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ========== HEALTHFOLIO ============ -->
+        <div class="healthfolio__wrapper">
+            <div class="container-fluid">
+                <div class="healthfolio__wrapper--main">
+                    <div class="row g-0 align-items-lg-center">
+                        <div class="col-lg-7 col-md-6 d-flex align-items-center">
+                            <div class="healtfolio__img--wrapper">
+                                <img src="assets/img/healthfolio-img/healthfolio-img-3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6 content__wrapper--main">
+                            <div
+                                class="healthfolio__content--wrapper d-flex flex-column justify-content-center ps-lg-5 ps-md-5 ps-3">
+                                <div class="healthfolio__logo pb-3">
+                                    <img src="assets/img/healthfolio-img/healthfolio-logo.png" alt="">
+                                </div>
+                                <div class="healthfolio__para">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta at autem,
+                                        reprehenderit fugiat voluptatem distinctio.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, nostrum!</p>
+                                </div>
+                                <div class="site__btn d-flex text-center flex-column">
+                                    <button class="btn" type="button">Learn more</button>
+                                    <label class="pt-3">Simple . Safe . Secure</label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========CONSULT SECTION===========-->
+        <div class="consult__wrapper position-relative">
+            <div class="half--circle--wrapper">
+                <div class="half--circle text-center">
+                    <div class="circle--content">
+                        <div class="healthfolio-img">
+                            <img src="assets/img/healthfoliopage-img/e-img.png" alt="e img">
+                        </div>
+                        <span>simple . seamless . secure</span>
+                    </div>
+                </div>
+            </div>
+            <div class="consult__wrapper--bg">
+                <div class="row g-0">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 bg-green-light">
+                        <div class="consult__wrapper--main ps-lg-5 ps-md-5 ps-3 pe-2">
+                            <div class="site__heading">
+                                <h2>Consult</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, illo!</p>
+                            <div class="site__btn">
+                                <a  href="./gjlisting.html" class="btn" type="button">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                        <div class="consult__wrapper--main ps-lg-5 ps-md-5 ps-3 pe-2">
+                            <div class="site__heading">
+                                <h2>e-HealthCare</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, illo!</p>
+                            <div class="site__btn">
+                                <button class="btn" type="button">Learn More
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========PRODUCT-WRAPPER ==========-->
+        <div class="product__wrapper">
+            <div class="product__wrapper--bg">
+                <div class="container">
+                    <div class="product__wrapper---main p-lg-3 p-md-0 p-3">
+                        <div class="row justify-content-lg-center justify-content-md-center g-0">
+                            <div class="col-lg-4 col-md-4 col-sm-6 bg-purple border__curve">
+                                <div class="card border-0 text-center">
+                                    <div class="card-body">
+                                        <div class="site__heading">
+                                            <h2>Products</h2>
+                                        </div>
+                                        <p class="pt-4">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="card__img--wrapper">
+                                        <div class="card__img">
+                                            <img src="assets/img/marketplace-img/marketplace-img-1.png" alt=""
+                                                srcset="">
+                                        </div>
+                                        <div class="img__title">
+                                            <span class="d-inline-block mt-3">Coffe Time</span>
+                                        </div>
+                                    </div>
+                                    <span class="view__more--products d-inline-block pt-5 pb-4">
+                                        <a href="#">View all products <i class="ms-3 fas fa-chevron-right"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 bg-blue border__curve">
+                                <div class="card  border-0 text-center">
+                                    <div class="card-body">
+                                        <div class="site__heading">
+                                            <h2>LabCheck</h2>
+                                        </div>
+                                        <p class="pt-4">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="card__img--wrapper">
+                                        <div class="card__img">
+                                            <img src="assets/img/marketplace-img/marketplace-img-2.png" alt=""
+                                                srcset="">
+                                        </div>
+                                        <div class="img__title">
+                                            <span class="d-inline-block mt-3">Lorem ipsum dolor sit amet.</span>
+                                        </div>
+                                    </div>
+                                    <span class="view__more--products d-inline-block pt-5 pb-4">
+                                        <a href="#">Find the right health screening <i
+                                                class="ms-3 fas fa-chevron-right"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 bg-purple border__curve ">
+                                <div class="card  border-0 text-center">
+                                    <div class="card-body">
+                                        <div class="site__heading">
+                                            <h2>Services</h2>
+                                        </div>
+                                        <p class="pt-4">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="card__img--wrapper">
+                                        <div class="card__img">
+                                            <img src="assets/img/marketplace-img/marketplace-img-1.png" alt=""
+                                                srcset="">
+                                        </div>
+                                        <div class="img__title">
+                                            <span class="d-inline-block mt-3">Lorem ipsum dolor sit amet.</span>
+                                        </div>
+                                    </div>
+                                    <span class="view__more--products d-inline-block pt-5 pb-4">
+                                        <a href="#">View all Service <i class="ms-3 fas fa-chevron-right"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ========= LIKE NO OTHER =============-->
+        <div class="ge__exchange">
+            <div class="ge__exchange--bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="site__heading">
+                                <h2>Like no other</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="site__logo">
+                                <img src="assets/img/geexchange-img/ge-exchange-img-1.png" alt="">
+                            </div>
+                            <div class="site__content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam sequi
+                                    reprehenderit voluptate qui consectetur veritatis adipisci, ipsum vitae nisi!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi provident, quas
+                                    officiis sint ipsum molestiae officia dignissimos temporibus debitis.</p>
+                            </div>
+                            <div class="site__btn  d-flex flex-column text-center">
+                                <button class="btn" type="button">Register</button>
+                                <label class="pt-3">Simple . Safe . Secure</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ========= MEMBERS ================ -->
+        <div class="members__wrapper">
+            <div class="container">
+                <div class="members__wrapper--main">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12  left">
+                            <h2>Who should join?</h2>
+                            <div class="site__content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quam sequi
+                                    reprehenderit voluptate qui consectetur veritatis adipisci, ipsum vitae nisi!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis modi provident, quas
+                                    officiis sint ipsum molestiae officia dignissimos temporibus debitis.</p>
+                            </div>
+                            <div class="site__btn d-flex flex-column text-center">
+                                <button class="btn" type="button">Register</button>
+                                <label class="pt-3">Simple . Safe . Secure</label>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-9 col-md-12 right">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="card">
+                                        <span class="avatar__img">
+                                            <img src="assets/img/whoshouldjoin-img/WhoShouldJoin_image-01.png" alt=""
+                                                srcset="">
+                                        </span>
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <h4>
+                                                    Members
+                                                </h4>
+                                            </div>
+                                            <div class="site__btn">
+                                                <button class="btn" type="button">Learn More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="card">
+                                        <span class="avatar__img">
+                                            <img src="assets/img/whoshouldjoin-img/WhoShouldJoin_image-02.png" alt=""
+                                                srcset="">
+                                        </span>
+                                        <div class="card-body">
+                                            <h4 class="card-title">
+                                                Alied Partners
+                                            </h4>
+                                            <div class="site__btn">
+                                                <button class="btn" type="button">Learn More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="card">
+                                        <span class="avatar__img">
+                                            <img src="assets/img/whoshouldjoin-img/WhoShouldJoin_image-03.png" alt=""
+                                                srcset="">
+                                        </span>
+                                        <div class="card-body">
+                                            <h4 class="card-title">
+                                                Consultants
+                                            </h4>
+                                            <div class="site__btn">
+                                                <button class="btn" type="button">Learn More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="card">
+                                        <span class="avatar__img">
+                                            <img src="assets/img/whoshouldjoin-img/WhoShouldJoin_image-04.png" alt=""
+                                                srcset="">
+                                        </span>
+                                        <div class="card-body">
+                                            <h4 class="card-title">
+                                                Healthcare Vendors
+                                            </h4>
+                                            <div class="site__btn">
+                                                <button class="btn" type="button">Learn More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="card">
+                                        <span class="avatar__img">
+                                            <img src="assets/img/whoshouldjoin-img/WhoShouldJoin_image-05.png" alt=""
+                                                srcset="">
+                                        </span>
+                                        <div class="card-body">
+                                            <h4 class="card-title">
+                                                Recipitents
+                                            </h4>
+                                            <div class="site__btn">
+                                                <button class="btn" type="button">Learn More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="card">
+                                        <span class="avatar__img">
+                                            <img src="assets/img/whoshouldjoin-img/WhoShouldJoin_image-06.png" alt=""
+                                                srcset="">
+                                        </span>
+                                        <div class="card-body">
+                                            <h4 class="card-title">
+                                                Healthcare Partners
+                                            </h4>
+                                            <div class="site__btn">
+                                                <button class="btn" type="button">Learn More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========COMPANY REVIEW=========== -->
+        <div class="company__review--wrapper">
+            <div class="company__review--bg">
+                <div class="container">
+                    <div class="site___content text-center">
+                        <div class="site__heading">
+                            <h2>You're in good company</h2>
+                        </div>
+                        <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae porro,
+                            reiciendis animi
+                        </p>
+                    </div>
+                    <div class="company__review--wrapper-main mt-5">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="review__content p-4">
+                                    <div class="review__para">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, doloribus
+                                            quia. Inventore nihil exercitationem est mollitia tempore ipsam nemo
+                                            dignissimos? Itaque aliquid natus cum sint!
+                                        </p>
+                                    </div>
+                                    <div class="profile__wrapper">
+                                        <div class="row profile__row align-items-center">
+                                            <div class="col-lg-1 col-md-1 col-sm-1 col-1">
+                                                <div class="avatar__img">
+                                                    <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-9 ms-4">
+                                                <h4>Andy Guscott</h4>
+                                                <span>Developer, Google</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="review__content p-4">
+                                    <div class="review__para">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, doloribus
+                                            quia. Inventore nihil exercitationem est mollitia tempore ipsam nemo
+                                            dignissimos? Itaque aliquid natus cum sint!
+                                        </p>
+                                    </div>
+                                    <div class="profile__wrapper">
+                                        <div class="row profile__row align-items-center">
+                                            <div class="col-lg-1  col-md-1 col-sm-1 col-1">
+                                                <div class="avatar__img">
+                                                    <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-9 col-md-9 col-sm-9 col-9 ms-4">
+                                                <h4>Andy Guscott</h4>
+                                                <span>Developer, Google</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand__logo-wrapper text-center mt-5">
+                            <div class="brand__img">
+                                <img src="assets/img/review-img/review-img.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ========= BLOGS ================== -->
+        <div class="blogs__wrapper pt-4">
+            <div class="container">
+                <div class="site___content text-center">
+                    <div class="site__heading">
+                        <h2>Latest from the blog</h2>
+                    </div>
+                    <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae porro,
+                        reiciendis animi
+                    </p>
+                </div>
+                <div class="blog__wrapper--main pt-5">
+                    <div class="blog__slider owl-carousel owl-theme">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="img__wrapper">
+                                    <img src="assets/img/blog-img/blog-img-1.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Just Another Simple Blog post</h4>
+                                    <span class="blog__date d-inline-block pb-4">November 22, 2021</span>
+                                    <div class="blog__content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste alias deserunt
+                                            voluptatibus mollitia modi necessitatibus!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="img__wrapper">
+                                    <img src="assets/img/blog-img/blog-img-1.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Just Another Simple Blog post</h4>
+                                    <span class="blog__date d-inline-block pb-4">November 22, 2021</span>
+                                    <div class="blog__content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste alias deserunt
+                                            voluptatibus mollitia modi necessitatibus!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="img__wrapper">
+                                    <img src="assets/img/blog-img/blog-img-1.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Just Another Simple Blog post</h4>
+                                    <span class="blog__date d-inline-block pb-4">November 22, 2021</span>
+                                    <div class="blog__content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste alias deserunt
+                                            voluptatibus mollitia modi necessitatibus!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="img__wrapper">
+                                    <img src="assets/img/blog-img/blog-img-1.png" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Just Another Simple Blog post</h4>
+                                    <span class="blog__date d-inline-block pb-4">November 22, 2021</span>
+                                    <div class="blog__content">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste alias deserunt
+                                            voluptatibus mollitia modi necessitatibus!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ================ FOOTER ============ -->
+
+    <footer>
+        <div class="footer__wrapper">
+            <div class="footer__bg pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-7 col-12">
+                            <div class="footer__content">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus cupiditate vel
+                                    commodi mollitia possimus. Optio!
+                                    sit amet consectetur, adipisicing elit. Delectus cupiditate vel
+                                    commodi mollitia possimus. Optio!
+                                </p>
+                                <div class="input-group pb-4">
+                                    <input type="text" class="form-control" placeholder="Enter email"
+                                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <button class="btn" type="button" id="button-addon2">Send</button>
+                                </div>
+                                <h2 class="footer__heading">Follow Us</h2>
+                                <div class="site__social pb-4">
+                                    <ul class="social">
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="" class="social__link">
+                                                <i class="fab fa-youtube"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h2 class="footer__heading">
+                                    Accepted Payment Methods
+                                </h2>
+                                <div class="payment__method--wrapper">
+                                    <img src="assets/icons/paymeny-icons/payment-icon.png" alt="payment_methods">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                            <h4 class="footer__coloumn--heading">About GeneJunction</h4>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="£" class="footer__link">Our Story</a>
+                                </li>
+                                <li>
+                                    <a href="£" class="footer__link">Credits</a>
+                                </li>
+                                <li>
+                                    <a href="£" class="footer__link">Contact Us</a>
+                                </li>
+                            </ul>
+                            <h4 class="footer__coloumn--heading mt-4">Customer Care</h4>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="£" class="footer__link">Help Center</a>
+                                </li>
+                                <li>
+                                    <a href="£" class="footer__link">How to Sell</a>
+                                </li>
+                                <li>
+                                    <a href="£" class="footer__link">FAQ</a>
+                                </li>
+                            </ul>
+                            <h4 class="footer__coloumn--heading mt-4">Solutions</h4>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#" class="footer__link">Products</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Labcheck</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">HealthFolio</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Consult</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                            <h4 class="footer__coloumn--heading">Registered As</h4>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#" class="footer__link">Member</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">ealthCare Vendor</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Consultant</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">recipitent</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Healthcare Partner</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Alied Partner</a>
+                                </li>
+                            </ul>
+                            <h4 class="footer__coloumn--heading mt-4">Other Links</h4>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#" class="footer__link">Help Center</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">How to Sell</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+.is-ctl-detail {
+
+
+    .booknow--wrapper {
+
+        .booknow-card {
+
+            .card-img {
+                border-radius: 50%;
+                width: 215px;
+                height: 215px;
+                margin: 20px auto;
+
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+            .card-title {
+                font-size: 20px;
+                font-weight: 600;
+
+                small {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+
+            .card-subtitle {
+                font-size: 16px;
+            }
+
+            .booknow-btn {
+                .btn {
+                    background-color: var(--color--darkblue);
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .general-info-wrapper {
+
+            .gene--heading {
+                .title {
+                    padding: 18px 0;
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+            }
+
+            .general-detail {
+                padding: 10px 0px;
+
+                .general-item-heading {
+                    width: 30%;
+
+                    h5 {
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .general-item-desc {
+                    width: 70%;
+                }
+            }
+
+            .locat--info {
+                width: 80%;
+                margin: 0 auto;
+
+                .locat--desc {
+
+                    h4 {
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 26px;
+
+                    }
+                }
+
+                .address--wrapper {
+
+                    .timings--wrapper {
+                        width: 75%;
+
+                        .clinic--location {
+                            p {
+                                margin-bottom: 4px;
+                            }
+                        }
+                    }
+
+
+
+                    .map--wrapper {
+                        width: 100%;
+
+                        iframe {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .modal-backdrop {
+        z-index: 1505;
+    }
+
+    .offcanvas{
+        z-index: 1560;
+    }
+
+}
+
+
+@media screen and (max-width :1199.98px) {
+    .is-ctl-detail {
+        .booknow--wrapper {
+
+            .row {
+                row-gap: 20px;
+            }
+
+            .booknow-card {
+                .card-img {
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+        }
+
+        .modal-xl {
+            max-width: 992px;
+        }
+    }
+}
+
+@media screen and (max-width : 991.98px) {
+    .is-ctl-detail {
+
+        .modal-xl {
+            max-width: 767px;
+        }
+
+        .booknow--wrapper {
+            .general-info-wrapper {
+                .locat--info {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 575.98px) {
+    .is-ctl-detail {
+        .booknow--wrapper {
+            .general-info-wrapper {
+                .general-detail {
+                    .general--item {
+                        column-gap: 10px;
+                    }
+
+                    .general-item-heading {
+                        margin-right: 14px;
+
+                        h5 {
+                            font-size: 12px;
+                        }
+                    }
+
+                    .general-item-desc {
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .locat--info {
+                    .address--wrapper {
+                        .timings--wrapper {
+                            width: 100%;
+                            flex-direction: column;
+                            row-gap: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+

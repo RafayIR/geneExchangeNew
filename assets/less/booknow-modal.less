@@ -1,0 +1,837 @@
+.is-ctl-detail {
+
+
+
+    .modal--wrapper {
+        .modal {
+            z-index: 1510;
+
+            .nav-justified {
+                .nav-item {
+                    text-align: left;
+                    display: flex;
+                    align-items: center;
+                    max-width: 22%;
+                    flex: 0 0 22%;
+
+                    .nav-link {
+                        display: inline-block;
+                        margin-right: 8px;
+                        width: 30px;
+                        height: 32px;
+                        border-radius: 50%;
+                        font-size: 18px;
+                        position: relative;
+                        background-color: var(--color--grey);
+                        color: var(--color--white);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+
+                        &.active {
+                            background-color: var(--color--darkblue);
+                        }
+                    }
+
+                    .nav-text {
+                        position: relative;
+                        display: block;
+                        font-size: 12px;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 120px;
+                            height: 2px;
+                            right: -132px;
+                            top: 10px;
+                            background-color: #ccc;
+                        }
+
+
+                    }
+
+                    &:nth-child(2) {
+                        max-width: 30%;
+                        flex: 0 0 30%;
+
+                        .nav-text {
+                            &::after {
+                                width: 152px;
+                                right: -160px;
+                            }
+                        }
+
+                    }
+
+                    &:nth-child(3) {
+                        max-width: 30%;
+                        flex: 0 0 30%;
+
+                        .nav-text {
+                            &::after {
+                                width: 152px;
+                                right: -160px;
+                            }
+                        }
+                    }
+
+
+                    &:last-child {
+
+                        max-width: 15%;
+                        flex: 0 0 15%;
+
+                        .nav-text {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    &.active {
+                        padding: 15px 15px 12px 15px;
+                        background: #cccccc4f;
+                        margin-left: -15px;
+                    }
+
+
+                }
+            }
+
+            // =======calender
+
+
+
+
+            .channel--wrapper {
+                width: 85%;
+                margin: 0 auto;
+
+                .nav-link {
+                    padding: 8px 50px;
+                    border: 0;
+                    border-bottom: 2px solid transparent;
+                    color: var(--color--grey);
+
+                    &.active {
+                        border-bottom: 2px solid var(--color--darkblue);
+                    }
+                }
+
+                .timing--wrapper {
+
+                    .row {
+
+                        row-gap: 30px;
+
+                        button {
+                            width: 100%;
+                            background: transparent;
+                            cursor: pointer;
+                            border-radius: 8px;
+                        }
+
+                        h5 {
+                            font-size: 15px;
+                            font-weight: 700;
+                            color: var(--color--grey);
+                            margin-bottom: 0;
+                        }
+
+                        span {
+                            font-size: 12px;
+                            color: var(--color--grey);
+                        }
+                    }
+
+
+                }
+            }
+
+            .booking--wrapper {
+
+                margin-top: 40px;
+
+                .title {
+                    font-size: 19px;
+                    font-weight: 700;
+                    margin-bottom: 16px;
+                }
+
+                .passport--wrapper {
+
+                    width: 85%;
+                    margin: 0 auto;
+                    padding-bottom: 35px;
+                }
+
+                .concern--wrapper {
+                    padding-top: 15px;
+                    width: 85%;
+                    margin: 0 auto;
+                }
+
+                .form-group {
+
+                    label {
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: var(--color--grey);
+                    }
+
+                    .form-control {
+                        padding: 12px 10px;
+                        margin-top: 20px;
+                    }
+                }
+
+            }
+
+            .gj--confirmation-wrapper {
+                width: 90%;
+                margin: 0 auto;
+                padding-bottom: 30px;
+
+                .confirm-main {
+                    padding-bottom: 20px;
+
+                    .card-title {
+
+                        font-size: 18px;
+                        font-weight: 700;
+                        margin-bottom: 30px;
+                    }
+
+                    .clinic--location {
+                        p {
+                            margin-bottom: 4px;
+                        }
+
+                    }
+
+                    .consult--dr {
+                        margin-bottom: 10px;
+
+                        h4 {
+                            font-size: 16px;
+                            margin-bottom: 0;
+                            color: var(--color--grey);
+                            font-weight: 700;
+                        }
+
+                        span {
+                            font-weight: 600;
+                            color: var(--color--grey);
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .time-main {
+                    .time-price--header {
+                        background-color: #f8f9fa;
+                        padding: 15px 18px;
+
+                        h5 {
+                            margin-bottom: 0;
+                            font-size: 16px;
+                            font-weight: 800;
+                        }
+                    }
+
+                    .confirm-price {
+                        .discount--info {
+
+                            h4 {
+                                font-size: 18px;
+                                color: var(--color--grey);
+                                font-weight: 700;
+                            }
+
+                            a {
+                                display: block;
+                                color: var(--color--darkblue);
+                            }
+                        }
+
+                        .price {
+                            span {
+                                font-size: 18px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+
+                    .credit--info {
+                        h4 {
+                            font-size: 18px;
+                            font-weight: 700;
+                            color: var(--color--grey);
+                        }
+
+                        span {
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+
+                        .form-group {
+                            width: 120px;
+                            border-radius: 6px;
+
+
+                            .form-control {
+                                width: 100%;
+                                border: 0;
+                                background: transparent;
+                            }
+
+                            span {
+                                width: 100%;
+                                height: 35px;
+                                display: flex;
+                                border-left: 1px solid #ccc;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+
+                .grand--total {
+                    h3 {
+                        font-size: 22px;
+                        font-weight: 300;
+                        margin-bottom: 0;
+                    }
+
+                    span {
+                        font-weight: 700;
+                        font-size: 24px;
+                        color: var(--color--primary);
+                    }
+                }
+
+                .pyament--wrapper {
+                    .select--payment {
+
+                        h4 {
+                            font-size: 16px;
+                            margin-bottom: 0;
+                            text-transform: capitalize;
+                        }
+
+                        .form-select {
+                            width: 30%;
+                            margin: 0 10px;
+                            padding: 10px 10px;
+                        }
+
+                        .code--wrapper {
+                            margin-left: 12px;
+
+                            span {
+                                font-weight: 700;
+                            }
+
+                        }
+                    }
+
+                    .zip {
+                        span {
+                            margin-left: 24px;
+                        }
+
+                        .zip-code {
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            .modal-footer {
+                justify-content: space-between;
+                padding-left: 20px;
+                padding-right: 30px;
+
+                .modal--footer--btn {
+                    margin-bottom: 15px;
+
+                    .btn-primary {
+                        background-color: var(--color--darkblue);
+                    }
+                }
+
+                .modal--footer--text {
+                    p {
+                        font-size: 12px;
+                        color: var(--color--darkblue);
+                        margin-bottom: 3px;
+                    }
+
+                    a {
+                        font-size: 13px;
+                        color: var(--color--darkblue);
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+.app {
+    &.custom-calender {
+
+        width: 100%;
+        height: 100%;
+        margin: 50px 0;
+
+        .app__main {
+            float: inherit;
+            margin: 0 auto;
+            background: none;
+
+            .calendar {
+                padding: 0;
+
+                .datepicker {
+                    .prev {
+                        color: #000;
+                    }
+
+                    .datepicker-switch {
+                        color: #000;
+                        font-size: 16px;
+                    }
+
+                    .next {
+                        color: #000;
+                    }
+
+                    .day {
+                        width: 40px;
+                        height: 85px;
+                        border-radius: 50%;
+                        font-size: 16px;
+
+                        &.today {
+                            background-color: var(--color--darkblue);
+                            color: var(--color--white) !important;
+
+                            &:hover {
+                                &.active.active {
+                                    background-color: var(--color--darkblue);
+                                    color: var(--color--white);
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            &.active.active {
+                                background-color: var(--color--darkblue);
+                                color: var(--color--white);
+                            }
+                        }
+
+                        &.active {
+                            background-color: var(--color--darkblue);
+                            color: var(--color--white);
+                        }
+                    }
+
+                    .dow {
+                        color: #000;
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width :1199.98px) {
+    .is-ctl-detail {
+        .modal--wrapper {
+            .modal {
+                .nav-justified {
+                    .nav-item {
+
+                        &:nth-child(2) {
+                            .nav-text {
+                                &::after {
+                                    width: 112px;
+                                    right: -120px;
+                                }
+
+                            }
+
+                        }
+
+                        &:nth-child(3) {
+                            .nav-text {
+                                &::after {
+                                    width: 112px;
+                                    right: -120px;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 991.98px) {
+    .is-ctl-detail {
+        .modal--wrapper {
+            .modal {
+                .nav-justified {
+                    .nav-item {
+                        flex-direction: column;
+                        max-width: 25%;
+                        flex: 0 0 25%;
+
+                        .nav-text {
+                            padding-top: 12px;
+                            text-align: center;
+
+
+                            &::after {
+                                width: 139px;
+                                right: -128px;
+                                top: -16px;
+                            }
+                        }
+
+
+                        &:nth-child(2) {
+                            max-width: 25%;
+                            flex: 0 0 25%;
+
+                            .nav-text {
+                                &::after {
+                                    width: 144px;
+                                    right: -98px;
+                                    top: -16px;
+                                }
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            max-width: 25%;
+                            flex: 0 0 25%;
+
+                            .nav-text {
+                                &::after {
+                                    width: 144px;
+                                    right: -98px;
+                                    top: -16px;
+                                }
+                            }
+                        }
+
+                        &:last-child {
+                            max-width: 25%;
+                            flex: 0 0 25%;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .app {
+        &.custom-calender {
+            .app__main {
+                .calendar {
+                    .datepicker {
+                        .day {
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width : 767.98px) {
+
+    .is-ctl-detail {
+        .modal--wrapper {
+            .modal {
+                .gj--confirmation-wrapper {
+
+                    .confirm-main {
+                        row-gap: 22px;
+
+                        .consult--dr {
+                            span {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    .time-main {
+                        .confirm-price {
+                            .discount--info {
+                                padding-right: 10px;
+
+                                h4 {
+                                    font-size: 14px;
+                                }
+
+                                a {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+
+                    .pyament--wrapper {
+                        .select--payment {
+                            flex-wrap: wrap;
+                            row-gap: 15px;
+                            margin-bottom: 10px;
+
+                            .select--heading {
+                                width: 100%;
+                            }
+
+                            .form-select {
+                                width: 50%;
+                                margin: 0;
+                            }
+
+                            .code--wrapper {
+                                width: 50%;
+                                text-align: end;
+                                margin-left: 0;
+                                padding-left: 6px;
+                            }
+                        }
+                    }
+                }
+
+                .modal-footer {
+                    .modal--footer--btn {
+                        margin-bottom: 2px;
+                    }
+                }
+
+                .nav-justified {
+                    .nav-item {
+                        &:nth-child(3) {
+
+
+                            .nav-text {
+                                &::after {
+                                    width: 128px;
+                                    right: -83px;
+                                }
+                            }
+                        }
+
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    .app {
+        &.custom-calender {
+            .app__main {
+                .calendar {
+                    .datepicker {
+                        .day {
+                            height: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 575.98px) {
+    .is-ctl-detail {
+        .modal--wrapper {
+            .modal {
+
+                .modal-header {
+                    .subtitle {
+                        text-align: center;
+                    }
+                }
+
+
+                .gj--confirmation-wrapper {
+                    .time-main {
+                        .credit--info {
+                            row-gap: 20px;
+                        }
+                    }
+
+                    .grand--total {
+                        h3 {
+                            font-size: 20px;
+                        }
+
+                        span {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .pyament--wrapper {
+                        .select--payment {
+
+                            .select--heading {}
+
+                            .form-select {
+                                width: 100%;
+                                margin: 0;
+                            }
+
+                            .code--wrapper {
+                                width: 100%;
+                                text-align: end;
+                                margin-left: 0;
+                                padding-left: 6px;
+                            }
+                        }
+                    }
+
+
+
+                }
+
+
+                .channel--wrapper {
+                    width: 100%;
+
+                    .nav-link {
+                        padding: 8px 14px;
+                    }
+                }
+
+                .nav-justified {
+                    .nav-item {
+
+                        &:nth-child(2) {
+                            .nav-text {
+                                &::after {
+                                    width: 130px;
+                                }
+                            }
+                        }
+
+
+
+                        &:nth-child(3) {
+                            .nav-text {
+
+                                &::after {
+                                    width: 80px;
+                                    right: -48px;
+
+                                }
+                            }
+
+                        }
+
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    .app {
+        &.custom-calender {
+            .app__main {
+                width: 95%;
+                padding: 20px 0;
+
+                .calendar {
+                    .datepicker {
+                        .day {
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width : 375px) {
+
+
+    .is-ctl-detail {
+        .modal--wrapper {
+            .modal {
+                .nav-justified {
+                    .nav-item {
+
+                        .nav-text {
+                            font-size: 10px;
+                        }
+
+                        &:nth-child(2) {
+                            .nav-text {
+                                &::after {
+                                    width: 110px;
+                                }
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            .nav-text {
+
+                                &::after {
+                                    width: 30px;
+                                    right: -20px;
+
+                                }
+                            }
+
+                        }
+
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    .app {
+        &.custom-calender {
+            .app__main {
+                .calendar {
+                    .datepicker {
+                        .day {
+                            height: 40px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

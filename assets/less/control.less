@@ -1,0 +1,142 @@
+.control--bg {
+    position: relative;
+    top: -100px;
+    background: #ffffff;
+    border-radius: 0 130px 0px 0;
+    padding-top: 100px;
+    .site__heading {
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 70px;
+                height: 5px;
+                background-color: #09c8a6;
+                bottom: -18px;
+                left: 8px;
+            }
+        }
+    }
+
+    .control__list {
+        margin-left: 22px;
+
+        .control__list--item {
+            list-style: disc;
+            padding: 8px 0;
+            font-size: 16px;
+        }
+
+        .power__control--img{
+            width: 100px;
+            height: auto;
+        }
+    }
+
+    .member__wrapper {
+        .card-title {
+            h2 {
+                background-color: #0d7378;
+                color: #2bfd42;
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            h4 {
+                background-color: #e7f5e8;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+
+        .card-body {
+            background-color: #f0faf2;
+
+            p{
+                font-size: 16px;
+            em{
+                font-style: normal;
+                font-weight: 700;
+            }
+        }
+        }
+
+        .member--price {
+            background-color: #f0faf2;
+
+            .card {
+                background-color: #00a99e;
+
+                h4 {
+                    color: #ffffff;
+                }
+
+                .price-tag {
+                    background-color: #ffffff;
+                    width: 90%;
+                    border-radius: 50px;
+
+                    a {
+                        width: 100%;
+                        display: block;
+                        padding: 12px 10px;
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: #00a99e;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 1199.98px) {
+    .control--bg {
+        .member__wrapper {
+            .member--price {
+                .card {
+                    .price-tag {
+                        a {
+                            font-size: 18px;
+                            padding: 14px 8px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 575.98px) {
+    .control--bg{
+        .site__heading{
+            h2{
+                font-size: 26px;
+
+                &::after{
+                    left: 2px;
+                }
+            }
+        }
+        .member__wrapper{
+            .member--price{
+                row-gap: 20px;
+
+                .card{
+                    .price-tag{
+                        width: 70%;
+                        a{
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

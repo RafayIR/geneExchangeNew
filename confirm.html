@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <link rel="stylesheet/less" type="text/css" href="assets/less/all.less" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Gj Consult Consultant</title>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
+        </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="is-ctl-listing is-ctl-register is-ctl-detail">
+    <header>
+        <div class="header__wrapper header__bg pt-2">
+            <div class="header__main">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <nav class="navbar">
+                                <div class="logo--wrapper">
+                                    <a href="http://" class="logo--link">
+                                        <div class="logo--img">
+                                            <img src="assets/img/logo-img/blue logo.png" alt="logo image">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="navbar__wrapper d-flex align-items-center justify-content-end">
+                                    <div class="signin__btn btn me-lg-5 me-md-5 me-sm-4 me-3">
+                                        <a href="#">Sign in</a>
+                                    </div>
+
+                                    <div class="cart__btn me-lg-3 me-md-3 me-sm-3 me-2">
+                                        <a href="http://"><span><i class="fa fa-shopping-cart"></i></span>
+                                            <span
+                                                class="price__badge d-flex align-items-center justify-content-center p-2">0</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="navbar__toggler--btn ms-3">
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                                    aria-labelledby="offcanvasExampleLabel">
+                                    <div class="account__wraapper--main d-flex align-items-center pt-3 p-4">
+                                        <div class="account__wrapper--bg ">
+                                            <div class="row align-items-center">
+                                                <div class="col-3 ps-1">
+                                                    <div class="avatar__img">
+                                                        <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="row flex-column">
+                                                        <h5>Hello Guests</h5>
+                                                        <div class="signin__wrapper">
+                                                            <a href="http://">Sign In</a>
+                                                            <a href="http://">Create an account</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="search__wrapper mt-4 pb-4 p-4 border-bottom">
+                                        <div class="input-group">
+                                            <span class="input-group-append">
+                                                <button class="btn" type="button">
+                                                    <i class="fa fa-search "></i> Search
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="navbar__items p-4">
+                                        <ul class="navbar-nav ">
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-1.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Home
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-2.png"></span>
+                                                <a href="./healthfolio.html" class="nav-link">
+                                                    HealthFolio
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-3.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    LabCheck
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-4.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Services
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-5.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Consult
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-6.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Products
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-7.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Xchange
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown__wrapper">
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn dropdown-toggle d-flex align-items-center justify-content-between"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Who should join
+                                                <i class="fas fa-chevron-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu border-0">
+                                                <li><a class="dropdown-item" href="#">Members</a></li>
+                                                <li><a class="dropdown-item" href="#">Members</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="booking--processed--wrapper">
+            <div class="container">
+                <div class="booking--processed">
+                    <div class="row align-items-center ">
+                        <div class="col-lg-2 col-md-3 col-sm-3 col-4">
+                            <div class="tick--img">
+                                <img src="assets/img/geexchange-img/ge-exchange-img-1.png" alt="gene exchange">
+                            </div>
+                        </div>
+                        <div class="col-lg-10 col-md-9 col-sm-9 col-8 text-sm-start text-center">
+                            <h3>Your Booking #J1ZQRUIOVB has been processed</h3>
+                            <p>Thank you for your booking! Your appointment details has been
+                                sent to your email address at
+                            </p>
+                            <a href="">been**@genejunction.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="booking--detail--wrapper">
+                <div class="container">
+                    <div class="booking--detail border">
+                        <div class="download--wrapper border-bottom mb-4">
+                            <h2>Download</h2>
+                        </div>
+
+                        <div class="jenejunc row align-items-center mb-4">
+                            <div class="col-lg-8 col-md-7 col-sm-5">
+                                <div class="jene-img">
+                                    <img src="assets/img/geexchange-img/ge-exchange-img-1.png" alt="gene exchange">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-5 col-sm-7 text-sm-start text-center">
+                                <h2>
+                                    Booking No.
+                                </h2>
+                                <span>
+                                    #J1ZQRUIOVB
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="address--detail m-0 row align-items-start">
+                            <div class="col-lg-7 col-md-7 col-sm-5">
+                                <span class="d-block mb-4">To:</span>
+                                <div class="bill-too">
+                                    <h4>Ben App</h4>
+                                    <p>q ,q</p>
+                                    <p>q , q</p>
+                                    <p>Johar, Malaysia</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-7">
+                                <div
+                                    class="invoice--info invoice-no d-flex align-content-center justify-content-between">
+                                    <h3>Invoice no.</h3>
+                                    <span>GJC - 2022000052</span>
+                                </div>
+                                <div
+                                    class="invoice--info invoice--date d-flex align-content-center justify-content-between">
+                                    <h3>Date</h3>
+                                    <span>November 25, 2022</span>
+                                </div>
+                                <div
+                                    class="invoice--info payment--method d-flex align-content-center justify-content-between">
+                                    <h3>payment-method</h3>
+                                    <span>card</span>
+                                </div>
+                                <div
+                                    class="invoice--info  transaction--id d-flex align-content-center justify-content-between">
+                                    <h3>Transaction ID</h3>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="booking--detail--main">
+                            <div class="booking--detial--card">
+                                <h2>Booking Detials</h2>
+                                <div class="row confirm-main mt-5">
+                                    <div class="col-lg-7 col-md-6">
+                                        <h3 class="card-title">Marvel Clinic <small>(300011)</small></h3>
+                                        <div class="clinic--location">
+                                            <p>GL 17, jalan SS 7/26. Ss7</p>
+                                            <p>petaling jaya 47301</p>
+                                            <p>Selangar, Malaysia</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-md-6">
+                                        <div class="consult--dr d-flex align-items-center justify-content-between">
+                                            <h4>Consult :</h4>
+                                            <span>Mr Dr Stragge</span>
+                                        </div>
+                                        <div class="consult--dr d-flex align-items-center justify-content-between">
+                                            <h4>Date :</h4>
+                                            <span>Tuesday, November 29, 2022</span>
+                                        </div>
+                                        <div class="consult--dr d-flex align-items-center justify-content-between">
+                                            <h4>Channel :</h4>
+                                            <span>Video Call</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="session--heading mt-4">
+                                    <h4>Sessions</h4>
+                                </div>
+                                <div
+                                    class="time-price--header d-flex align-items-center justify-content-between border-bottom">
+                                    <h5>Time</h5>
+                                    <h5>Price</h5>
+                                </div>
+                                <div
+                                    class="confirm-price d-flex align-items-start justify-content-between mt-2 pb-1 border-bottom">
+                                    <div class="discount--info">
+                                        <h4>09 : 30 AM - 10 : 00 AM - Video Call </h4>
+                                    </div>
+                                    <div class="price">
+                                        <span>RM30.00</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="confirm-price d-flex align-items-start justify-content-end mt-2 pb-2 border-bottom">
+                                    <div class="sub-total">
+                                        Sub-total <span>RM30.00</span>
+                                    </div>
+                                </div>
+                                <div class="row grand--total align-items-center mt-3 justify-content-end">
+                                    <div class="col-lg-3 col-md-3 col-sm-4 col-6">
+                                        <h3>Grand Total</h3>
+                                    </div>
+                                    <div
+                                        class="col-lg-2 col-md-3 col-sm-4 col-6 text-lg-end text-md-end text-sm-end text-end">
+                                        <span>RM 30.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+
+</html>

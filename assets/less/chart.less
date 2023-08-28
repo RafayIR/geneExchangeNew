@@ -1,0 +1,61 @@
+.chartMenu {
+    width: 100vw;
+    height: 40px;
+    background: #1a1a1a;
+}
+
+.chartMenu p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.chartBox {
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px; 
+    border-radius: 10px;
+    background: white;
+}
+
+
+.chartBox {
+    position: relative;
+    z-index: 1;
+    &::after{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 18px;
+        content: '';
+        position: absolute;
+        z-index: -1;
+    }
+    
+    &.brown--bg-gradient{
+        &::after{
+            background: linear-gradient(202deg, #ffffff00 -44%, #b8727d 80%);
+        }
+       
+    }
+    &.blue--bg-gradient{
+        &::after {
+            background: linear-gradient(202deg, #ffffff00 -44%, #603ddb 80%);
+        }
+    }
+
+    &.teel--bg-gradient {
+        &::after{
+            background: linear-gradient(202deg, #ffffff00 -44%, #e5973c 80%);
+        }
+    }
+}
+
+
+@media screen and (max-width : 575.98px) {
+    .chartBox{
+        #myChart1, #myChart2{
+            display: none !important;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif !important;
+    font-size: 14px !important;
+    color: #77787a;
+}
+
+ul , li {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+:root{
+    --color--white : #ffffff;
+    --color--primary: #70cbb8;
+    --light--green--bg:#ccf1ea;
+    --color--green : #20c997;
+    --color--bg--grey : #f4f4f4;
+    --color--input--text: #c1c1c1;
+    --color--bg:#eae9e9;
+    --color--heading : #00ffff;
+    --color--border :#dee2e6;
+    --color--darkblue:#0b3fc4;
+    --color--secondary:#253064;
+    --color--golden: #dccf73;
+    --color--grey:#606060;
+    --color--dashboard--text--light : #d9d9d9;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+li{
+    list-style: none;
+}
+
+
+.navbar>.container {
+    display: block !important;
+}
+
+.navbar__toggler--btn{
+    .navbar-toggler{
+        &:focus{
+            box-shadow: none !important;
+        }
+    }
+}
+
+.bg--light-purple{
+    background-color: #cedaf4;
+}
+
+.bg-purple{
+    background-color: #686db6;
+}
+
+.bg-blue{
+    background-color: var(--color--darkblue);
+}
+
+.position-inherit{
+    position: inherit;
+}
+
+@media screen and (max-width : 1199.98px) {
+    .container{
+        max-width: 1040px;
+    }
+}
+
+
+@media screen and (max-width:991.98px)  {
+    .container {
+        max-width: 800px;
+    }
+}
+
+
+@media screen and (max-width:767.98px){
+  .desktop__show{
+        display: none;
+    }
+}
+
+@media screen and (min-width:767.98px) {
+    .mobile__show{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 650px;
+    }
+}

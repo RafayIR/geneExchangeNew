@@ -1,0 +1,154 @@
+.footer__bg {
+    background-color: #00a99d;
+    color: var(--color--white);
+
+    .footer__coloumn--heading {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 3px;
+
+
+    }
+
+    .footer__list {
+        li {
+            margin-bottom: 6px;
+
+            a {
+                color: var(--color--white);
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.footer__content {
+    width: 80%;
+
+    p {
+        font-weight: 700;
+    }
+
+    .input-group {
+        .form-control {
+            background: none;
+            color: var(--color--border);
+            margin-right: 10px;
+            border-radius: 12px !important;
+        }
+
+        .btn {
+            background-color: var(--color--white);
+            border-radius: 12px !important;
+            color: var(--color--green);
+            padding: 0 28px;
+        }
+    }
+
+    .footer__heading {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .site__social {
+        ul {
+            display: inline-flex;
+            column-gap: 30px;
+
+            .social__item {
+                a {
+                    color: var(--color--white);
+                    font-size: 20px;
+                }
+            }
+
+        }
+    }
+
+    .payment__method--wrapper {
+        width: 200px;
+    }
+}
+
+
+.healthfolio__footer--bg {
+    background-color: #cedaf4;
+    padding-top: 70px;
+    padding-bottom: 150px;
+    background-image: url(../img/healthfoliopage-img/wave-1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 24%;
+    background-position: 55% 100%;
+
+
+    .footer__collapse--wrapper {
+
+        .accordion-item {
+            .accordion-button {
+                background-color: var(--color--darkblue);
+                color: var(--color--white);
+                font-weight: 600;
+
+                &:not(.collapsed) {
+                    background-color: #00a99d;
+
+                    .arrow--down{
+                        transform: rotate(180deg);
+                    }
+                }
+
+                .arrow--down{
+                    margin-left: auto;  
+                    transition: transform .2s ease-in-out;
+                }
+
+                &::after{
+                    background-image: none;
+                    display: none;
+                }
+
+               
+            }
+            .accordion-body {
+                background-color: #ccf1ea;
+            }
+
+        }
+    }
+
+    &.members__footer--bg{
+        .site__heading{
+            h3{
+                font-size: 30px;
+                color: var(--color--darkblue);
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:991.98px) {
+    .healthfolio__footer--bg{
+    background-size: 120% 12%;
+    background-position: 10% 100%;
+
+    }
+}
+
+@media screen and (max-width :767.98px) {
+    .footer__wrapper {
+        .row {
+            row-gap: 30px;
+
+            .footer__content {
+                width: 95%;
+            }
+        }
+    }
+    
+    .healthfolio__footer--bg{
+        background-size: 200% 11%;
+        background-position: 30% 100%;
+    }
+}

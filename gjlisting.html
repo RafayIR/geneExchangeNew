@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- ================RANGE SLIDER PLUGIN ===================== -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+
+
+
+    <link rel="stylesheet/less" type="text/css" href="assets/less/all.less" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Gj Consult Consultant</title>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
+        </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+</head>
+
+<body class="is-ctl-listing">
+    <header>
+        <div class="header__wrapper header__bg pt-2">
+            <div class="header__main">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <nav class="navbar">
+                                <div class="logo--wrapper">
+                                    <a href="http://" class="logo--link">
+                                        <div class="logo--img">
+                                            <img src="assets/img/logo-img/blue logo.png" alt="logo image">
+                                        </div>
+                                    </a>                                    
+                                </div>
+                                <div class="searchbox">
+                                    <div class="input-group">
+                                        <input class="form-control border-end-0 border" type="search" value="search" id="example-search-input">
+                                        <span class="input-group-append">
+                                            <button class="btn btn-outline-secondary bg-white border-start-0  border ms-n5" type="button">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="navbar__wrapper d-flex align-items-center justify-content-end">
+                                    <div class="signin__btn btn me-lg-5 me-md-5 me-sm-4 me-3">
+                                        <a href="#">Sign in</a>
+                                    </div>
+
+                                    <div class="cart__btn me-lg-3 me-md-3 me-sm-3 me-2">
+                                        <a href="http://"><span><i class="fa fa-shopping-cart"></i></span>
+                                            <span
+                                                class="price__badge d-flex align-items-center justify-content-center p-2">0</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="navbar__toggler--btn ms-3">
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                                    aria-labelledby="offcanvasExampleLabel">
+                                    <div class="account__wraapper--main d-flex align-items-center pt-3 p-4">
+                                        <div class="account__wrapper--bg ">
+                                            <div class="row align-items-center">
+                                                <div class="col-3 ps-1">
+                                                    <div class="avatar__img">
+                                                        <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="row flex-column">
+                                                        <h5>Hello Guests</h5>
+                                                        <div class="signin__wrapper">
+                                                            <a href="http://">Sign In</a>
+                                                            <a href="http://">Create an account</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="search__wrapper mt-4 pb-4 p-4 border-bottom">
+                                        <div class="input-group">
+                                            <span class="input-group-append">
+                                                <button class="btn" type="button">
+                                                    <i class="fa fa-search "></i> Search
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="navbar__items p-4">
+                                        <ul class="navbar-nav ">
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-1.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Home
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-2.png"></span>
+                                                <a href="./healthfolio.html" class="nav-link">
+                                                    HealthFolio
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-3.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    LabCheck
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-4.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Services
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-5.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Consult
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-6.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Products
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-7.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Xchange
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown__wrapper">
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn dropdown-toggle d-flex align-items-center justify-content-between"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Who should join
+                                                <i class="fas fa-chevron-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu border-0">
+                                                <li><a class="dropdown-item" href="#">Members</a></li>
+                                                <li><a class="dropdown-item" href="#">Members</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- BREADCRUMBS -->
+
+        <div class="breadcrumbs-wrapper">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Consult</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Consultant</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="listing--wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-0 col-0 pe-0">
+                        <div class="filter-btn  d-md-none d-block">
+                            <button id="open-modal" class="btn ms-3 btn-light">Filter</button>
+                        </div>
+                        <div id="modal-overlay">
+                        <div  id="modal" class="border sidebar--filter">
+                            <div class="filter--heading">
+                                <h2 class="d-none d-md-block">Filter by</h2>
+                                <div class="filter-block d-flex align-items-center justify-content-between">
+                                    <span class="sidebar--heading m-0 d-md-none d-block">Filter
+                                    </span>
+                                    <button id="close-modal" class="btn btn-light  d-md-none d-block">Close</button>
+                                </div>
+                            </div>
+                            <div class="location--dropdown">
+                                <h2 class="sidebar--heading">
+                                    location
+                                </h2>
+                                <div class="country--wrapper d-flex flex-lg-row flex-md-column flex-sm-column">
+                                    <form action="/action_page.php">
+                                        <fieldset  class="border p-1">
+                                          <legend class="float-none w-auto">Country</legend>
+                                          <div class="dropdown">
+                                            <button class="btn dropdown-toggle d-flex align-items-center" href="#" role="button"
+                                                id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Malaysia
+                                            </button>
+            
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                        </fieldset>
+                                    </form>
+                                    <form action="/action_page.php">
+                                        <fieldset  class="border p-1">
+                                          <legend class="float-none w-auto">State/Region</legend>
+                                          <div class="dropdown">
+                                            <button class="btn dropdown-toggle d-flex align-items-center" href="#" role="button"
+                                                id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Johar
+                                            </button>
+            
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                        </fieldset>
+                                    </form>
+    
+                                </div>
+                                
+                                  
+    
+    
+                                <input type="text" placeholder="Zip/postal Code" class="form-control" name="postalcode">
+                            </div>
+    
+                            <div class="speciality--wrapper">
+                                <h2 class="sidebar--heading">
+                                    speciality / expertise
+                                </h2>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle d-flex align-items-center" href="#" role="button"
+                                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Speciality/Expertise
+                                    </button>
+    
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <div class="language--wrapper">
+                                <h2 class="sidebar--heading">
+                                    spoken language
+                                </h2>
+    
+                                <div class="form-check">
+                                    <ul>
+                                        <li class="language--list">
+                                            <input class="form-check-input" type="checkbox" value="" id="bahasamalaysia">
+                                            <label class="form-check-label" for="bahasamalaysia">
+                                                Bahasha Malaysia
+                                            </label>
+                                        </li>
+                                        <li class="language--list">
+                                            <input class="form-check-input" type="checkbox" value="" id="english">
+                                            <label class="form-check-label" for="english">
+                                                English
+                                            </label>
+                                        </li>
+                                        <li class="language--list">
+                                            <input class="form-check-input" type="checkbox" value="" id="mandarin">
+                                            <label class="form-check-label" for="mandarin">
+                                                Mandarin
+                                            </label>
+                                        </li>
+                                        <li class="language--list">
+                                            <input class="form-check-input" type="checkbox" value="" id="tamil">
+                                            <label class="form-check-label" for="tamil">
+                                                Tamil
+                                            </label>
+                                        </li>
+                                    </ul>
+    
+                                </div>
+                            </div>
+    
+                            <div class="medical--wrapper">
+                                <h2 class="sidebar--heading">
+                                    medical center
+                                </h2>
+    
+                                <div class="form-check">
+                                    <input type="text" class="sidebar--search form-control" name="search"
+                                        placeholder="Search Center...">
+                                    <ul>
+                                        <li class="medical--list">
+                                            <input class="form-check-input" type="checkbox" value="" id="medical1">
+                                            <label class="form-check-label" for="medical1">
+                                                Stark Medical
+                                            </label>
+                                        </li>
+                                        <li class="medical--list">
+                                            <input class="form-check-input" type="checkbox" value="" id="medical2">
+                                            <label class="form-check-label" for="medical2">
+                                                Maria Clicnic Sdn Bhd
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <div class="appot--wrapper">
+                                <h2 class="sidebar--heading">
+                                    appointment day
+                                </h2>
+                                <div class="weeklychkbox mt-2">
+                                      <div class="roundchk">
+                                        <input name="monday" type="checkbox" id="checkbox-mon" value="mon"/>
+                                        <label for="checkbox-mon"> M </label>
+                                      </div>
+                                      <div class="roundchk">
+                                        <input name="tuesday" type="checkbox" id="checkbox-tue" value="tue"/>
+                                        <label for="checkbox-tue"> T </label>
+                                      </div>
+                                      <div class="roundchk">
+                                        <input name="wednesday" type="checkbox" id="checkbox-wed" value="wed"/>
+                                        <label for="checkbox-wed"> W </label>
+                                      </div>
+                                      <div class="roundchk">
+                                        <input name="thursday" type="checkbox" id="checkbox-thu" value="thu"/>
+                                        <label for="checkbox-thu"> T </label>
+                                      </div>
+                                      <div class="roundchk">
+                                        <input name="friday" type="checkbox" id="checkbox-fri" value="fri"/>
+                                        <label for="checkbox-fri"> F </label>
+                                      </div>
+                                      <div class="roundchk">
+                                        <input name="saturday" type="checkbox" id="checkbox-sat" value="sat"/>
+                                        <label for="checkbox-sat"> S </label>
+                                      </div>
+                                      <div class="roundchk">
+                                        <input name="sunday" type="checkbox" id="checkbox-sun" value="sun"/>
+                                        <label for="checkbox-sun"> S </label>
+                                      </div>
+                                </div>
+                            </div>
+    
+                            <div class="form-switch d-flex justify-content-between">
+                                <label class="form-check-label d-inline-block" for="pricerange">average session price
+                                    range</label>
+                                <input class="form-check-input" type="checkbox" role="switch" id="pricerange">
+                            </div>
+    
+                            <div class="range-slider">
+    
+                                <div class="price--range">
+                                    <div class="d-flex justify-content-between">
+                                        <span>RM5</span>
+                                        <span>RM250</span>
+                                        <span>RM500</span>
+                                    </div>
+                                </div>
+                                <input type="text" class="js-range-slider" name="my_range" value="" data-skin="round"
+                                    data-type="double" data-min="0" data-max="100" data-step="25" data-prefix=""
+                                    data-grid="false" />
+                            </div>
+    
+                            <div class="filter--btns d-flex justify-content-between">
+                                <button class="btn btn-light">Clear Filter</button>
+                                <button class="btn btn-primary">Apply Filter</button>
+                            </div>
+
+                          
+                        </div>
+                    </div>
+                      
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-sm-12 col-12 listing--wrapper">
+                        <div class="sorting--wrapper grey--bg">
+                            <span>sort by</span>
+                            <button class="btn border">Price low to high</button>
+                            <button class="btn border">Price high to low </button>
+                        </div>
+                        <div class="row m-0 mt-4">
+                            <div class="col-lg-6">
+                                <div class="card flex-sm-row flex-column align-items-start card--wrapper">
+                                    <div class="card-img-wrapper">
+                                        <div class="card--img">
+                                            <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="avatar--detail">
+                                            <h4 class="card-title">Dr Vandu Margun</h4>
+                                            <h6 class="card-subtitle">General Paractice</h6>
+                                        </div>
+                                        <div class="avatar--tag">
+                                            <span>Marvel Clinic</span>
+                                        </div>
+                                        <div class="location--info">
+                                            <span>petaling jaya , Selanger, Malaysia</span>
+                                        </div>
+                                        <div class="availibilty--info">
+                                            Available : <span>Onsite , Video call Phone</span>
+                                        </div>
+                                        <div class="price--info">
+                                            <span>Avg <em>RM 20.00</em> per session</span>
+                                        </div>
+                                        <div class="view--profile text-center">
+                                            <a href="booknow.html" class="btn">View Profile</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card flex-sm-row flex-column align-items-start card--wrapper">
+                                    <div class="card-img-wrapper">
+                                        <div class="card--img">
+                                            <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="avatar--detail">
+                                            <h4 class="card-title">Dr Vandu Margun</h4>
+                                            <h6 class="card-subtitle">General Paractice</h6>
+                                        </div>
+                                        <div class="avatar--tag">
+                                            <span>Marvel Clinic</span>
+                                        </div>
+                                        <div class="location--info">
+                                            <span>petaling jaya , Selanger, Malaysia</span>
+                                        </div>
+                                        <div class="availibilty--info">
+                                            Available : <span>Onsite , Video call Phone</span>
+                                        </div>
+                                        <div class="price--info">
+                                            <span>Avg <em>RM 20.00</em> per session</span>
+                                        </div>
+                                        <div class="view--profile text-center">
+                                            <a href="#" class="btn">View Profile</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card flex-sm-row flex-column align-items-start card--wrapper">
+                                    <div class="card-img-wrapper">
+                                        <div class="card--img">
+                                            <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="avatar--detail">
+                                            <h4 class="card-title">Dr Vandu Margun</h4>
+                                            <h6 class="card-subtitle">General Paractice</h6>
+                                        </div>
+                                        <div class="avatar--tag">
+                                            <span>Marvel Clinic</span>
+                                        </div>
+                                        <div class="location--info">
+                                            <span>petaling jaya , Selanger, Malaysia</span>
+                                        </div>
+                                        <div class="availibilty--info">
+                                            Available : <span>Onsite , Video call Phone</span>
+                                        </div>
+                                        <div class="price--info">
+                                            <span>Avg <em>RM 20.00</em> per session</span>
+                                        </div>
+                                        <div class="view--profile text-center">
+                                            <a href="#" class="btn">View Profile</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card flex-sm-row flex-column align-items-start card--wrapper">
+                                    <div class="card-img-wrapper">
+                                        <div class="card--img">
+                                            <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="avatar--detail">
+                                            <h4 class="card-title">Dr Vandu Margun</h4>
+                                            <h6 class="card-subtitle">General Paractice</h6>
+                                        </div>
+                                        <div class="avatar--tag">
+                                            <span>Marvel Clinic</span>
+                                        </div>
+                                        <div class="location--info">
+                                            <span>petaling jaya , Selanger, Malaysia</span>
+                                        </div>
+                                        <div class="availibilty--info">
+                                            Available : <span>Onsite , Video call Phone</span>
+                                        </div>
+                                        <div class="price--info">
+                                            <span>Avg <em>RM 20.00</em> per session</span>
+                                        </div>
+                                        <div class="view--profile text-center">
+                                            <a href="#" class="btn">View Profile</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card flex-sm-row flex-column align-items-start card--wrapper">
+                                    <div class="card-img-wrapper">
+                                        <div class="card--img">
+                                            <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="avatar--detail">
+                                            <h4 class="card-title">Dr Vandu Margun</h4>
+                                            <h6 class="card-subtitle">General Paractice</h6>
+                                        </div>
+                                        <div class="avatar--tag">
+                                            <span>Marvel Clinic</span>
+                                        </div>
+                                        <div class="location--info">
+                                            <span>petaling jaya , Selanger, Malaysia</span>
+                                        </div>
+                                        <div class="availibilty--info">
+                                            Available : <span>Onsite , Video call Phone</span>
+                                        </div>
+                                        <div class="price--info">
+                                            <span>Avg <em>RM 20.00</em> per session</span>
+                                        </div>
+                                        <div class="view--profile text-center">
+                                            <a href="#" class="btn">View Profile</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+   
+
+    <script src="assets/js/range-slider.js"></script>
+    <script src="assets/js/modal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,575 @@
+.banner__bg {
+    background-image: url(../img/background-img/background-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 660px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .logo__wrapper {
+        width: 100px;
+        position: absolute;
+        top: 10px;
+        z-index: 1000;
+        left: calc(7% - 1px);
+
+    }
+
+
+
+    .banner__img--wrapper {
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+
+        .banner__icon--link {
+            position: absolute;
+            width: 50px;
+            height: auto;
+
+            &.icon__1 {
+                left: calc(-6% - -1px);
+                top: calc(45% - 15px);
+                width: 9%;
+            }
+
+            &.icon__2 {
+                left: calc(13% - 1px);
+                top: calc(-13% - 5px);
+                width: 17%;
+            }
+
+            &.icon__3 {
+                right: calc(12% - 1px);
+                top: calc(-13% - 5px);
+                width: 11%;
+            }
+
+            &.icon__4 {
+                right: calc(-12% - 1px);
+                top: calc(42% - 1px);
+                width: 13%;
+            }
+
+            &.icon__5 {
+                right: calc(9% - 1px);
+                bottom: calc(-11% - 1px);
+                width: 15%;
+            }
+
+            &.icon__6 {
+                bottom: calc(-12% - 1px);
+                left: calc(7% - 1px);
+                width: 17%;
+            }
+
+
+            img {
+                object-fit: contain;
+            }
+        }
+
+        &.child__img {
+            width: 56%;
+        }
+
+
+    }
+
+
+    .banner__main--content {
+        color: var(--color--white);
+        width: 90%;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        strong {
+            color: var(--color--bg);
+        }
+
+        .signin_btn {
+
+            .btn {
+                background-color: var(--color--green);
+                color: var(--color--white);
+                padding: 10px 40px;
+                border-radius: 30px;
+                font-weight: 800;
+            }
+        }
+    }
+
+    &.bg-white {
+        background-image: none;
+
+        .banner__img--wrapper {
+            .banner__icon--link {
+
+                &.icon__2 {
+                    width: 12%;
+                }
+
+                &.icon__6 {
+                    left: calc(13% - 1px);
+                    width: 12%;
+                }
+            }
+        }
+
+        .banner__main--content {
+            color: var(--color--darkblue);
+
+            strong {
+                color: #bababa;
+            }
+        }
+    }
+
+    &.child__img--wrapper {
+        .banner__logo {
+            width: 150px;
+            height: auto;
+        }
+    }
+
+    &.healthfolio__banner {
+        background-image: url(../img/healthfoliopage-img/healthfolio-bg-img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 4;
+        position: relative;
+
+        .banner__main--content {
+            color: var(--color--grey);
+
+            .signin_btn {
+                .btn {
+                    background-color: var(--color--darkblue);
+                }
+            }
+        }
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: linear-gradient(34deg, #ffffff 27%, rgba(255 255 255 / 13%));
+        }
+
+        .banner__img--wrapper {
+            width: 170px;
+            margin-bottom: -18px;
+            margin-left: inherit;
+        }
+    }
+
+    &.consultant--banner {
+        height: 750px;
+        background-image: url(../img/consultangpage-img/consult-bg-2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .banner__main--content {
+            width: 100%;
+
+            .banner__heading {
+                margin-left: 45px;
+
+                h2 {
+                    font-size: 48px;
+                    color: #606060;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 70px;
+                        height: 5px;
+                        background-color: #09c8a6;
+                        bottom: -18px;
+                        left: 3px;
+                    }
+                }
+
+                strong {
+                    font-size: 20px;
+                    color: #606060;
+                }
+            }
+
+            .banner--dropdown-search {
+                .banner--dropdown {
+                    color: #bababa;
+                    background: #fff;
+                    width: 75%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    border-radius: 5px;
+
+                    .btn-group {
+                        border-right: 1px solid #ccc;
+                        padding: 10px 15px 18px;
+                        width: 100%;
+
+                        .btn-lg {
+                            padding: 0;
+                            font-size: 17px;
+                            width: 100%;
+                            text-align: left;
+
+                            &.btn {
+                                padding: 0;
+
+                                &:focus {
+                                    box-shadow: none;
+                                }
+                            }
+
+
+                            &::after {
+                                right: calc(1% - 5px);
+                                top: 10px;
+                                position: absolute;
+                            }
+                        }
+
+                        .dropdown-menu {
+                            &.location__menu {
+                                &.show {
+                                    width: 100%;
+                                    transform: translate(0, 74px) !important;
+                                }
+                            }
+
+                            &.specialized__menu {
+                                &.show {
+                                    width: 100%;
+                                    transform: translate(0, 60px) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .search--btn {
+                display: flex;
+                align-items: center;
+                width: 23%;
+                margin-left: 13px;
+                border-radius: 5px;
+                justify-content: center;
+                background: var(--color--primary);
+
+
+                .btn {
+                    width: 100%;
+                    color: var(--color--white);
+                    height: 100%;
+                }
+            }
+
+            .signin_btn {
+                .btn {
+                    padding: 10px 0;
+                    width: 300px;
+                    margin-right: 28px;
+                    background-color: #606060;
+                    color: var(--color--white);
+                }
+            }
+
+        }
+    }
+
+}
+
+
+.banner__wrapper {
+
+    &.owl-theme {
+        .owl-dots {
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width : 1399.98px) {
+    .banner__bg {
+        height: 500px;
+
+        .banner__img--wrapper {
+            width: 60%;
+            margin-top: 20px;
+
+            &.child__img {
+                width: 46%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 1199.98px) {
+    .banner__bg {
+        height: 480px;
+
+        .banner__img--wrapper {
+            width: 60%;
+            margin-top: 20px;
+        }
+
+        &.consultant--banner {
+            .banner__main--content {
+                .banner__heading {
+                    margin-left: 98px;
+
+                    h2 {
+                        font-size: 40px;
+                    }
+
+                    strong {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 991.98px) {
+    .banner__bg {
+        height: 490px;
+
+        .banner__main--content {
+            width: 95%;
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+        .banner__img--wrapper {
+            width: 78%;
+
+            &.child__img {
+                width: 65%;
+            }
+        }
+
+        &.consultant--banner {
+            height: 640px;
+
+            .banner__main--content {
+
+                .banner__heading {
+                    margin-left: 0;
+
+                    h2 {
+                        font-size: 30px;
+                        margin-top: 60px;
+                    }
+
+                    strong {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 767.98px) {
+    .banner__bg {
+        height: 685px;
+
+        .row {
+            flex-direction: column-reverse;
+            row-gap: 30px;
+
+            .banner__img--wrapper {
+                margin-top: 80px;
+                width: 48%;
+
+                &.child__img {
+                    margin-top: 20px;
+                    width: 33%;
+                }
+            }
+
+
+            .banner__main--content {
+                margin-top: 30px;
+            }
+        }
+
+        &.healthfolio__banner {
+            background-position: bottom;
+
+            .row {
+                .banner__img--wrapper {
+                    width: 175px;
+                    margin-top: inherit;
+                }
+            }
+
+            &::after {
+                background: linear-gradient(34deg, #ffffff 48%, rgba(255 255 255 / 13%));
+            }
+        }
+
+
+        &.consultant--banner {
+            height: 700px;
+            background-position: left;
+        }
+    }
+
+    &.child__img--wrapper {
+        .row {
+            flex-direction: column;
+            row-gap: 0;
+        }
+    }
+
+
+}
+
+@media screen and (max-width : 575.98px) {
+    .banner__bg {
+        .row {
+            .banner__img--wrapper {
+                width: 52%;
+                margin-top: 20px;
+
+                &.child__img {
+                    width: 45%;
+                    margin-top: 30px;
+                }
+            }
+
+            .banner__main--content {
+                h2 {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &.healthfolio__banner {
+            background-position: 75%;
+            height: 600px;
+
+            .row {
+                .banner__img--wrapper {
+                    width: 135px;
+                }
+            }
+        }
+
+        &.consultant--banner {
+            background-position: left;
+            height: 720px;
+
+
+            .banner__main--content {
+                .banner__heading {
+                    h2 {
+                        font-size: 28px;
+                    }
+
+                    strong {
+                        font-size: 15px;
+                    }
+                }
+
+                .banner--dropdown-search {
+                    flex-direction: column;
+                    row-gap: 20px;
+
+                    .banner--dropdown {
+                        width: 90%;
+
+                        .btn-group {
+                            padding: 4px 12px 12px;
+                        }
+                    }
+
+                    .search--btn {
+                        width: 40%;
+                        padding: 5px 0px;
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            .row {
+                flex-direction: initial;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width : 480px) {
+    .banner__bg {
+        .logo__wrapper {
+            width: 76px;
+        }
+
+        .row {
+            .banner__img--wrapper {
+                width: 80%;
+                margin-top: 70px;
+
+                &.child__img {
+                    width: 52%;
+                    margin-top: 30px;
+                }
+            }
+        }
+
+        &.consultant--banner {
+            .banner__main--content {
+
+                .banner--dropdown-search {
+                    .banner--dropdown {
+                        flex-direction: column;
+
+                        .btn-group {
+                            border-right: none;
+                            border-bottom: 1px solid #ccc;
+                        }
+                    }
+                }
+
+                .signin_btn {
+                    color: var(--color--darkblue);
+
+                    .btn {
+                        width: 180px;
+                        margin-right: 8px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

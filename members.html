@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet/less" type="text/css" href="assets/less/all.less" />
+
+
+    <title>Gj Members</title>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
+        </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+</head>
+
+<body>
+
+    <main>
+        <!--============= HEADER =============== -->
+        <header>
+            <div class="header__wrapper header__bg pt-2">
+                <div class="header__main">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                <nav class="navbar justify-content-end">
+                                    <div class="navbar__wrapper d-flex align-items-center justify-content-end">
+                                        <div class="signin__btn btn me-lg-5 me-md-5 me-sm-4 me-3">
+                                            <a href="#">Sign in</a>
+                                        </div>
+
+                                        <div class="cart__btn me-lg-3 me-md-3 me-sm-3 me-2">
+                                            <a href="http://"><span><i class="fa fa-shopping-cart"></i></span>
+                                                <span
+                                                    class="price__badge d-flex align-items-center justify-content-center p-2">0</span>
+                                            </a>
+                                        </div>
+
+                                        <div class="navbar__toggler--btn ms-3">
+                                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                                        aria-labelledby="offcanvasExampleLabel">
+                                        <div class="account__wraapper--main d-flex align-items-center pt-3 p-4">
+                                            <div class="account__wrapper--bg ">
+                                                <div class="row align-items-center">
+                                                    <div class="col-3 ps-1">
+                                                        <div class="avatar__img">
+                                                            <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <div class="row flex-column">
+                                                            <h5>Hello Guests</h5>
+                                                            <div class="signin__wrapper">
+                                                                <a href="http://">Sign In</a>
+                                                                <a href="http://">Create an account</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="search__wrapper mt-4 pb-4 p-4 border-bottom">
+                                            <div class="input-group">
+                                                <span class="input-group-append">
+                                                    <button class="btn" type="button">
+                                                        <i class="fa fa-search "></i> Search
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="navbar__items p-4">
+                                            <ul class="navbar-nav ">
+                                                <li class="nav-item">
+                                                    <span class="sidebar-icon pe-3"><img
+                                                            src="assets/icons/sidebar-icon/sidebar-icon-1.png"></span>
+                                                    <a href="#" class="nav-link">
+                                                        Home
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <span class="sidebar-icon pe-3"><img
+                                                            src="assets/icons/sidebar-icon/sidebar-icon-2.png"></span>
+                                                    <a href="./healthfolio.html" class="nav-link">
+                                                        HealthFolio
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <span class="sidebar-icon pe-3"><img
+                                                            src="assets/icons/sidebar-icon/sidebar-icon-3.png"></span>
+                                                    <a href="#" class="nav-link">
+                                                        LabCheck
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <span class="sidebar-icon pe-3"><img
+                                                            src="assets/icons/sidebar-icon/sidebar-icon-4.png"></span>
+                                                    <a href="#" class="nav-link">
+                                                        Services
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <span class="sidebar-icon pe-3"><img
+                                                            src="assets/icons/sidebar-icon/sidebar-icon-5.png"></span>
+                                                    <a href="#" class="nav-link">
+                                                        Consult
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <span class="sidebar-icon pe-3"><img
+                                                            src="assets/icons/sidebar-icon/sidebar-icon-6.png"></span>
+                                                    <a href="#" class="nav-link">
+                                                        Products
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <span class="sidebar-icon pe-3"><img
+                                                            src="assets/icons/sidebar-icon/sidebar-icon-7.png"></span>
+                                                    <a href="#" class="nav-link">
+                                                        Xchange
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="dropdown__wrapper">
+                                            <div class="dropdown">
+                                                <button
+                                                    class="btn dropdown-toggle d-flex align-items-center justify-content-between"
+                                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Who should join
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </button>
+                                                <ul class="dropdown-menu border-0">
+                                                    <li><a class="dropdown-item" href="#">Members</a></li>
+                                                    <li><a class="dropdown-item" href="#">Members</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- =============== MEMBER =============== -->
+        <div class="exercise__wrapper">
+            <div class="contianer-fluid">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="exercise__img--wrapper">
+                            <img src="assets/img/member_page-img/exercise.jpg" alt="exercise image">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5 ps-md-5">
+                        <div class="gj__exercise--wrapper">
+                            <div class="site__heading">
+                                <h2>Members</h2>
+                                <h6 class="mt-4">A One-Stop,Digital Gentics and Health Marketplace</h6>
+                            </div>
+                            <div class="exercise__wrapper--content mt-4">
+                                <p>For individual seeking all-around-control, choices and conveinience</p>
+                                <ul class="exercise__list--wrapper ps-3 ps-lg-5 mb-4">
+                                    <li>Create your personal Electronic DNA(genetic) and healthproofile</li>
+                                    <li>Choose to exchange and monetize your digital records</li>
+                                    <li>Seek online health consultancy</li>
+                                    <li>Purchase genetic tests, health products and services and general merchandise
+                                    </li>
+                                </ul>
+                                <p>And all whilst contributing towards advancing genomic & medical science</p>
+                            </div>
+                            <div class="sub__heading">
+                                <h5>Only at GeneJunction</h5>
+                                <h5>Your very own digital health junction</h5>
+                            </div>
+                            <div class="site__btn  d-flex flex-column mt-4 mt-md-5 mt-lg-4 mt-xl-5">
+                                <button class="btn" type="button">Sign up today</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========== REVOLVING-DISCOUNT ================ -->
+
+        <div class="revolving__discount--wrapper ">
+            <div class="discount__bg pt-5 pb-5">
+                <div class="container">
+                    <div class="site__heading">
+                        <h2 class="text-capitalize text-center">Your One-Stop Digital and Health Portal with a Revolving
+                            discount program for all your healthcare needs</h2>
+                    </div>
+
+                    <div class="circle--wrapper">
+                        <div class="gj--circle position-relative">
+                            <div class="gj--circle-small c-1">
+                                <div class="gj__circle--img">
+                                    <img src="assets/img/member_page-img/businessman.jpg" alt="businessman image">
+                                </div>
+                            </div>
+
+                            <div class="gj--circle-small c-2">
+                                <div class="gj__circle--img">
+                                    <img src="assets/img/member_page-img/businessman.jpg" alt="businessman image">
+                                </div>
+                            </div>
+
+                            <div class="gj--circle-small c-3">
+                                <div class="gj__circle--img">
+                                    <img src="assets/img/member_page-img/businessman.jpg" alt="businessman image">
+                                </div>
+                            </div>
+
+                            <div class="gj--circle-small c-4">
+                                <div class="gj__circle--img">
+                                    <img src="assets/img/member_page-img/businessman.jpg" alt="businessman image">
+                                </div>
+                            </div>
+                            <div class="row gj-row m-0 align-items-center">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                    <div class="card card-small border-blue">
+                                        <div class="card-img bg-primary">
+                                            <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h2 class="card-title">
+                                                Online consultancy
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                    <div class="card card-small border-blue">
+                                        <div class="card-img bg-primary">
+                                            <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h2 class="card-title">
+                                                Online consultancy
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                    <div class="card card-big">
+                                        <div class="card-img">
+                                            <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h2 class="card-title">
+                                                Health Marchandise
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                    <div class="card card-small border-blue">
+                                        <div class="card-img bg-primary">
+                                            <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h2 class="card-title">
+                                                Online consultancy
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                                    <div class="card card-small border-blue">
+                                        <div class="card-img bg-primary">
+                                            <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h2 class="card-title">
+                                                Online consultancy
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ HEALTHDATA ================== -->
+
+
+
+        <div class="healthfolio__wrapper health__data--wrapper">
+            <div class="container-fluid">
+                <div class="healthfolio__wrapper--main health__data--main">
+                    <div class="row g-0 align-items-lg-center gj-row">
+                        <div
+                            class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center health__data--content">
+                            <div class="health__data--text">
+                                <h4>your Health data defying gravity</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 content__wrapper--main">
+                            <div
+                                class="healthfolio__content--wrapper d-flex flex-column justify-content-center ps-lg-5 ps-md-3 p-3">
+                                <div class="healthfolio__logo">
+                                    <img src="assets/img/healthfolio-img/healthfolio-logo.png" alt="">
+                                </div>
+                                <div class="site__heading">
+                                    <h2>Your Electronic Health Record (HealthFolio)</h2>
+                                </div>
+                                <div class="healthfolio__para mt-4">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta at autem,
+                                        reprehenderit fugiat voluptatem distinctio.</p>
+                                    <label>You own it. You operate it. You control it. </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- =========== COMINGSOON WRAPPER ================ -->
+
+
+        <div class="coming__soon--wrapper mt-5">
+            <div class="container text-center">
+                <div class="row gj-row align-items-center justify-content-center">
+                    <div class="col-lg-3 col-md-4 col-sm-4">
+                        <div class="logo--wrapper">
+                            <img src="assets/icons/sidebar-icon/sidebar-icon-7.png" alt="Gene Xchange" srcset="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3  col-md-4 col-sm-4">
+                        <div class="site__subheading">
+                            <h2>GeneJunction</h2>
+                            <h5>Xchange</h5>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="site__heading mt-5">
+                    <h2>An Exchange platform like no other</h2>
+                    <small>Coming Soon</small>
+                </div>
+                <div class="site__btn  d-flex flex-column text-center mt-5">
+                    <button class="btn" type="button">Sign up today</button>
+                    <label class="pt-3">Simple . Safe . Secure</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ PLATFORM-WRAPPER ================= -->
+
+        <div class="platform__wrapper mt-5">
+            <div class="container-fluid p-0">
+                <div class="site__heading text-center">
+                    <h2 class="text-uppercase p-1">Benifts from Multiple roles on the PlatForm</h2>
+                </div>
+                <div class="row g-0 mt-3">
+                    <div class="col-lg-6 blue--bg">
+                        <div class="row m-0 pt-5 pb-5">
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                <div class="card text-center border-0">
+                                    <div class="avatar__img">
+                                        <img src="assets/img/whoshouldjoin-img/WhoShouldJoin_image-01.png" alt=""
+                                            srcset="">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h4>
+                                                Members
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                <div class="card text-center border-0">
+                                    <div class="avatar__img">
+                                        <img src="assets/img/whoshouldjoin-img/WhoShouldJoin_image-03.png" alt=""
+                                            srcset="">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h4>
+                                                Consultant
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                <div class="card text-center border-0">
+                                    <div class="avatar__img">
+                                        <img src="assets/img/whoshouldjoin-img/WhoShouldJoin_image-02.png"
+                                            alt="Alied Partners" srcset="">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h4>
+                                                Alied Partners
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                <div class="card text-center border-0">
+                                    <div class="avatar__img">
+                                        <img src="assets/img/whoshouldjoin-img/WhoShouldJoin_image-04.png"
+                                            alt="Health Vendors" srcset="">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h4>
+                                                Health Vendors
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                <div class="card text-center border-0">
+                                    <div class="avatar__img">
+                                        <img src="assets/img/whoshouldjoin-img/WhoShouldJoin_image-05.png"
+                                            alt="Recipitents" srcset="">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h4>
+                                                Recipitents
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                <div class="card text-center border-0">
+                                    <div class="avatar__img">
+                                        <img src="assets/img/whoshouldjoin-img/WhoShouldJoin_image-06.png"
+                                            alt="Healthcare Partners" srcset="">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <h4>
+                                                Healthcare Partners
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row m-0">
+                            <div class="col-lg-12">
+                                <div class="site__para">
+                                    <p>With simple one-time FREE registration as a member,Choose to activte
+                                        any role on the platform.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <footer>
+        <div class="members__footer">
+            <div class="healthfolio__footer--bg members__footer--bg">
+                <div class="container">
+                    <div class="site__heading">
+                        <h3>Member FAQ</h3>
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-lg-6">
+                            <div class="img__wrapper">
+                                <img src="assets/img/member_page-img/health-check-illustration.jpg" alt="health check">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="footer__collapse--wrapper">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                What is HealthFolio?
+                                                <span class="arrow--down">
+                                                    <i class="fa fa-chevron-down"></i>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quidem
+                                                deleniti delectus nesciunt cum. Maiores nam libero dolores quisquam
+                                                accusantium molestiae facilis voluptatem maxime dignissimos fugit ipsa,
+                                                voluptatibus expedita vel excepturi porro ab tempora quas veniam nulla
+                                                quibusdam necessitatibus eius.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Why subscribe to HealthFolio?
+                                                <span class="arrow--down">
+                                                    <i class="fa fa-chevron-down"></i>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <strong>This is the second item's accordion body.</strong> It is hidden
+                                                by default, until the collapse plugin adds the appropriate classes that
+                                                we use to style each element. These classes control the overall
+                                                appearance, as well as the showing and hiding via CSS transitions. You
+                                                can modify any of this with custom CSS or overriding our default
+                                                variables. It's also worth noting that just about any HTML can go within
+                                                the <code>.accordion-body</code>, though the transition does limit
+                                                overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                How can i work my Healthcare physician to best use this application to
+                                                improve my health?
+                                                <span class="arrow--down">
+                                                    <i class="fa fa-chevron-down"></i>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <strong>This is the third item's accordion body.</strong> It is hidden
+                                                by default, until the collapse plugin adds the appropriate classes that
+                                                we use to style each element. These classes control the overall
+                                                appearance, as well as the showing and hiding via CSS transitions. You
+                                                can modify any of this with custom CSS or overriding our default
+                                                variables. It's also worth noting that just about any HTML can go within
+                                                the <code>.accordion-body</code>, though the transition does limit
+                                                overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingfour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapsefour"
+                                                aria-expanded="false" aria-controls="collapsefour">
+                                                What are the benifits of Healthfolio?
+                                                <span class="arrow--down">
+                                                    <i class="fa fa-chevron-down"></i>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div id="collapsefour" class="accordion-collapse collapse"
+                                            aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <strong>This is the third item's accordion body.</strong> It is hidden
+                                                by default, until the collapse plugin adds the appropriate classes that
+                                                we use to style each element. These classes control the overall
+                                                appearance, as well as the showing and hiding via CSS transitions. You
+                                                can modify any of this with custom CSS or overriding our default
+                                                variables. It's also worth noting that just about any HTML can go within
+                                                the <code>.accordion-body</code>, though the transition does limit
+                                                overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingfive">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapsefive"
+                                                aria-expanded="false" aria-controls="collapsefive">
+                                                How can i create value for HealthFolio on the GeneJunctionXchange?
+                                                <span class="arrow--down">
+                                                    <i class="fa fa-chevron-down"></i>
+                                                </span>
+                                            </button>
+                                        </h2>
+                                        <div id="collapsefive" class="accordion-collapse collapse"
+                                            aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <strong>This is the third item's accordion body.</strong> It is hidden
+                                                by default, until the collapse plugin adds the appropriate classes that
+                                                we use to style each element. These classes control the overall
+                                                appearance, as well as the showing and hiding via CSS transitions. You
+                                                can modify any of this with custom CSS or overriding our default
+                                                variables. It's also worth noting that just about any HTML can go within
+                                                the <code>.accordion-body</code>, though the transition does limit
+                                                overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+.benifts--bg{
+    background-image: url(../img/healthfoliopage-img/benifits-bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:800px ;
+    position: relative;
+    border-radius: 150px 0 0 0;
+    .benifts_content{
+        .card__wrapper{
+            row-gap: 25px;
+            position: absolute;
+            bottom: 48px;
+            right: calc(14% - 1px);
+            z-index: 2;
+            .site__heading{
+                color: #fff;
+
+                h2{
+                    font-size: 48px;
+                    position: relative;
+                    font-weight: 800;
+
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 70px;
+                        height: 5px;
+                        background-color: #09c8a6;
+                        bottom: -30px;
+                        left: 8px;
+                    }
+                }
+            }
+
+            .card{
+                padding: 20px;
+                border-radius: 16px;
+
+                h4{
+                    color: #fff;
+                    font-size: 30px;
+                }
+
+                .card-body{
+                    p{
+                        color: #34caf6;
+                        font-size: 16px;
+                    }
+                }
+
+                &.card--bg{
+                    background-color: rgba(47, 83, 169,0.9);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:767.98px) {
+    .benifts--bg{
+        .benifts_content{
+            .card__wrapper{
+                position: inherit;
+                padding-top: 80px;
+
+                .site__heading{
+                    h2{
+                        font-size: 34px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    .benifts--bg{
+        .benifts_content{
+            .card__wrapper{
+
+                .site__heading{
+                    h2{
+                        font-size: 30px;
+                    }
+                }
+
+                .card{
+                    h4{
+                        font-size: 20px;
+                    }
+
+                    .card-body{
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

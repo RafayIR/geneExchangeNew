@@ -1,0 +1,225 @@
+.consult__wrapper {
+    .half--circle--wrapper {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+
+        .half--circle {
+            color: var(--color--white);
+            transform: translate(-1%, 1%);
+            margin: 0 auto;
+            height: 150px;
+            width: 300px;
+            border-radius: 0px 0px 150px 150px;
+            top: 0;
+            background-color: var(--color--darkblue);
+            left: 50%;
+            padding: 15px;
+
+            .healthfolio-img {
+
+                width: 50px;
+                margin: 6px auto;
+            }
+        }
+
+    }
+}
+
+.genexchange {
+    background-color: var(--light--green--bg);
+
+
+
+    .consult__wrapper--bg {
+        background-image: url(../img/healthfoliopage-img/genexchange-bg.jpg);
+        border-radius: 0 150px 0 0;
+        height: 100%;
+        height: 800px;
+
+        .bg-green-light {
+            border-radius: 0 150px 0 0;
+            height: 100%;
+            padding-top: 60px;
+        }
+
+        .site__heading {
+            h2 {
+                font-size: 48px;
+                font-weight: 700;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 70px;
+                    height: 5px;
+                    background-color: #09c8a6;
+                    bottom: -18px;
+                    left: 3px;
+                }
+            }
+        }
+
+        .consult__wrapper--main {
+            .video__wrapper {
+                background-color: #000;
+                width: 100%;
+                height: auto;
+                border-radius: 15px;
+                padding: 40px;
+                color: var(--color--white);
+
+                video {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+.consult__wrapper--bg {
+    background-image: url(../img/consult-img/consult-bg-img.png);
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: cover;
+    color: var(--color--white);
+
+}
+
+.bg-green-light {
+    background-color: rgba(64, 148, 148, 0.4);
+    height: 600px;
+}
+
+.consult__wrapper--main {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .site__btn {
+        width: 210px;
+
+        .btn {
+            background-color: var(--color--darkblue);
+            color: var(--color--white);
+            padding: 10px 60px;
+            border-radius: 30px;
+        }
+    }
+}
+
+
+@media screen and (max-width:991.98px) {
+    .consult__wrapper {
+        &.genexchange {
+            .consult__wrapper--bg {
+                .bg-green-light {
+                    .site__heading {
+                        h2 {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and(max-width:767.98px) {
+
+    .consult__wrapper {
+        .half--circle--wrapper {
+            transform: rotate(90deg);
+            right: 0;
+            width: auto;
+
+            .half--circle {
+                transform: translate(85%, -50%);
+                height: 102px;
+                width: 204px;
+                border-radius: 0px 0px 125px 125px;
+                left: inherit;
+                padding: 6px;
+
+                .circle--content {
+                    transform: rotate(180deg);
+
+                    .healthfolio-img {
+
+                        width: 40px;
+                        margin: 4px auto;
+                    }
+                }
+            }
+
+        }
+
+
+
+        &.genexchange {
+            .consult__wrapper--bg {
+
+                .bg-green-light {
+                    padding-top: 0;
+
+                    .row {
+
+                        row-gap: 25px;
+
+                        .site__heading {
+                            h2 {
+                                font-size: 32px;
+                            }
+                        }
+
+                        .consult__wrapper--main {
+                            .video__wrapper {
+                                padding: 15px;
+                                margin-top: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .consult__wrapper--bg {
+        height: 450px;
+
+        .bg-green-light {
+            height: 225px;
+        }
+
+        .consult__wrapper--main {
+            height: 250px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:575.98px) {
+    .consult__wrapper {
+        &.genexchange {
+            .consult__wrapper--bg {
+                height: 720px;
+
+                .bg-green-light {
+                    .row {
+                        .site__heading {
+                            h2 {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

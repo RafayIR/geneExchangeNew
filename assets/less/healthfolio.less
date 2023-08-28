@@ -1,0 +1,273 @@
+.healthfolio__wrapper {
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.healthfolio__wrapper--main {
+    background-image: url(../img/healthfolio-img/healthfolio-img-1.png);
+    background-repeat: no-repeat;
+    background-size: 1160px;
+    background-color: var(--light--green--bg);
+
+
+    .healtfolio__img--wrapper {
+        width: 300px;
+        height: 100%;
+        margin-left: 50px;
+    }
+
+    .content__wrapper--main {
+        height: 650px;
+        z-index: 5;
+        position: relative;
+
+        .healthfolio__content--wrapper {
+
+            margin-bottom: 25px;
+            height: 100%;
+
+            .healthfolio__logo {
+                width: 150px;
+            }
+
+            .healthfolio__para {
+                width: 80%;
+            }
+
+            .site__btn {
+                width: 200px;
+                margin-top: 40px;
+
+                .btn {
+                    background-color: var(--color--darkblue);
+                    color: var(--color--white);
+                    padding: 10px 18px;
+                    border-radius: 30px;
+                }
+            }
+
+
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            z-index: -1;
+            opacity: 1;
+            background: linear-gradient(237deg, rgba(255, 255, 255, 1)50%, rgba(255 255 255 / 36%));
+
+        }
+    }
+
+    &.health__data--main {
+        background-image: none;
+        background-color: inherit;
+        background-size: contain;
+
+        .gj-row {
+            height: 450px;
+
+            .health__data--content {
+                background-color: var(--color--grey);
+                height: inherit;
+
+                .health__data--text {
+                    width: 30%;
+                    color: var(--color--white);
+                    margin: 0 auto;
+
+                    h4 {
+                        font-weight: 600;
+                    }
+                }
+            }
+
+
+            .content__wrapper--main {
+                height: inherit;
+
+                .healthfolio__content--wrapper {
+                    &::after {
+                        display: none;
+                    }
+
+                    .healthfolio__logo {
+                        width: 250px;
+                        height: auto;
+                    }
+
+                    .site__heading {
+                        h2 {
+                            color: var(--color--darkblue);
+                            font-size: 24px;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .healthfolio__para {
+                        
+                        p {
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+
+                        label{
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width : 1500px) {
+    .healthfolio__wrapper--main {
+        background-size: 1500px;
+
+        .healtfolio__img--wrapper {
+            width: 430px;
+        }
+    }
+}
+
+
+@media screen and (min-width:767.98px) and (max-width:991.98px) {
+    .healthfolio__wrapper--main {
+        background-size: 900px;
+
+        .healtfolio__img--wrapper {
+            width: 280px;
+            height: 100%;
+
+            img {
+                object-fit: contain;
+            }
+        }
+
+        .content__wrapper--main {
+            height: 400px;
+        }
+
+        &.health__data--main{
+            .gj-row{
+                .content__wrapper--main{
+                    .healthfolio__content--wrapper {
+                        .healthfolio__logo{
+                            width: 160px;
+                        }
+                    }
+                }
+
+                .health__data--content{
+                    .health__data--text{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 767.98px) {
+    .healthfolio__wrapper--main {
+        background-size: 950px;
+
+        .row {
+            row-gap: 30px;
+
+            .healtfolio__img--wrapper {
+                max-width: 330px;
+                width: 100%;
+                margin-top: 40px;
+                margin-left: 50px;
+                padding-right: 10px;
+                position: inherit;
+
+
+                img {
+                    object-fit: contain;
+                }
+            }
+
+            .content__wrapper--main {
+                height: 100%;
+
+                .healthfolio__content--wrapper {
+                    padding-top: 15px;
+
+                    .site__btn {
+                        margin-top: 20px;
+                    }
+                }
+
+                &::after {
+                    background: linear-gradient(351deg, #ffffff 49%, rgba(255 255 255 / 36%));
+                }
+            }
+        }
+
+        &.health__data--main{
+            .gj-row{
+                height: 100%;
+
+                .health__data--content{
+                    .health__data--text{
+                        padding: 40px 0;
+                        width: 45%;
+                    }
+                }
+
+                .content__wrapper--main{
+                    .healthfolio__content--wrapper{
+                        .healthfolio__logo{
+                            width: 170px;
+                            margin: 0 auto;
+                        }
+
+                        .site__heading{
+                            h2{
+                                font-size: 20px;
+                                text-align: center;
+                            }
+                        }
+                        .healthfolio__para{
+                            margin: 0 auto;
+                            text-align: center;
+                            p{
+                                font-size: 16px;
+                            }
+
+                            label{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .healthfolio__wrapper--main {
+        .row {
+            .healthfolio__content--wrapper {
+                .healthfolio__para {
+                    width: 95%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet/less" type="text/css" href="assets/less/all.less" />
+
+    <title>Gj Consultant</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
+        </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <!--============= HEADER =============== -->
+    <header>
+        <div class="header__wrapper header__bg pt-2">
+            <div class="header__main">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <nav class="navbar justify-content-end">
+                                <div class="navbar__wrapper d-flex align-items-center justify-content-end">
+                                    <div class="signin__btn btn me-lg-5 me-md-5 me-sm-4 me-3">
+                                        <a href="#">Sign in</a>
+                                    </div>
+
+                                    <div class="cart__btn me-lg-3 me-md-3 me-sm-3 me-2">
+                                        <a href="http://"><span><i class="fa fa-shopping-cart"></i></span>
+                                            <span
+                                                class="price__badge d-flex align-items-center justify-content-center p-2">0</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="navbar__toggler--btn ms-3">
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                                    aria-labelledby="offcanvasExampleLabel">
+                                    <div class="account__wraapper--main d-flex align-items-center pt-3 p-4">
+                                        <div class="account__wrapper--bg ">
+                                            <div class="row align-items-center">
+                                                <div class="col-3 ps-1">
+                                                    <div class="avatar__img">
+                                                        <img src="assets/img/user-img/user-img-1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="row flex-column">
+                                                        <h5>Hello Guests</h5>
+                                                        <div class="signin__wrapper">
+                                                            <a href="http://">Sign In</a>
+                                                            <a href="http://">Create an account</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="search__wrapper mt-4 pb-4 p-4 border-bottom">
+                                        <div class="input-group">
+                                            <span class="input-group-append">
+                                                <button class="btn" type="button">
+                                                    <i class="fa fa-search "></i> Search
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="navbar__items p-4">
+                                        <ul class="navbar-nav ">
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-1.png"></span>
+                                                <a href="index.html" class="nav-link">
+                                                    Home
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-2.png"></span>
+                                                <a href="healthfolio.html" class="nav-link">
+                                                    HealthFolio
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-3.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    LabCheck
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-4.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Services
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-5.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Consult
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-6.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Products
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <span class="sidebar-icon pe-3"><img
+                                                        src="assets/icons/sidebar-icon/sidebar-icon-7.png"></span>
+                                                <a href="#" class="nav-link">
+                                                    Xchange
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown__wrapper">
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn dropdown-toggle d-flex align-items-center justify-content-between"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Who should join
+                                                <i class="fas fa-chevron-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu border-0">
+                                                <li><a class="dropdown-item" href="#">Members</a></li>
+                                                <li><a class="dropdown-item" href="#">Members</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- =============BANNER========== -->
+        <div class="banner__wrapper ">
+            <div class="banner__bg consultant--banner">
+                <div class="logo__wrapper logo__blue">
+                    <a class="logo-link d-block" href="index.html">
+                        <img src="assets/img/logo-img/blue logo.png" alt="">
+                    </a>
+                </div>
+                <div class="container">
+                    <div class="row align-items-lg-end align-items-md-end">
+                        <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 col-12">
+
+                        </div>
+                        <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 col-12">
+                            <div class="banner__main--content">
+                                <div class="banner__heading">
+                                    <h2 class="mb-5">Connect with our global panel of Doctors & specialist</h2>
+                                    <strong>Book appointments and connect with our doctors and health consultants in
+                                        person or by video/phone call
+                                    </strong>
+                                </div>
+                                <div class="banner--dropdown-search d-flex mt-2 mt-sm-5">
+                                    <div class="banner--dropdown ">
+                                        <div class="btn-group flex-column">
+                                            <span>Location</span>
+                                            <button class="btn btn-lg dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Johar,Malaysia
+                                            </button>
+                                            <ul class="dropdown-menu location__menu">
+                                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-group mt-2 border-0 flex-column">
+                                            <button class="btn btn-lg dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Speciality / expertise
+                                            </button>
+                                            <ul class="dropdown-menu specialized__menu">
+                                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="search--btn">
+                                        <button class="btn">
+                                            <i class="fas fa-search"></i> Search
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="signin_btn mt-3 mt-sm-5">
+                                    <a class="btn" href="http://">Browse our directory</a>
+                                    View Consultant
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============= REALIABLE DOCTORS & SPECIALIST========== -->
+
+
+        <div class="reliable__wrapper">
+            <div class="reliable--bg">
+                <div class="container">
+                    <div class="site__heading">
+                        <h2 class="mb-5">Reliable doctors & Specialists trusted by millions of people</h2>
+                        <p>Our specialists are available online anytime between 8 AM to 8 PM 7 days a week</p>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-lg-4 col-md-6  col-sm-6 reliable-card">
+                            <div class="card border-0">
+                                <div class="card-body text-center">
+                                    <div class="card-title">
+                                        <h4>ClobalConnect</h4>
+                                    </div>
+                                    <div class="card-desc">
+                                        <p>Browse and connect witth our global healthcare consultant
+                                            directory covering a wide range of specialities.
+                                        </p>
+                                    </div>
+                                </div>
+                                <ul class="card--menu">
+                                    <li>Global directory of health consultants at your fingertips</li>
+                                    <li>Wide range of specialities to cater all your health needs</li>
+                                    <li>Book an appointment to get advise and assistance</li>
+                                    <li>Connect with a consultant through any channel convenient to you</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6  col-sm-6 reliable-card">
+                            <div class="card border-0">
+                                <div class="card-body text-center">
+                                    <div class="card-img">
+                                        <img src="assets/img/consultangpage-img/stethoscope-img.png" alt="image">
+                                    </div>
+                                    <div class="card-title">
+                                        <h4>TeleConsult</h4>
+                                    </div>
+                                    <div class="card-desc">
+                                        <p>Browse and connect witth our global healthcare consultant
+                                            directory covering a wide range of specialities.
+                                        </p>
+                                    </div>
+                                </div>
+                                <ul class="card--menu">
+                                    <li>Global directory of health consultants at your fingertips</li>
+                                    <li>Wide range of specialities to cater all your health needs</li>
+                                    <li>Book an appointment to get advise and assistance</li>
+                                    <li>Connect with a consultant through any channel convenient to you</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6  col-sm-6 reliable-card">
+                            <div class="card border-0">
+                                <div class="card-body text-center">
+                                    <div class="card-img">
+                                        <img src="assets/img/consultangpage-img/report-filing-img.png" alt="image">
+                                    </div>
+                                    <div class="card-title">
+                                        <h4>eVarify</h4>
+                                    </div>
+                                    <div class="card-desc">
+                                        <p>Browse and connect witth our global healthcare consultant
+                                            directory covering a wide range of specialities.
+                                        </p>
+                                    </div>
+                                    <h5>COMING SOON</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ======= HOW IT WORKS  ============ -->
+
+        <div class="how__works--wrapper">
+            <div class="how__works--bg">
+                <div class="container">
+                    <div class="how__works--content w-50">
+                        <div class="site__heading">
+                            <h2>How it works</h2>
+                        </div>
+                        <div class="site__para mt-5">
+                            <p>Getting health advice and assistance with GeneJunction Consult is like seeing a
+                                healthcare consultant traditionally
+                                ,but so much comfortable and convenient.
+                            </p>
+                        </div>
+                        <div class="site__btn mt-5">
+                            <button class="btn" type="button">GlobalConnect</button>
+                        </div>
+                    </div>
+
+                    <div class="row search__consultant mt-5">
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="search__collapse--wrapper collapse--bg">
+                                <div class="collapse--content">
+                                    <h3>Search for a consultant</h3>
+                                    <p>Use the search bar to find and connect with consultant and specialists from
+                                        around the world.
+                                        You can search by location and specialities such as Dietetics ,Asthetics
+                                        ,Cardiology ,Gynecology,
+                                        alternate therapies and more
+                                    </p>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                How to start?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quidem
+                                                deleniti delectus nesciunt cum. Maiores nam libero dolores quisquam
+                                                accusantium molestiae facilis voluptatem maxime dignissimos fugit ipsa,
+                                                voluptatibus expedita vel excepturi porro ab tempora quas veniam nulla
+                                                quibusdam necessitatibus eius.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                What do you consult on
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <strong>This is the second item's accordion body.</strong> It is hidden
+                                                by default, until the collapse plugin adds the appropriate classes that
+                                                we use to style each element. These classes control the overall
+                                                appearance, as well as the showing and hiding via CSS transitions. You
+                                                can modify any of this with custom CSS or overriding our default
+                                                variables. It's also worth noting that just about any HTML can go within
+                                                the <code>.accordion-body</code>, though the transition does limit
+                                                overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                Can i choose a consultant from outside of my country?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <strong>This is the third item's accordion body.</strong> It is hidden
+                                                by default, until the collapse plugin adds the appropriate classes that
+                                                we use to style each element. These classes control the overall
+                                                appearance, as well as the showing and hiding via CSS transitions. You
+                                                can modify any of this with custom CSS or overriding our default
+                                                variables. It's also worth noting that just about any HTML can go within
+                                                the <code>.accordion-body</code>, though the transition does limit
+                                                overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingfour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapsefour"
+                                                aria-expanded="false" aria-controls="collapsefour">
+                                                Are there any guidelines as to what i can ask?
+                                            </button>
+                                        </h2>
+                                        <div id="collapsefour" class="accordion-collapse collapse"
+                                            aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <strong>This is the third item's accordion body.</strong> It is hidden
+                                                by default, until the collapse plugin adds the appropriate classes that
+                                                we use to style each element. These classes control the overall
+                                                appearance, as well as the showing and hiding via CSS transitions. You
+                                                can modify any of this with custom CSS or overriding our default
+                                                variables. It's also worth noting that just about any HTML can go within
+                                                the <code>.accordion-body</code>, though the transition does limit
+                                                overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="search__collapse--wrapper mt-5 collapse--bg">
+                                <div class="collapse--content">
+                                    <h3>Book an appointment</h3>
+                                    <p>Use the search bar to find and connect with consultant and specialists from
+                                        around the world.
+                                        You can search by location and specialities such as Dietetics ,Asthetics
+                                        ,Cardiology ,Gynecology,
+                                        alternate therapies and more
+                                    </p>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                How do I pay for my consultation
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quidem
+                                                deleniti delectus nesciunt cum. Maiores nam libero dolores quisquam
+                                                accusantium molestiae facilis voluptatem maxime dignissimos fugit ipsa,
+                                                voluptatibus expedita vel excepturi porro ab tempora quas veniam nulla
+                                                quibusdam necessitatibus eius.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Do I need to provide my ID before making an appointment?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, rerum
+                                                corporis. Fugiat nam, quos voluptatem cumque nihil libero quis magnam
+                                                dignissimos maiores at culpa? Aliquid.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                Can I cancel or reschedule my appointment?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos dolorem
+                                                sunt omnis deserunt ad quos! Quo quaerat tempore, officiis, temporibus
+                                                quia assumenda animi aspernatur nisi quasi consectetur voluptatem vero
+                                                ullam maiores quas, fugit velit magni ut asperiores nam. Quod, saepe.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="search__collapse--wrapper mt-5 collapse--bg">
+                                <div class="collapse--content">
+                                    <h3>Consultancy procedure</h3>
+                                    <p>Use the search bar to find and connect with consultant and specialists from
+                                        around the world.
+                                        You can search by location and specialities such as Dietetics ,Asthetics
+                                        ,Cardiology ,Gynecology,
+                                        alternate therapies and more
+                                    </p>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                How do I attend my appointment?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel quidem
+                                                deleniti delectus nesciunt cum. Maiores nam libero dolores quisquam
+                                                accusantium molestiae facilis voluptatem maxime dignissimos fugit ipsa,
+                                                voluptatibus expedita vel excepturi porro ab tempora quas veniam nulla
+                                                quibusdam necessitatibus eius.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Is my personal information kept confidential and secure?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque dolor
+                                                necessitatibus dolorum? Unde ea fugiat animi blanditiis a et modi dicta,
+                                                eveniet expedita voluptatum exercitationem, doloribus facere! Ipsam,
+                                                quisquam odit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                Can I share HealthFolio with the consultant ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat facere
+                                                error iure maiores nihil voluptas ut assumenda, cumque ipsa neque
+                                                impedit? Excepturi a error molestiae animi minima quisquam iure.
+                                                Inventore reiciendis officia repellat corrupti molestias?
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingfour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapsefour"
+                                                aria-expanded="false" aria-controls="collapsefour">
+                                                What happens after the consultation?
+                                            </button>
+                                        </h2>
+                                        <div id="collapsefour" class="accordion-collapse collapse"
+                                            aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos excepturi
+                                                quaerat distinctio, expedita nobis consectetur magnam dignissimos
+                                                architecto iste impedit vero officiis! Nemo alias, nesciunt velit
+                                                reprehenderit eaque, delectus nisi a, consectetur obcaecati harum qui
+                                                dicta fugit soluta porro accusamus!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="how__works--img mt-5">
+                                <img src="assets/img/consultangpage-img/ipad-img.png" alt="ipad image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =======FOR CLICNICIANS=========== -->
+
+        <div class="clinician--wrapper">
+            <div class="seemless--bg clinician--bg">
+                <div class="container">
+
+                    <div class="seemless__content text-center mt-5">
+                        <div class="clincian--title mb-5">
+                            <h3>FOR CLINICIANS</h3>
+                        </div>
+                        <div class="site__heading">
+                            <h2>Elevate your paractice to a consult & e-Clinic</h2>
+                        </div>
+                        <div class="site__para mt-5">
+                            <p>Get your customers to subscribe to Healthfolio</p>
+                        </div>
+                    </div>
+                    <!-- ==========consultantCard========== -->
+                    <div class="row consultant--card owl-carousel owl-theme mt-5">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                                <div class="card-img p-4">
+                                    <img src="assets/img/healthfoliopage-img/seemless-img-1.png" alt="" srcset="">
+                                </div>
+                                <div class="card-body pt-0 text-center">
+                                    <div class="card-desc p-lg-4 p-md-2 pb-0">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maxime eligendi
+                                            numquam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                                <div class="card-img p-4">
+                                    <img src="assets/img/healthfoliopage-img/seemless-img-2.png" alt="" srcset="">
+                                </div>
+                                <div class="card-body pt-0 text-center">
+                                    <div class="card-desc p-lg-4 p-md-2 pb-0">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing .</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                                <div class="card-img p-4">
+                                    <img src="assets/img/healthfoliopage-img/seemless-img-3.png" alt="" srcset="">
+                                </div>
+                                <div class="card-body pt-0 text-center">
+                                    <div class="card-desc p-lg-4 p-md-2 pb-0">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maxime eligendi
+                                            numquam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                                <div class="card-img p-4">
+                                    <img src="assets/img/healthfoliopage-img/seemless-img-4.png" alt="" srcset="">
+                                </div>
+                                <div class="card-body pt-0 text-center">
+                                    <div class="card-desc p-lg-4 p-md-2 pb-0">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maxime eligendi
+                                            numquam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                                <div class="card-img p-4">
+                                    <img src="assets/img/consultangpage-img/money.png" alt="money image" srcset="">
+                                </div>
+                                <div class="card-body pt-0 text-center">
+                                    <div class="card-desc p-lg-4 p-md-2 pb-0">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maxime eligendi
+                                            numquam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="secure__data d-block">
+                        <a href="#">Read more about how we secure your data <i
+                                class="fas fa-chevron-right ms-sm-3 ms-1"></i></a>
+                    </span>
+                </div>
+            </div>
+    </main>
+
+
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
