@@ -1,0 +1,738 @@
+.ccms--dashboard {
+    .member--main-bg {
+        background-image: url(/assets/img/healthfoliopage-img/filling-medical-record.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: linear-gradient(273deg, #2a48cf 30%, #00cca6 75%);
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.76;
+        }
+    }
+
+    .member--info-bottom span {
+        display: block;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 3px 3px;
+        border-radius: 25px;
+    }
+
+    .member--info-wrapper {
+        .healthfolios--days-wrapper{
+            display: flex;
+            align-items: center;
+            row-gap: 5px;
+            justify-content: center;
+
+            .healthfolios--days {
+                h4 {
+                    font-size: 16px;
+                    margin-bottom: 0;
+                    color: var(--color--green);
+                    font-weight: 700;
+                }
+                p {
+                    white-space: nowrap;
+                    margin-bottom: 0;
+                    font-size: 12px;
+                }
+            
+            }
+        }
+    }
+
+    .dashboard--appointment-cards {
+        height: 400px;
+        overflow-y: scroll;
+
+        .dashboard--appointment-col {
+
+            .noti--circle {
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                z-index: 10;
+                background: #c7df00;
+                top: 7px;
+                right: 5px;
+                border-radius: 50px;
+            }
+
+            .card {
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                min-height: 100px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 25px;
+                    height: 100%;
+                    right: 0;
+                    border-radius: 0px 10px 10px 0px;
+                    top: 0;
+                }
+
+
+            }
+
+            &:nth-child(odd) {
+                .card {
+                    .item-date {
+                        .date {
+                            .date--wrapper {
+                                em {
+                                    color: #6e53d2;
+                                }
+                            }
+                        }
+                    }
+
+
+
+                    &::after {
+                        background-color: #6e53d2;
+
+                    }
+                }
+            }
+
+            &:nth-child(even) {
+                .card {
+                    &::after {
+                        background-color: var(--color--darkblue);
+                    }
+                }
+            }
+
+        }
+
+
+        .card-body {
+            margin-top: 0;
+
+            .item-date {
+                .date {
+                    .date--wrapper {
+                        em {
+                            font-size: 18px;
+                            line-height: normal;
+                        }
+                    }
+                }
+
+                &::after {
+                    height: 100%;
+                }
+            }
+
+            .item-time {
+                width: 60%;
+
+                .progress {
+                    border-radius: 15px;
+                    height: 30px;
+
+                    .progress-bar {
+                        background-color: #c7df00;
+                        font-size: 16px;
+                        font-weight: 600;
+
+                    }
+
+                }
+
+                h4 {
+                    margin-bottom: 0;
+                }
+            }
+
+
+        }
+
+        .card--header {
+            p {
+                font-size: clamp(16px, 2.5vw, 12px);
+                margin-bottom: 5px;
+                line-height: normal;
+            }
+
+            span {
+                font-size: clamp(13px, 2.5vw, 10px);
+            }
+        }
+    }
+
+    .calender--wrapper {
+
+        .calender--table {
+            width: 100%;
+            overflow: scroll;
+
+            .empty-box {
+                display: flex;
+                align-items: center;
+
+
+
+
+                .col-1 {
+                    font-size: 14px;
+                    width: 33.33%;
+                    text-align: center;
+                    height: 40px;
+                    border-right: 2px solid #b3b3b3;
+                    line-height: 75px;
+                    font-weight: 500;
+                }
+
+                .col-2 {
+                    font-size: 14px;
+                    width: 65%;
+                    height: 40px;
+                    line-height: 40px;
+                    padding-left: 25px;
+                    margin-left: -25px;
+                    text-align: center;
+                    border-right: 2px solid #b3b3b3;
+                    border-bottom: 2px solid #b3b3b3;
+                    font-weight: 400;
+
+                    &.today {
+                        font-size: 18px;
+                        color: var(--color--green);
+                        font-weight: 700;
+                    }
+                }
+
+                .col-3 {
+                    font-size: 14px;
+                    height: 40px;
+                    width: 40%;
+                    line-height: 40px;
+                    text-align: center;
+                    border-bottom: 2px solid #b3b3b3;
+                    font-weight: 400;
+
+                    &.coming-day {
+                        font-size: 16px;
+                        color: #b3b3b3;
+                        font-weight: 700;
+                    }
+                }
+
+                .doc-detail {
+                    column-gap: 5px;
+
+                    .apt--detail {
+                        margin: 0;
+                        width: 45%;
+                        margin-top: 6px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+
+                        &:nth-child(2) {
+                            border-color: #6e53d2;
+                            color: #6e53d2;
+                        }
+                    }
+                }
+
+                .apt--detail {
+                    width: 96%;
+                    display: block;
+                    line-height: 10px;
+                    padding: 2px;
+                    height: 17px;
+                    color: var(--color--darkblue);
+                    font-weight: 700;
+                    font-size: 11px;
+                    border: 2px solid var(--color--darkblue);
+                    border-radius: 15px;
+                    margin: 0 auto;
+                    margin-top: 2px;
+                }
+
+            }
+
+        }
+    }
+
+    .dispensary--wrapper {
+        .pending--case {
+
+            h4 {
+                font-size: clamp(13px, 2.5vw, 16px);
+                font-weight: 700;
+            }
+
+            h3 {
+                font-size: clamp(42px, 2.5vw, 20px);
+                color: #b56e79;
+                font-weight: 700;
+            }
+        }
+
+        .dispensary--table {
+            table {
+                border-collapse: separate;
+                border-spacing: 0 6px;
+                width: 100%;
+            }
+
+            th {
+                color: #77787a;
+                font-weight: 700;
+                padding: 10px 5px;
+            }
+
+
+            td {
+                color: var(--color--darkblue);
+                font-weight: 700;
+                padding: 10px 5px;
+                background-color: white;
+            }
+        }
+    }
+
+    .order--wrappers {
+        .order--heading {
+
+            h3 {
+                font-size: clamp(24px, 2.5vw, 20px);
+                color: #b56e79;
+                padding-bottom: 5px;
+                font-weight: 700;
+                border-bottom: 1px solid #77787a;
+            }
+
+            p {
+                font-size: clamp(20px, 2.5vw, 18px);
+                font-weight: 600;
+            }
+        }
+    }
+
+    .order--cards {
+
+        .order--card-row {
+            width: 80%;
+        }
+
+        .card {
+            background: transparent;
+
+            .ordercard--img-wrapper {
+                background-repeat: no-repeat;
+                border-radius: 10px 10px 0px 0px;
+                background-size: cover;
+                height: 100px;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                padding: 15px;
+
+                h3 {
+                    color: var(--color--white);
+                    font-size: clamp(18px, 2.4vw, 14px);
+                    margin-bottom: 0;
+                }
+            }
+
+            .card-body {
+                .orders-row {
+
+                    span {
+                        font-size: clamp(10px, 2.5vw, 10px);
+                        font-weight: 700;
+                        white-space: nowrap;
+                    }
+
+                    h3 {
+                        font-size: clamp(46px, 2.5vw, 20px);
+                        font-weight: 700;
+                        margin-top: 10px;
+                    }
+                }
+
+                .dashboard--width {
+                    .dashboard--appointment-cards {
+                        height: auto;
+                        .dashboard--appointment-col {
+                            .card {
+                                background: var(--color--white);
+                                z-index: 1;
+                                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+                                .card-body {
+                                    align-items: center;
+
+                                    .item-time {
+                                        h4 {
+                                            font-size: clamp(14px, 2.5vw, 12px);
+                                        }
+                                    }
+                                }
+
+                                .card--header {
+                                    span {
+                                        color: #677294;
+                                        font-weight: 700;
+                                        margin-bottom: 8px;
+                                        display: inline-block;
+                                        font-size: clamp(16px, 2.5vw, 16px);
+                                    }
+                                }
+
+                                &::after {
+                                    width: 67%;
+                                    left: 0;
+                                    z-index: -1;
+                                    border-radius: 10px 0px 0px 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.blue-card {
+                .orders-row {
+                    h3 {
+                        color: var(--color--darkblue);
+                    }
+                }
+
+
+                .dashboard--width {
+                    .dashboard--appointment-cards {
+                        .dashboard--appointment-col {
+                            .card {
+                                .card--header {
+                                    p {
+                                        color: #169ad9;
+                                    }
+                                }
+
+                                .item-date {
+                                    .date--wrapper {
+                                        em {
+                                            color: var(--color--darkblue);
+                                        }
+                                    }
+                                }
+
+
+
+                                &::after {
+                                    background: #d7eef9;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.green-card {
+                .orders-row {
+                    h3 {
+                        color: #2faba7;
+                    }
+                }
+
+
+                .dashboard--width {
+                    .dashboard--appointment-cards {
+                        .dashboard--appointment-col {
+                            .card {
+                                .card--header {
+                                    p {
+                                        color: #2faba7;
+                                    }
+                                }
+
+                                .item-date {
+                                    .date--wrapper {
+                                        em {
+                                            color: #08716c;
+                                        }
+                                    }
+                                }
+
+                                &::after {
+                                    width: 20%;
+                                    background: #e2f4f4;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.maroon-card {
+                .orders-row {
+                    h3 {
+                        color: #b56e79;
+                    }
+                }
+
+                .dashboard--width {
+                    .dashboard--appointment-cards {
+                        .dashboard--appointment-col {
+                            .card {
+                                .card--header {
+                                    p {
+                                        color: #b56e79;
+                                    }
+                                }
+
+                                .item-date {
+                                    .date--wrapper {
+                                        em {
+                                            color: #843442;
+                                        }
+                                    }
+                                }
+
+                                &::after {
+                                    width: 60%;
+                                    background: #eed8dc
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+.member--main-col {
+
+    z-index: 5;
+
+    .banner--info-wrapper {
+        left: 0px;
+        position: absolute;
+        bottom: -35px;
+        width: 80%;
+    }
+
+    .banner--info {
+        background: var(--color--white);
+        padding: 2px 10px;
+        border-radius: 5px;
+    }
+}
+
+
+
+@media screen and (max-width : 1160px) {
+    .ccms--dashboard {
+        .member--main-row {
+            .member--main-col {
+                width: 50%;
+
+                .banner--info-wrapper {
+                    width: 100%;
+                }
+            }
+        }
+
+        .order--cards {
+            .order--card-row {
+                width: 95%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width :991.98px) {
+    .ccms--dashboard {
+        .order--cards {
+            .order--card-row {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width : 767.98px) {
+    .ccms--dashboard {
+
+        .navbar-nav {
+            .nav-item {
+                &.is-level-1{
+
+                    .nav-item-logo{
+                        width: 33px;
+                        line-height: 30px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+
+        
+        .member--main-row {
+            .member--main-col {
+                width: 100%;
+
+                .banner--info-wrapper {
+                    width: 100%;
+                    position: relative;
+                    margin: 0;
+                    row-gap: 15px;
+                }
+            }
+
+
+            .member--hf-heading {
+                width: 90%;
+
+                .member--hf-desc {
+                    width: 100%;
+                }
+
+                p {
+                    display: block;
+                }
+
+                &>div {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                }
+
+            }
+        }
+
+        .member--info-wrapper {
+            bottom: -100px;
+        }
+
+        .appointment--card-wrapper {
+            row-gap: 35px;
+        }
+
+        .order--wrappers {
+            &.member--dashboard {
+                margin-top: 70px !important;
+            }
+        }
+
+        .order--cards {
+            .dashboard--width {
+                padding-right: 0;
+                padding-left: 0;
+
+                .order--card-row {
+                    width: 100%;
+
+                }
+
+                .dashboard--appointment-cards {
+                    padding: 0;
+                }
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width : 575.98px) {
+    .ccms--dashboard {
+        .member--info-wrapper {
+            .member--info-col {
+                span {
+                    font-size: 10px;
+                }
+            }
+        }
+
+
+        .dashboard--width {
+            .container-fluid {
+                padding: 0;
+            }
+
+            .dashboard--appointment-cards {
+
+                .dashboard--appointment-col {
+                    padding-left: 0;
+                    padding-right: 0;
+
+
+                    .card {
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                        .card-body {
+                            width: 90%;
+                            flex-direction: row;
+
+                            .item-time {
+                                width: 100%;
+
+                                .progress {
+                                    .progress-bar {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .card--header {
+                            p {
+                                display: block;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .member--info-bottom {
+                .row {
+                    row-gap: 15px;
+                }
+            }
+        }
+
+
+        .dispensary--wrapper {
+            .dispensary--table {
+                
+                th {
+                    font-size: 12px;
+                    padding: 10px 5px;
+                }
+
+                tbody {
+                    td {
+                        font-size: 11px;
+                    }
+                }
+            }   
+        }
+
+    }
+}
