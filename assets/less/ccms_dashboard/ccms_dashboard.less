@@ -31,7 +31,7 @@
     }
 
     .member--info-wrapper {
-        .healthfolios--days-wrapper{
+        .healthfolios--days-wrapper {
             display: flex;
             align-items: center;
             row-gap: 5px;
@@ -44,13 +44,37 @@
                     color: var(--color--green);
                     font-weight: 700;
                 }
+
                 p {
                     white-space: nowrap;
                     margin-bottom: 0;
                     font-size: 12px;
                 }
-            
+
             }
+        }
+    }
+
+    .appointment--card-wrapper {
+        &::-webkit-scrollbar {
+            width: 8px;
+            border-radius: 5px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #77787a;
+            border-radius: 5px;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
         }
     }
 
@@ -372,6 +396,8 @@
                 .dashboard--width {
                     .dashboard--appointment-cards {
                         height: auto;
+                        overflow: hidden;
+
                         .dashboard--appointment-col {
                             .card {
                                 background: var(--color--white);
@@ -580,9 +606,9 @@
 
         .navbar-nav {
             .nav-item {
-                &.is-level-1{
+                &.is-level-1 {
 
-                    .nav-item-logo{
+                    .nav-item-logo {
                         width: 33px;
                         line-height: 30px;
                         height: 35px;
@@ -591,7 +617,7 @@
             }
         }
 
-        
+
         .member--main-row {
             .member--main-col {
                 width: 100%;
@@ -720,7 +746,7 @@
 
         .dispensary--wrapper {
             .dispensary--table {
-                
+
                 th {
                     font-size: 12px;
                     padding: 10px 5px;
@@ -731,7 +757,7 @@
                         font-size: 11px;
                     }
                 }
-            }   
+            }
         }
 
     }
