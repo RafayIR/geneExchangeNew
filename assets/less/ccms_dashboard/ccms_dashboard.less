@@ -56,10 +56,10 @@
     }
 
 
-
     .dashboard--appointment-cards {
         height: 400px;
         overflow-y: scroll;
+        margin-top: 0;
 
         &::-webkit-scrollbar {
             width: 6px;
@@ -202,6 +202,7 @@
     .calender--wrapper {
         .calender--table {
             overflow: scroll;
+
             /* For both vertical and horizontal scrollbars */
             &::-webkit-scrollbar {
                 width: 6px;
@@ -424,7 +425,7 @@
                     }
 
                     h3 {
-                        font-size: clamp(46px, 2.5vw, 20px);
+                        font-size: clamp(42px, 2.5vw, 18px);
                         font-weight: 700;
                         margin-top: 10px;
                     }
@@ -605,6 +606,51 @@
 }
 
 
+@media screen and (min-width : 767.98px) and (max-width : 991.98px) {
+    .ccms--dashboard {
+        .order--cards {
+            .card {
+                .card-body {
+                    .dashboard--width {
+                        .dashboard--appointment-cards {
+                            .dashboard--appointment-col {
+                                .card {
+                                    padding: 12px 12px;
+                                    .card--header {
+                                        p {
+                                            font-size: 14px;
+                                        }
+                                    }
+    
+                                    .card-body {
+                                        .item-date {
+                                            .date--wrapper {
+    
+                                                em {
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                        }
+    
+                                        .item-time {
+                                            h4 {
+                                                font-size: 12px;
+                                            }
+                                        }
+    
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
 
 @media screen and (max-width : 1160px) {
     .ccms--dashboard {
@@ -626,7 +672,8 @@
     }
 }
 
-@media screen and (max-width :991.98px) {
+
+@media screen and (max-width : 991.98px) {
     .ccms--dashboard {
         .order--cards {
             .order--card-row {
@@ -780,6 +827,35 @@
             }
         }
 
+
+        .order--cards {
+            .dashboard--width {
+                .dashboard--appointment-cards {
+
+
+                    .card-body {
+
+
+                        .item-date {
+
+                            .date {
+
+                                display: block;
+                                .date--wrapper {
+    
+                                    text-align: left;
+                                    em {
+                                        display: inline-block;
+                                        width: 60px;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
         .dispensary--wrapper {
             .dispensary--table {
