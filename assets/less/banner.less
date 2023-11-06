@@ -305,6 +305,146 @@
 }
 
 
+.nw-page {
+
+    .banner__bg {
+        background-image: url(../img/newhomepage-img/banner-img.png);
+        height: 900px;
+        background-size: contain;
+    }
+
+    .banner__main--content {
+        width: 80%;
+
+        .banner-label {
+            font-size: 30px;
+            font-weight: 900;
+            color: var(--color--darkblue);
+        }
+
+
+
+        h2 {
+            color: #000000;
+            font-size: 56px;
+            font-weight: 600;
+        }
+
+        p {
+            color: #000000;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 18px;
+        }
+
+
+        .profile--img-wrapper {
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+
+            .profile-img {
+                width: 50px;
+                margin-left: -20px;
+            }
+
+            img {
+
+                flex-shrink: 0;
+            }
+
+
+            .img-number {
+                width: 50px;
+                height: 50px;
+                margin-left: -10px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--color--green);
+
+            }
+
+            .img-desc {
+                font-size: 12px;
+                margin-left: 8px;
+                font-weight: 700;
+                color: var(--color--darkblue);
+
+            }
+        }
+    }
+
+    .banner--btn {
+
+        width: 250px;
+        border-radius: 25px;
+        background: #c8e000;
+
+
+        a {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--color--darkblue);
+        }
+
+    }
+}
+
+.nw-consult {
+    .banner__bg {
+        background-image: url(../img/newconsultpage-img/newconsult-bg.png);
+        height: 900px;
+        background-size: cover;
+        position: relative;
+        z-index: 4;
+
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: linear-gradient(86deg, rgba(0, 0, 0, 0.8) 4%, rgba(40, 77, 54, 0.45) 30%);
+            border-radius: 0px 0px 0px 45px;
+        }
+
+
+        .banner__main--content {
+            width: 80%;
+
+            .banner-label {
+                font-size: 30px;
+                font-weight: 900;
+                color: var(--color--darkblue);
+            }
+
+
+
+            h2 {
+                color: var(--color--white);
+                font-size: 56px;
+                font-weight: 600;
+            }
+
+            p {
+                color: var(--color--white);
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 18px;
+            }
+
+
+
+
+        }
+    }
+}
+
 
 
 
@@ -392,6 +532,15 @@
             }
         }
     }
+
+    .nw-consult {
+        .banner__bg {
+            .banner__main--content {
+                width: 95%;
+            }
+        }
+    }
+
 }
 
 
@@ -445,6 +594,16 @@
         .row {
             flex-direction: column;
             row-gap: 0;
+        }
+    }
+
+
+    .nw-consult {
+
+        .banner__bg {
+
+            height: 510px;
+            background-position: center;
         }
     }
 
@@ -520,6 +679,16 @@
 
             .row {
                 flex-direction: initial;
+            }
+        }
+    }
+
+    .nw-consult {
+        .banner__bg {
+            .banner__main--content{
+                h2 {
+                    font-size: 28px;
+                }
             }
         }
     }
