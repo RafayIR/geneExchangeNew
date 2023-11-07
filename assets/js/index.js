@@ -279,6 +279,31 @@ $('.card--wrapper').owlCarousel({
   }
 })
 
+$('.tp-con').owlCarousel({
+  loop: false,
+  dots: false,
+  nav: false,
+  margin: 20,
+  responsive: {
+    0: {
+      items: 1.25,
+      autoplay: true,
+      loop: true,
+      autoplayTimeout: 2500,
+    },
+    576:
+    {
+      items: 2,
+    },
+    768: {
+      items: 2
+    },
+    1024: {
+      items: 3.5
+    },
+  }
+})
+
 
 $('.un-health-row').owlCarousel({
   loop: false,
