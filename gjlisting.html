@@ -61,13 +61,16 @@
                                         <div class="logo--img">
                                             <img src="assets/img/logo-img/blue logo.png" alt="logo image">
                                         </div>
-                                    </a>                                    
+                                    </a>
                                 </div>
                                 <div class="searchbox">
                                     <div class="input-group">
-                                        <input class="form-control border-end-0 border" type="search" value="search" id="example-search-input">
+                                        <input class="form-control border-end-0 border" type="search" value="search"
+                                            id="example-search-input">
                                         <span class="input-group-append">
-                                            <button class="btn btn-outline-secondary bg-white border-start-0  border ms-n5" type="button">
+                                            <button
+                                                class="btn btn-outline-secondary bg-white border-start-0  border ms-n5"
+                                                type="button">
                                                 <i class="fa fa-search"></i>
                                             </button>
                                         </span>
@@ -227,207 +230,215 @@
                             <button id="open-modal" class="btn ms-3 btn-light">Filter</button>
                         </div>
                         <div id="modal-overlay">
-                        <div  id="modal" class="border sidebar--filter">
-                            <div class="filter--heading">
-                                <h2 class="d-none d-md-block">Filter by</h2>
-                                <div class="filter-block d-flex align-items-center justify-content-between">
-                                    <span class="sidebar--heading m-0 d-md-none d-block">Filter
-                                    </span>
-                                    <button id="close-modal" class="btn btn-light  d-md-none d-block">Close</button>
-                                </div>
-                            </div>
-                            <div class="location--dropdown">
-                                <h2 class="sidebar--heading">
-                                    location
-                                </h2>
-                                <div class="country--wrapper d-flex flex-lg-row flex-md-column flex-sm-column">
-                                    <form action="/action_page.php">
-                                        <fieldset  class="border p-1">
-                                          <legend class="float-none w-auto">Country</legend>
-                                          <div class="dropdown">
-                                            <button class="btn dropdown-toggle d-flex align-items-center" href="#" role="button"
-                                                id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Malaysia
-                                            </button>
-            
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            </ul>
-                                        </div>
-                                        </fieldset>
-                                    </form>
-                                    <form action="/action_page.php">
-                                        <fieldset  class="border p-1">
-                                          <legend class="float-none w-auto">State/Region</legend>
-                                          <div class="dropdown">
-                                            <button class="btn dropdown-toggle d-flex align-items-center" href="#" role="button"
-                                                id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Johar
-                                            </button>
-            
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            </ul>
-                                        </div>
-                                        </fieldset>
-                                    </form>
-    
-                                </div>
-                                
-                                  
-    
-    
-                                <input type="text" placeholder="Zip/postal Code" class="form-control" name="postalcode">
-                            </div>
-    
-                            <div class="speciality--wrapper">
-                                <h2 class="sidebar--heading">
-                                    speciality / expertise
-                                </h2>
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle d-flex align-items-center" href="#" role="button"
-                                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Speciality/Expertise
-                                    </button>
-    
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-    
-                            <div class="language--wrapper">
-                                <h2 class="sidebar--heading">
-                                    spoken language
-                                </h2>
-    
-                                <div class="form-check">
-                                    <ul>
-                                        <li class="language--list">
-                                            <input class="form-check-input" type="checkbox" value="" id="bahasamalaysia">
-                                            <label class="form-check-label" for="bahasamalaysia">
-                                                Bahasha Malaysia
-                                            </label>
-                                        </li>
-                                        <li class="language--list">
-                                            <input class="form-check-input" type="checkbox" value="" id="english">
-                                            <label class="form-check-label" for="english">
-                                                English
-                                            </label>
-                                        </li>
-                                        <li class="language--list">
-                                            <input class="form-check-input" type="checkbox" value="" id="mandarin">
-                                            <label class="form-check-label" for="mandarin">
-                                                Mandarin
-                                            </label>
-                                        </li>
-                                        <li class="language--list">
-                                            <input class="form-check-input" type="checkbox" value="" id="tamil">
-                                            <label class="form-check-label" for="tamil">
-                                                Tamil
-                                            </label>
-                                        </li>
-                                    </ul>
-    
-                                </div>
-                            </div>
-    
-                            <div class="medical--wrapper">
-                                <h2 class="sidebar--heading">
-                                    medical center
-                                </h2>
-    
-                                <div class="form-check">
-                                    <input type="text" class="sidebar--search form-control" name="search"
-                                        placeholder="Search Center...">
-                                    <ul>
-                                        <li class="medical--list">
-                                            <input class="form-check-input" type="checkbox" value="" id="medical1">
-                                            <label class="form-check-label" for="medical1">
-                                                Stark Medical
-                                            </label>
-                                        </li>
-                                        <li class="medical--list">
-                                            <input class="form-check-input" type="checkbox" value="" id="medical2">
-                                            <label class="form-check-label" for="medical2">
-                                                Maria Clicnic Sdn Bhd
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-    
-                            <div class="appot--wrapper">
-                                <h2 class="sidebar--heading">
-                                    appointment day
-                                </h2>
-                                <div class="weeklychkbox mt-2">
-                                      <div class="roundchk">
-                                        <input name="monday" type="checkbox" id="checkbox-mon" value="mon"/>
-                                        <label for="checkbox-mon"> M </label>
-                                      </div>
-                                      <div class="roundchk">
-                                        <input name="tuesday" type="checkbox" id="checkbox-tue" value="tue"/>
-                                        <label for="checkbox-tue"> T </label>
-                                      </div>
-                                      <div class="roundchk">
-                                        <input name="wednesday" type="checkbox" id="checkbox-wed" value="wed"/>
-                                        <label for="checkbox-wed"> W </label>
-                                      </div>
-                                      <div class="roundchk">
-                                        <input name="thursday" type="checkbox" id="checkbox-thu" value="thu"/>
-                                        <label for="checkbox-thu"> T </label>
-                                      </div>
-                                      <div class="roundchk">
-                                        <input name="friday" type="checkbox" id="checkbox-fri" value="fri"/>
-                                        <label for="checkbox-fri"> F </label>
-                                      </div>
-                                      <div class="roundchk">
-                                        <input name="saturday" type="checkbox" id="checkbox-sat" value="sat"/>
-                                        <label for="checkbox-sat"> S </label>
-                                      </div>
-                                      <div class="roundchk">
-                                        <input name="sunday" type="checkbox" id="checkbox-sun" value="sun"/>
-                                        <label for="checkbox-sun"> S </label>
-                                      </div>
-                                </div>
-                            </div>
-    
-                            <div class="form-switch d-flex justify-content-between">
-                                <label class="form-check-label d-inline-block" for="pricerange">average session price
-                                    range</label>
-                                <input class="form-check-input" type="checkbox" role="switch" id="pricerange">
-                            </div>
-    
-                            <div class="range-slider">
-    
-                                <div class="price--range">
-                                    <div class="d-flex justify-content-between">
-                                        <span>RM5</span>
-                                        <span>RM250</span>
-                                        <span>RM500</span>
+                            <div id="modal" class="border sidebar--filter">
+                                <div class="filter--heading">
+                                    <h2 class="d-none d-md-block">Filter by</h2>
+                                    <div class="filter-block d-flex align-items-center justify-content-between">
+                                        <span class="sidebar--heading m-0 d-md-none d-block">Filter
+                                        </span>
+                                        <button id="close-modal" class="btn btn-light  d-md-none d-block">Close</button>
                                     </div>
                                 </div>
-                                <input type="text" class="js-range-slider" name="my_range" value="" data-skin="round"
-                                    data-type="double" data-min="0" data-max="100" data-step="25" data-prefix=""
-                                    data-grid="false" />
-                            </div>
-    
-                            <div class="filter--btns d-flex justify-content-between">
-                                <button class="btn btn-light">Clear Filter</button>
-                                <button class="btn btn-primary">Apply Filter</button>
-                            </div>
+                                <div class="location--dropdown">
+                                    <h2 class="sidebar--heading">
+                                        location
+                                    </h2>
+                                    <div class="country--wrapper d-flex flex-lg-row flex-md-column flex-sm-column">
+                                        <form action="/action_page.php">
+                                            <fieldset class="border p-1">
+                                                <legend class="float-none w-auto">Country</legend>
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle d-flex align-items-center"
+                                                        href="#" role="button" id="dropdownMenuLink"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Malaysia
+                                                    </button>
 
-                          
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                        <form action="/action_page.php">
+                                            <fieldset class="border p-1">
+                                                <legend class="float-none w-auto">State/Region</legend>
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle d-flex align-items-center"
+                                                        href="#" role="button" id="dropdownMenuLink"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Johar
+                                                    </button>
+
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+
+                                    </div>
+
+
+
+
+                                    <input type="text" placeholder="Zip/postal Code" class="form-control"
+                                        name="postalcode">
+                                </div>
+
+                                <div class="speciality--wrapper">
+                                    <h2 class="sidebar--heading">
+                                        speciality / expertise
+                                    </h2>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle d-flex align-items-center" href="#"
+                                            role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Speciality/Expertise
+                                        </button>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="language--wrapper">
+                                    <h2 class="sidebar--heading">
+                                        spoken language
+                                    </h2>
+
+                                    <div class="form-check">
+                                        <ul>
+                                            <li class="language--list">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="bahasamalaysia">
+                                                <label class="form-check-label" for="bahasamalaysia">
+                                                    Bahasha Malaysia
+                                                </label>
+                                            </li>
+                                            <li class="language--list">
+                                                <input class="form-check-input" type="checkbox" value="" id="english">
+                                                <label class="form-check-label" for="english">
+                                                    English
+                                                </label>
+                                            </li>
+                                            <li class="language--list">
+                                                <input class="form-check-input" type="checkbox" value="" id="mandarin">
+                                                <label class="form-check-label" for="mandarin">
+                                                    Mandarin
+                                                </label>
+                                            </li>
+                                            <li class="language--list">
+                                                <input class="form-check-input" type="checkbox" value="" id="tamil">
+                                                <label class="form-check-label" for="tamil">
+                                                    Tamil
+                                                </label>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                                <div class="medical--wrapper">
+                                    <h2 class="sidebar--heading">
+                                        medical center
+                                    </h2>
+
+                                    <div class="form-check">
+                                        <input type="text" class="sidebar--search form-control" name="search"
+                                            placeholder="Search Center...">
+                                        <ul>
+                                            <li class="medical--list">
+                                                <input class="form-check-input" type="checkbox" value="" id="medical1">
+                                                <label class="form-check-label" for="medical1">
+                                                    Stark Medical
+                                                </label>
+                                            </li>
+                                            <li class="medical--list">
+                                                <input class="form-check-input" type="checkbox" value="" id="medical2">
+                                                <label class="form-check-label" for="medical2">
+                                                    Maria Clicnic Sdn Bhd
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="appot--wrapper">
+                                    <h2 class="sidebar--heading">
+                                        appointment day
+                                    </h2>
+                                    <div class="weeklychkbox mt-2">
+                                        <div class="roundchk">
+                                            <input name="monday" type="checkbox" id="checkbox-mon" value="mon" />
+                                            <label for="checkbox-mon"> M </label>
+                                        </div>
+                                        <div class="roundchk">
+                                            <input name="tuesday" type="checkbox" id="checkbox-tue" value="tue" />
+                                            <label for="checkbox-tue"> T </label>
+                                        </div>
+                                        <div class="roundchk">
+                                            <input name="wednesday" type="checkbox" id="checkbox-wed" value="wed" />
+                                            <label for="checkbox-wed"> W </label>
+                                        </div>
+                                        <div class="roundchk">
+                                            <input name="thursday" type="checkbox" id="checkbox-thu" value="thu" />
+                                            <label for="checkbox-thu"> T </label>
+                                        </div>
+                                        <div class="roundchk">
+                                            <input name="friday" type="checkbox" id="checkbox-fri" value="fri" />
+                                            <label for="checkbox-fri"> F </label>
+                                        </div>
+                                        <div class="roundchk">
+                                            <input name="saturday" type="checkbox" id="checkbox-sat" value="sat" />
+                                            <label for="checkbox-sat"> S </label>
+                                        </div>
+                                        <div class="roundchk">
+                                            <input name="sunday" type="checkbox" id="checkbox-sun" value="sun" />
+                                            <label for="checkbox-sun"> S </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-switch d-flex justify-content-between">
+                                    <label class="form-check-label d-inline-block" for="pricerange">average session
+                                        price
+                                        range</label>
+                                    <input class="form-check-input" type="checkbox" role="switch" id="pricerange">
+                                </div>
+
+                                <div class="range-slider">
+
+                                    <div class="price--range">
+                                        <div class="d-flex justify-content-between">
+                                            <span>RM5</span>
+                                            <span>RM250</span>
+                                            <span>RM500</span>
+                                        </div>
+                                    </div>
+                                    <input type="text" class="js-range-slider" name="my_range" value=""
+                                        data-skin="round" data-type="double" data-min="0" data-max="100" data-step="25"
+                                        data-prefix="" data-grid="false" />
+                                </div>
+
+                                <div class="filter--btns d-flex justify-content-between">
+                                    <button class="btn btn-light">Clear Filter</button>
+                                    <button class="btn btn-primary">Apply Filter</button>
+                                </div>
+
+
+                            </div>
                         </div>
-                    </div>
-                      
+
                     </div>
                     <div class="col-lg-9 col-md-8 col-sm-12 col-12 listing--wrapper">
                         <div class="sorting--wrapper grey--bg">
@@ -593,7 +604,7 @@
         </div>
 
     </main>
-   
+
 
     <script src="assets/js/range-slider.js"></script>
     <script src="assets/js/modal.js"></script>

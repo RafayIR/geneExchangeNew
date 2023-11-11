@@ -390,6 +390,31 @@
         }
 
     }
+
+
+    .chartBox {
+        width: 250px;
+        position: absolute;
+        height: auto;
+        right: calc(15% - 1px);
+        top: calc(-150px - 100%);
+        border-radius: 18px;
+
+        h4 {
+            color: var(--color--white);
+
+        }
+
+        .chart-number {
+            color: var(--color--white);
+
+        }
+
+        canvas {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
 }
 
 .nw-consult {
@@ -448,7 +473,14 @@
 
 
 
+@media screen and (min-width : 1475px) {
+    .nw-page {
+        .banner__bg {
+            background-size: cover;
+        }
+    }
 
+}
 
 
 @media screen and (max-width : 1399.98px) {
@@ -462,6 +494,12 @@
             &.child__img {
                 width: 46%;
             }
+        }
+    }
+
+    .nw-page {
+        .banner__main--content {
+            width: 90%;
         }
     }
 }
@@ -490,6 +528,24 @@
                     }
                 }
             }
+        }
+    }
+
+
+    .nw-page {
+        .banner__bg {
+            background-size: cover;
+            height: 690px;
+
+            .banner__main--content {
+                h2 {
+                    font-size: 44px;
+                }
+            }
+        }
+
+        .chartBox {
+            right: calc(5% - 1px);
         }
     }
 }
@@ -531,6 +587,44 @@
                     strong {
                         font-size: 18px;
                     }
+                }
+            }
+        }
+    }
+
+
+    .nw-page {
+        .banner__bg {
+            height: 540px;
+
+            .banner__main--content {
+
+                h2 {
+                    font-size: 36px;
+
+                }
+            }
+
+        }
+
+        .banner--btn {
+            width: 210px;
+            padding: 2px 2px;
+            border-radius: 30px;
+        }
+
+        .chartBox {
+            right: calc(3% - 1px);
+            top: calc(-284px - 100%);
+            width: 170px;
+
+            h4 {
+                font-size: 14px;
+            }
+
+            .chart-number {
+                h3 {
+                    font-size: 22px;
                 }
             }
         }
@@ -610,7 +704,22 @@
         }
     }
 
+    .nw-page {
 
+        .banner__bg {
+            background-position: 85%;
+
+            .banner-content {
+                bottom: -225px;
+            }
+
+        }
+
+        .chartBox {
+            right: calc(9% - 1px);
+            top: calc(-95px - 100%);
+        }
+    }
 }
 
 @media screen and (max-width : 575.98px) {
@@ -688,12 +797,74 @@
 
     .nw-consult {
         .banner__bg {
-            .banner__main--content{
+            .banner__main--content {
                 h2 {
                     font-size: 28px;
                 }
             }
         }
+    }
+
+    .nw-page {
+
+        .banner__bg {
+            background-position: 70%;
+            background-size: 800px 100%;
+            height: 550px;
+
+            .banner-content {
+                bottom: -190px;
+
+                .content {
+                    h2 {
+                        font-size: 24px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+
+                    .banner--btn {
+                        a {
+                            font-size: 16px;
+                        }
+                    }
+
+                    .profile--img-wrapper {
+                        .profile-img {
+                            width: 38px;
+                            margin-left: -12px;
+                        }
+
+                        .img-number {
+                            width: 38px;
+                            height: 38px;
+                            font-size: 12px;
+                            margin-left: -12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .chartBox {
+            right: calc(9% - 19px);
+            top: calc(-50px - 100%);
+            width: 145px;
+
+            h4 {
+                font-size: 12px;
+            }
+
+            .chart-number {
+                font-size: 10px;
+
+                h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+
     }
 
 }

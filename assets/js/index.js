@@ -42,6 +42,24 @@ $('.card--wrapper .card').on('click', function () {
 })
 
 
+$('.menu--btn .btn').on('click', function (e) {
+  $('.mobile-menu-wrapper').toggleClass('active');
+});
+
+$('.mobile-menu-wrapper').on('click', function (e) {
+  // Prevent the event from propagating to the document/body
+  $('.mobile-menu-wrapper').removeClass('active');
+});
+
+$('.register-btn').on('click' , function (e) {
+  $('.dashboard-dropdown').toggleClass('show')
+})
+
+// // Handle clicks on the document/body to close the menu
+// $(document).on('click', function () {
+//   $('.mobile-menu-wrapper').removeClass('active');
+// });
+
 function updateRangeValue(value) {
   document.getElementById('rangeValue').textContent = value;
 }
@@ -317,7 +335,7 @@ $('.un-health-row').owlCarousel({
       loop: true,
       autoplayTimeout: 2500,
     },
-    576:{
+    576: {
       items: 1.5,
       loop: true,
     },
@@ -330,3 +348,29 @@ $('.un-health-row').owlCarousel({
     },
   }
 })
+
+$('.card-slider-row').owlCarousel({
+  loop: true,
+  dots: false,
+  nav: false,
+  margin: 20,
+  responsive: {
+    0: {
+      items: 1.25,
+      autoplay: true,
+      loop: true,
+      autoplayTimeout: 2500,
+    },
+    576:
+    {
+      items: 1.5,
+    },
+    768: {
+      items: 2.5
+    },
+    1024: {
+      items: 3.5
+    },
+  }
+})
+

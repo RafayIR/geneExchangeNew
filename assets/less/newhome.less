@@ -186,7 +186,7 @@
     .unite--health-wrapper {
 
         .card {
-
+            height: 100%;
             border-radius: 18px;
 
             .card-img {
@@ -196,6 +196,11 @@
 
             h4 {
                 font-weight: 700;
+            }
+
+            .card-desc {
+                min-height: 100px;
+                overflow: hidden;
             }
 
             p {
@@ -208,7 +213,10 @@
 
     .ex-benift--wrapper {
 
-
+        .mobile-img2 {
+            margin-left: -150px;
+            margin-top: -40px;
+        }
 
         .ex-wrapper-bg {
 
@@ -254,6 +262,7 @@
             .footer--social {
                 .social--list {
                     column-gap: 10px;
+
                     .social--link {
                         display: inline-block;
                         width: 45px;
@@ -302,4 +311,158 @@
         }
     }
 
+}
+
+
+@media screen and (max-width : 1199.98px) {
+    .nw-page {
+        .footer {
+            .footer-section {
+                margin-top: -45px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 991.98px) {
+    .nw-page {
+        .unite--health-wrapper {
+            .row {
+                align-items: stretch;
+            }
+
+            .card-desc {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 767.98px) {
+
+    .nw-page {
+
+        .elevate--self-care-wrapper {
+            margin-top: 270px;
+
+
+            .elevate-cards {
+                .row {
+                    row-gap: 20px;
+                }
+            }
+        }
+
+
+        .genetic--wrapper {
+
+            .site--desc {
+                h3 {
+                    width: 100%;
+                }
+
+                p {
+                    width: 95%;
+                }
+            }
+        }
+
+
+        .convenient--wrapper {
+            .site--desc {
+                width: 100%;
+                margin-left: 0;
+
+                h3 {
+                    font-size: 22px;
+                }
+
+                .btn {
+                    font-size: 16px;
+                }
+            }
+
+            &.diverse-marketplace {
+                .site--desc {
+                    width: 100%;
+                }
+            }
+        }
+
+        .unite--health-wrapper {
+            .row {
+                row-gap: 20px;
+            }
+
+            .card {
+                .card-heading {
+                    min-height: 45px;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width : 575.98px) {
+
+    .nw-page {
+        .convenient--wrapper {
+
+            .row {
+                row-gap: 20px;
+            }
+
+            &.diverse-marketplace {
+
+
+                .row {
+                    flex-direction: column-reverse;
+                }
+            }
+        }
+
+        .featured--wrapper {
+            .site--desc {
+                width: 100%;
+            }
+        }
+
+        .cards--slider {
+            background: #f0eef7;
+            padding: 50px 0;
+        }
+
+        .footer {
+            .ex-benift--wrapper {
+                .ex-wrapper-bg {
+                    .ben-img-wrapper {
+                        width: 35%;
+
+                        .mobile-img1 {
+                            margin-left: -36px;
+                        }
+
+                        .mobile-img2 {
+                            margin-left: -35px;
+                        }
+                    }
+                }
+            }
+
+            .footer-section {
+                .footer--social {
+                    .social--list {
+                        .social--link {
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
