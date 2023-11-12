@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet/less" type="text/css" href="assets/less/all.less" />
+
+    <title>HealthFolio</title>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
+        </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+</head>
+
+<body class="nw-page nw-consult nw-h-folio">
+
+    <!--============= HEADER =============== -->
+    <header>
+        <div class="header__wrapper header__bg pt-2">
+            <div class="header__main">
+                <div class="container">
+                    <div class="row align-items-md-end align-items-center">
+
+                        <div class="col-lg-3 col-md-3  col-sm-6 col-6">
+                            <a href="">
+                                <div class="logo-img">
+                                    <img src="assets/img/logo-img/logo.png" alt="logo" />
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-9 mobile-menu-wrapper col-md-9 m-0 row align-items-md-end">
+                            <div class="col-lg-8 col-md-8">
+                                <div class="menu-wrapper">
+                                    <nav class="navbar pb-0 justify-content-center navbar-expand-lg ">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    HealthFolio
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    Consult
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    MarketPlace
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">
+                                                    Packages
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-4 col-md-4 position-relative">
+                                <div class="register-btn">
+                                    <a href="#">Register</a> / <a href="#">SignIn</a>
+                                </div>
+
+                                <div class="dashboard-dropdown desktop__show">
+                                    <ul>
+                                        <li class="dashlist mt-2">
+                                            <a href="" class="dashlink">
+                                                Dashboard
+                                            </a>
+                                        </li>
+                                        <li class="dashlist">
+                                            <a href="" class="dashlink">
+                                                Sign Out
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-6 col-6 mobile__show">
+                            <div class="menu--btn text-end">
+                                <button class="btn">
+                                    <span><i class="fas fa-bars"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ============== BANNER =================== -->
+
+        <div class="banner__bg" style="background-image: url(assets/img/newhealthfolio-img/banner-img.png);">
+
+            <div class="container">
+                <div class="row align-items-lg-center align-items-md-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="banner__main--content desktop__show">
+                            <h2>
+                                Take control with <b>Health</b>folio
+                            </h2>
+                            <p>
+                                <b>Healthfolio</b> is your secure personal health record (PHR) solution
+                                that allows you to manage and access your medical information from anywhere
+                                and anytime.
+                            </p>
+                        </div>
+                        <div class="banner--btn btn mt-5 desktop__show">
+                            <a class="btn" href="http://">Subscribe Today</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 position-relative">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="banner-content mobile__show">
+                <div class="content">
+                    <div class="banner__main--content">
+                        <h2>
+                            <b>Expert care</b> just a tap away
+                        </h2>
+                        <p>
+                            Enhance health awareness and outcomes through an
+                            inclusive ecosystem that connects individiuls and
+                            healthcare providers through e-healthcare
+                        </p>
+
+                        <div class="mt-3 profile--img-wrapper">
+
+                            <div class="profile-img">
+                                <img src="assets/img/newhomepage-img/profile-img-1.png" alt="profile image">
+                            </div>
+
+                            <div class="profile-img">
+                                <img src="assets/img/newhomepage-img/profile-img-2.png" alt="profile image">
+                            </div>
+
+                            <div class="profile-img">
+                                <img src="assets/img/newhomepage-img/profile-img-3.png" alt="profile image">
+                            </div>
+
+                            <span class="img-number">50k</span>
+
+                            <div class="img-desc">Active users are growing. Join us today</div>
+                        </div>
+                    </div>
+                    <div class="banner--btn btn mt-2">
+                        <a class="btn" href="http://">Join Today</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ============== 1st SECTION =============== -->
+
+        <div class="hc-wrapper">
+            <div class="bc-bg">
+                <div class="container">
+                    <div class="site--desc top">
+                        <h3>
+                            What do you get with <b> Health</b>Folio?
+                        </h3>
+                    </div>
+
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="vr-tab" data-bs-toggle="tab" data-bs-target="#vr"
+                                type="button" role="tab" aria-controls="vr" aria-selected="true">Virtual
+                                For Your Own Health
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="rpm-tab" data-bs-toggle="tab" data-bs-target="#rpm"
+                                type="button" role="tab" aria-controls="rpm" aria-selected="false">
+                                Communication
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="fsa-tab" data-bs-toggle="tab" data-bs-target="#fsa"
+                                type="button" role="tab" aria-controls="fsa" aria-selected="false">
+                                Lorem Ipsum
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="vr" role="tabpanel" aria-labelledby="vr-tab">
+                            <div class="hc-tab-content">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="hc-img-wrapper">
+                                            <img src="assets/img/newhealthfolio-img/tab-img.png" alt="hc image">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="site--desc">
+                                            <h3>Streamlined</h3>
+                                            <h3><b>Health Records</b></h3>
+
+                                            <p>
+                                                Patients can connect with healthcare provides for consultations from the
+                                                comfort of their own homes without having to travel to a clinic.
+                                            </p>
+
+
+                                            <div class="banner--btn btn">
+                                                <button class="btn">
+                                                    Learn More
+                                                </button>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="rpm" role="tabpanel" aria-labelledby="rpm-tab">...</div>
+                        <div class="tab-pane fade" id="fsa" role="tabpanel" aria-labelledby="fsa-tab">...</div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ============== 2nd SECTION =============== -->
+
+
+        <div class="genetic--wrapper get-quality">
+            <div class="container">
+                <div class="site--desc mt-5 mb-5">
+                    <div class="get-quality-img">
+                        <img src="assets/img/newconsultpage-img/ecounsult.png" alt="">
+                    </div>
+                    <h3>Your health and wellness <b>anywhere , anytime</b></h3>
+                </div>
+
+                <div class="genetic--bg">
+                    <div class="genetic--img">
+                        <img src="assets/img/newhealthfolio-img/healthfolio-bg.png" alt="geneic image" srcset="">
+                    </div>
+                </div>
+
+                <div class="site--desc mt-5">
+
+                    <p class="mb-4">
+                        <b>
+                            With real-time insights and user-friendly features,
+                            adopting a healthier lifestyle has never easier
+                        </b>
+                    </p>
+
+                    <div class="banner--btn btn">
+                        <button class="btn">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <!-- ============== 3rd SECTION ================ -->
+
+        <div class="connect--wrapper">
+            <div class="container">
+                <div class="site--desc">
+
+                </div>
+
+                <div class="connect-row row mt-5">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="assets/img/newhealthfolio-img/card-img1.png" alt="connect image">
+                            </div>
+                            <div class="card-body p-0 ps-3">
+                                <div class="card-heading">
+                                    <h4>Manage Your Conditions</h4>
+                                </div>
+                                <div class="card-desc">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur
+                                        repudiandae magnam?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="assets/img/newhealthfolio-img/card-img2.png" alt="connect image">
+                            </div>
+                            <div class="card-body p-0 ps-3">
+                                <div class="card-heading">
+                                    <h4>Manage Your Conditions</h4>
+                                </div>
+                                <div class="card-desc">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur
+                                        repudiandae magnam?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="assets/img/newhealthfolio-img/card-img3.png" alt="connect image">
+                            </div>
+                            <div class="card-body p-0 ps-3">
+                                <div class="card-heading">
+                                    <h4>Manage Your Conditions</h4>
+                                </div>
+                                <div class="card-desc">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur
+                                        repudiandae magnam?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="assets/img/newhealthfolio-img/card-img4.png" alt="connect image">
+                            </div>
+                            <div class="card-body p-0 ps-3">
+                                <div class="card-heading">
+                                    <h4>Manage Your Conditions</h4>
+                                </div>
+                                <div class="card-desc">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur
+                                        repudiandae magnam?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="assets/img/newhealthfolio-img/card-img5.png" alt="connect image">
+                            </div>
+                            <div class="card-body p-0 ps-3">
+                                <div class="card-heading">
+                                    <h4>Manage Your Conditions</h4>
+                                </div>
+                                <div class="card-desc">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur
+                                        repudiandae magnam?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="assets/img/newhealthfolio-img/card-img6.png" alt="connect image">
+                            </div>
+                            <div class="card-body p-0 ps-3">
+                                <div class="card-heading">
+                                    <h4>Manage Your Conditions</h4>
+                                </div>
+                                <div class="card-desc">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur
+                                        repudiandae magnam?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <!-- ============== 4th SECTION =============-->
+
+        <div class="elevate--self-care-wrapper">
+            <div class="container">
+                <div class="site--desc mt-5">
+                    <h3><b>The best place</b> to track your health records is here !</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aliquam vel laborum corporis
+                        maiores pariatur officia error, iusto ducimus? Quis.
+                    </p>
+                </div>
+
+
+                <div class="elevate-cards mt-5">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                            <div class="card border-0">
+                                <div class="card-img">
+                                    <img src="assets/img/newhealthfolio-img/bst-img3.png" alt="card image" srcset="">
+                                </div>
+
+                                <div class="card-body">
+                                    <h4 class="card-heading">Ownership</h4>
+                                    <p class="card-desc">
+                                        Seamless access and control your health
+                                        records with ease , all at your fingertips.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                            <div class="card border-0">
+                                <div class="card-img">
+                                    <img src="assets/img/newhealthfolio-img/bst-img2.png" alt="card image" srcset="">
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="card-heading">
+                                        <h4>Highly Secure</h4>
+                                    </div>
+
+                                    <div class="card-desc">
+                                        <p>
+                                            Safeguarding your data is our priority.
+                                            we implement robust HIPPA-complaint encryption
+                                            to guarentee your data's safety.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                            <div class="card border-0">
+                                <div class="card-img adjust-w">
+                                    <img src="assets/img/newhealthfolio-img/bst-img1.png" alt="card image" srcset="">
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="card-heading">
+                                        <h4>24/7 availablility</h4>
+                                    </div>
+
+                                    <div class="card-desc">
+                                        <p>
+                                            Wave goodbye to untidy papaers and sheild records from loss or damage.
+                                            Effortlessly consolidate your health records in one location
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="learn-btn">
+                    <button class="btn">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============== 5th SECTION =============== -->
+
+        <div class="stf-customer bg-grey-pr">
+            <div class="container">
+                <div class="site--desc">
+                    <h3 class="desktop__show">
+                        Satisfied Customers
+                        <b>Share Their Experiences</b>
+                    </h3>
+
+                    <h3 class="mobile__show">
+                        You're in
+                        <b>Good company</b>
+                    </h3>
+                </div>
+
+                <div class="card--wrapper owl-carousel owl-theme">
+                    <div class="card p-3 border-0">
+                        <div class="card-body">
+                            <div class="card-heading">
+                                <h5>"Easy to use"</h5>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt commodi dolore
+                                delectus? Alias id labore commodi, obcaecati eligendi expedita, rerum dolor dolore
+                                hic maiores est dicta architecto fugit ipsa debitis.
+                            </p>
+
+
+                            <div class="customer--wrapper">
+                                <div class="d-flex align-items-center">
+                                    <div class="pf-img">
+                                        <img src="assets/img/newconsultpage-img/pf-img-1.png" alt="profile image">
+                                    </div>
+                                    <div class="pf-info">
+                                        <h5>Jam Sama</h5>
+                                        <p>Pharmacist at Watson</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-3 border-0">
+                        <div class="card-body">
+                            <div class="card-heading">
+                                <h5>"Easy to use"</h5>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt commodi dolore
+                                delectus? Alias id labore commodi, obcaecati eligendi expedita, rerum dolor dolore
+                                hic maiores est dicta architecto fugit ipsa debitis.
+                            </p>
+
+
+                            <div class="customer--wrapper">
+                                <div class="d-flex align-items-center">
+                                    <div class="pf-img">
+                                        <img src="assets/img/newconsultpage-img/pf-img-2.png" alt="profile image">
+                                    </div>
+                                    <div class="pf-info">
+                                        <h5>Jam Sama</h5>
+                                        <p>Pharmacist at Watson</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-3 border-0">
+                        <div class="card-body">
+                            <div class="card-heading">
+                                <h5>"Easy to use"</h5>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt commodi dolore
+                                delectus? Alias id labore commodi, obcaecati eligendi expedita, rerum dolor dolore
+                                hic maiores est dicta architecto fugit ipsa debitis.
+                            </p>
+
+
+                            <div class="customer--wrapper">
+                                <div class="d-flex align-items-center">
+                                    <div class="pf-img">
+                                        <img src="assets/img/newconsultpage-img/pf-img-3.png" alt="profile image">
+                                    </div>
+                                    <div class="pf-info">
+                                        <h5>Jam Sama</h5>
+                                        <p>Pharmacist at Watson</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-3 border-0">
+                        <div class="card-body">
+                            <div class="card-heading">
+                                <h5>"Easy to use"</h5>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt commodi dolore
+                                delectus? Alias id labore commodi, obcaecati eligendi expedita, rerum dolor dolore
+                                hic maiores est dicta architecto fugit ipsa debitis.
+                            </p>
+
+
+                            <div class="customer--wrapper">
+                                <div class="d-flex align-items-center">
+                                    <div class="pf-img">
+                                        <img src="assets/img/newconsultpage-img/pf-img-4.png" alt="profile image">
+                                    </div>
+                                    <div class="pf-info">
+                                        <h5>Jam Sama</h5>
+                                        <p>Pharmacist at Watson</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ============== 6th SECTION =============== -->
+
+        <div class="freq--qus-wrapper bg-grey-pr">
+            <div class="container">
+                <div class="site--desc">
+                    <h3>
+                        Frequently asked questions
+
+                    </h3>
+                </div>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                How much does it cost and who does it cover?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil inventore vel vero
+                                nesciunt, iure quia molestias alias in voluptatem nam, commodi odit provident voluptatum
+                                fuga, ducimus doloremque consequatur culpa libero!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Can I get precriptions?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil inventore vel vero
+                                nesciunt, iure quia molestias alias in voluptatem nam, commodi odit provident voluptatum
+                                fuga, ducimus doloremque consequatur culpa libero!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Are these doctors good ?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil inventore vel vero
+                                nesciunt, iure quia molestias alias in voluptatem nam, commodi odit provident voluptatum
+                                fuga, ducimus doloremque consequatur culpa libero!.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                Can I get lab test?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                The recovery time depends on the specific treatment and individual factors. Please
+                                consult your doctor for personalized information.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                Can I get referrals to specialist or in-person care ?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Side effects may vary depending on the treatment. Your doctor will discuss potential
+                                side effects before any procedure.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                aria-controls="flush-collapseSix">
+                                Can I use my insurance?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class=" accordion-collapse collapse"
+                            aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                We accept a range of insurance plans. Contact our billing department for more
+                                information on accepted insurance.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                                aria-controls="flush-collapseSeven">
+                                What payment methods do you accept?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Your doctor will provide you with post-procedure dietary guidelines if necessary. It
+                                varies based on the procedure.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseEight" aria-expanded="false"
+                                aria-controls="flush-collapseEight">
+                                Can you treat my condition?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseEight" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Yes, you can schedule appointments online through our website or by calling our
+                                appointment line.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+     <!-- ============== 9th SECTION =============== -->
+     <footer class="footer">
+
+        <div class="ex-benift--wrapper">
+            <div class="ex-wrapper-bg">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="ben-img-wrapper d-flex">
+                                <img class="mobile-img1" src="assets/img/newhomepage-img/ben-img-2.png" alt="image">
+
+                                <img class="mobile-img2" src="assets/img/newhomepage-img/ben-img-1.png" alt="image">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <p>Member Plus</p>
+
+                            <div class="site--desc">
+                                <h3>
+                                    <b>Stop worrying and take control.</b>
+                                </h3>
+
+                                <ul>
+                                    <li>
+                                        Member-only prices when you have a doctor's visit
+                                    </li>
+                                    <li>
+                                        Save money while focusing on preventive health
+                                    </li>
+                                    <li>
+                                        Store up to 8 GB of your health data
+                                    </li>
+                                    <li>
+                                        Stay up-to-date and enhance longevity
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="banner--btn btn mt-lg-5 mt-2">
+                                <a class="btn" href="http://">Join Member Plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <div class="footer-bg">
+                <div class="container">
+
+                    <div class="row pt-5">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                    <div class="footer-logo">
+                                        <img src="assets/img/logo-img/logo.png" alt="footer logo">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                    <div class="footer--social">
+                                        <div class="site--heading">
+                                            <h3>Follow Us</h3>
+                                        </div>
+                                        <ul class="social--list d-flex align-items-center">
+                                            <li>
+                                                <a class="social--link" href="#">
+                                                    <img src="assets/img/newhomepage-img/facebook.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="social--link" href="#">
+                                                    <img src="assets/img/newhomepage-img/linkedIn.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="social--link" href="#">
+                                                    <img src="assets/img/newhomepage-img/twitter.png" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="footer--desc">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae expedita quaerat
+                                    laudantium sequi, alias porro nulla? Voluptas voluptate ducimus rerum molestiae
+                                    assumenda aspernatur possimus dolorem?
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 ">
+                            <h4 class="footer__coloumn--heading">Product</h4>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#" class="footer__link">Chat with Doctor</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Health Management</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Private Consult</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <h4 class="footer__coloumn--heading">About</h4>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#" class="footer__link">Company</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Security</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Terms of Services</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

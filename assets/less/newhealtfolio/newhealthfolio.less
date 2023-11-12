@@ -1,0 +1,177 @@
+.nw-h-folio {
+
+    .connect--wrapper {
+        .connect-row {
+            width: 90%;
+
+            .card {
+                flex-direction: column;
+                align-items: flex-start;
+                box-shadow: none;
+                border: none;
+
+                .card-img {
+                    width: 120px;
+                }
+
+                .card-heading {
+                    h4 {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+    .elevate--self-care-wrapper {
+
+
+        .elevate-cards {
+            .card {
+                .card-img {
+                    &.adjust-w {
+                        width: 44%;
+                    }
+                }
+            }
+        }
+    }
+
+    .stf-customer  {
+        margin-bottom: 0;
+        padding-bottom: 60px;
+        padding-top: 60px;
+        border-radius: 60px 0 0 0;
+    }
+
+    .freq--qus-wrapper  {
+        padding-bottom: 200px;
+
+        .site--desc {
+            margin-top: 0;
+            padding-top: 60px;
+        }
+
+        .accordion {
+            width: 85%;
+        }
+
+        .accordion-item {
+            background: transparent;
+            .accordion-header{
+                .accordion-button {
+                    background: transparent;
+                    font-size: 24px;
+                }
+            }
+        }
+        
+    }
+
+    .footer {
+        padding-top: 0px;
+        margin-top: -40px;
+        
+    }
+
+    .ex-benift--wrapper {
+      
+        ul {
+            padding-left: 15px;
+
+            li {
+                color: #d9d9d9;
+                font-size: 18px;
+
+                &::before {
+                    content: "\2022";
+                    color: #d9d9d9;
+                    font-size: 18px;
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 991.98px) {
+    .nw-h-folio {
+        .ex-benift--wrapper {
+            ul {
+                li {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 767.98px) {
+    .nw-h-folio {
+        .ex-benift--wrapper {
+            ul {
+                li {
+                    font-size: 14px;
+                    color: #fff;
+
+                    &::before {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .connect--wrapper {
+            .connect-row {
+                width: 100%;
+            }
+        }
+
+        .elevate--self-care-wrapper {
+            margin-top: 0px;
+        }
+    }
+}
+
+@media screen and (max-width : 575.98px) {
+    .nw-h-folio {
+       
+
+        .connect--wrapper {
+            .connect-row {
+                
+                .card-img {
+                    margin: 0 auto;
+                }
+
+                .card-body {
+                    text-align: center;
+                }
+            }
+        }
+
+        .stf-customer {
+            padding-top: 120px;
+        }
+
+        .freq--qus-wrapper {
+
+            .accordion {
+                width: 100%;
+            }
+
+            .accordion-item {
+                .accordion-header {
+                    .accordion-button {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+       
+    }
+}
