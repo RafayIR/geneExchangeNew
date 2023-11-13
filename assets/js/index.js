@@ -46,7 +46,7 @@ $('.menu--btn .btn').on('click', function (e) {
   $('.mobile-menu-wrapper').toggleClass('active');
 });
 
-$('.mobile-menu-wrapper').on('click', function (e) {
+$('.cross-btn').on('click', function (e) {
   // Prevent the event from propagating to the document/body
   $('.mobile-menu-wrapper').removeClass('active');
 });
