@@ -65,6 +65,25 @@ function updateRangeValue(value) {
 }
 
 
+let totalTabsCount = 0;
+let activeTabIndex = 1;
+let tabChangeTimeout = 3000;
+
+totalTabsCount = $("#myTab .nav-link").length;
+
+function tabChangeHandler() {
+    if (activeTabIndex == totalTabsCount) {
+        activeTabIndex = 1;
+    } else {
+        activeTabIndex++;
+    }
+    $("#myTab .nav-link")
+        .eq(parseInt(activeTabIndex - 1))
+        .trigger("click");
+}
+
+let AUTO_CHANGE_TIMER = setInterval(tabChangeHandler, tabChangeTimeout);
+
 
 
 $('.banner__slider').owlCarousel({
