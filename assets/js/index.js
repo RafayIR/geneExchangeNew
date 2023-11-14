@@ -1,6 +1,7 @@
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
-  if (scroll >= 250) {
+  var isHfPage = $('body').hasClass('hf-page');
+  if (scroll >= 250  ) {
     $('.header__wrapper').addClass('header-minimized')
     $('.dashboard--header').addClass('header-minimized')
   } else {

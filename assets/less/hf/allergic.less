@@ -1,0 +1,131 @@
+.hf-page {
+    .al-wrapper {
+        padding-bottom: 70px;
+        .card {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border: 0;
+            border-radius: 15px 15px;
+
+            .card-top {
+                padding: 20px 16px;
+                border-radius: 15px 15px 0 0;
+
+                .card-img {
+                    width: 20%;
+                    margin: auto;
+                }
+
+                .card-img-info {
+                    h5 {
+                        font-weight: 700;
+                        font-size: 18px;
+                        margin-bottom: 0;
+                    }
+
+                    .btn {
+                        background: #cddf47;
+                        font-weight: 700;
+                        color: var(--color--darkblue);
+                    }
+                }
+            }
+
+            .card-body {
+                padding: 0;
+
+                .card-desc {
+                    border-bottom: 1px solid #ccc;
+                    padding: 0 16px;
+                    margin-top: 20px;
+                    font-size: 16px;
+                    padding-bottom: 20px;
+
+                    .card-row {
+                        padding: 4px 0px;
+                        font-weight: 700;
+                    }
+
+                    .nm {
+                        b {
+                            font-size: 16px;
+                        }
+                    }
+
+                    .view {
+
+                        .vw-icon {
+                            color: #bb7a85;
+                            font-weight: 700;
+                            font-size: 16px;
+
+                            .fa-icon {
+                                width: 18px;
+                            }
+                        }
+
+                        &.fm-edit {
+                            .vw-icon {
+
+                                color: var(--color--darkblue);
+                            }
+                        }
+
+                        p {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+
+                .card-btn {
+                    .btn {
+                        border-radius: 0 0 15px 15px;
+                        color: #fff;
+                        background: var(--color--darkblue);
+                        padding: 20px 10px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width :1199.98px) {
+    .hf-page {
+        .al-wrapper {
+            .card {
+                .card-top {
+                    .card-img-info {
+                        h5 {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 991.98px) {
+    .hf-page {
+        .hf-left {
+            margin-left: 70px;
+
+            .al-wrapper {
+                .al-row {
+                    row-gap: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 767.98px) {
+    .hf-page {
+        .hf-left {
+            margin-left: 0;
+        }
+    }
+}

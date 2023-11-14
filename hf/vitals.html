@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet/less" type="text/css" href="../assets/less/all.less" />
+
+    <title>Vitals</title>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
+        </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body class="hf-page mh-f-page vt-page">
+
+    <!-- ================ HEADER ==================== -->
+
+    <header>
+        <div class="dashboard--header desktop__show pt-2 pb-2">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-2 col-md-4">
+                        <div class="d-flex align-items-center justify-content-between header--left">
+                            <div class="header--logo">
+                                <img src="../../assets/img/logo-img/logo.png" alt="header logo">
+                            </div>
+                            <div class="menu--bar">
+                                <span>
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <div class="d-flex align-items-center justify-content-end header--right">
+                            <a href="#">
+                                <span class="pe-5">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                            </a>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gene Junction Gene
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-navbar ccms--dashboard navbar-wrapper">
+        <nav class="navbar navbar-expand-md">
+            <ul class="navbar-nav">
+                <li class="nav-item is-level-1">
+                    <a class="nav-link cat-1-link" aria-current="page" href="#">
+                        <div class="nav-item-logo">
+                            <img class="mobile__show" src="../assets/img/dashboard-img/mobiledashboard.png"
+                                alt="nav logo">
+                            <img class="desktop__show" src="../assets/img/ccms_dashboard-img/dashboard_button.png"
+                                alt="nav logo">
+                        </div>
+                        <span class="desktop__show">Dashboard</span>
+                    </a>
+                </li>
+
+
+                <li class="nav-item is-level-1 desktop__show">
+                    <a class="nav-link cat-1-link" href="#">
+                        <div class="nav-item-logo">
+                            <img src="../assets/img/ccms_dashboard-img/organisation.png" alt="nav logo">
+                        </div>
+                        Health Center
+                    </a>
+                </li>
+
+                <li class="nav-item is-level-1">
+                    <a class="nav-link cat-1-link" href="#">
+                        <div class="nav-item-logo hf-custom-w">
+                            <img src="../assets/img/ccms_dashboard-img/customer_management.png" alt="nav logo">
+                        </div>
+                        Customer Managemnet
+                    </a>
+                    <div class="sub--menu-wrapper is-level-2">
+                        <ul>
+                            <li class="nav-item is-item-2">
+                                <a class="nav-link" href="#">
+                                    <div class="nav-item-logo">
+                                    </div>
+                                    <span class="desktop__show">My Pateints</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item is-item-2">
+                                <a class="nav-link" href="#">
+                                    <div class="nav-item-logo">
+                                        <span class="notification--circle"></span>
+                                    </div>
+                                    <span class="desktop__show">Chat</span>
+                                </a>
+                            </li>
+
+
+                            <li class="nav-item is-item-2">
+                                <a class="nav-link" href="#">
+                                    <div class="nav-item-logo">
+                                        <span class="notification--circle"></span>
+                                    </div>
+                                    <span class="desktop__show">Promo Code</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item is-item-2">
+                                <a class="nav-link" href="#">
+                                    <div class="nav-item-logo">
+
+                                    </div>
+                                    <span class="desktop__show">Packages</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </li>
+
+
+                <li class="nav-item is-level-1">
+                    <a class="nav-link cat-1-link" href="#">
+                        <div class="nav-item-logo">
+                            <img src="../assets/img/ccms_dashboard-img/consult.png" alt="nav logo">
+                        </div>
+                        Consult
+                    </a>
+                </li>
+
+
+                <li class="nav-item is-level-1">
+                    <a class="nav-link cat-1-link" href="#">
+                        <div class="nav-item-logo">
+                            <img src="../assets/img/ccms_dashboard-img/vendors.png" alt="nav logo">
+                        </div>
+                        My Vendors
+                    </a>
+                </li>
+
+                <li class="nav-item is-level-1">
+                    <a class="nav-link cat-1-link" href="#">
+                        <div class="nav-item-logo">
+                            <img src="../assets/img/ccms_dashboard-img/premium_features.png" alt="nav logo">
+                        </div>
+                        Premium
+                    </a>
+                </li>
+
+
+                <li class="nav-item is-level-1">
+                    <a class="nav-link cat-1-link" href="#">
+                        <div class="nav-item-logo">
+                            <img src="../assets/img/ccms_dashboard-img/enterprise.png" alt="nav logo">
+                        </div>
+                        Enterprise
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ============== MAIN CONTENT ================= -->
+
+    <main class="hf-left">
+
+        <!-- ============== 1st SECTION ================== -->
+
+        <div class="fam-history-wrapper">
+            <div class="container">
+                <div class="fam-header">
+                    <div class="row fam-hd-row align-items-center">
+                        <div class="col-lg-6 col-md-6 d-flex flex-column">
+                            <div class="fam-heading">
+                                <h2>
+                                    <b>Vitals</b>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="history-btn text-center text-sm-end">
+                                <button class="btn btn-primary">
+                                    Add new vital
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============== 2nd SECTION ============= -->
+
+        <div class="fm-card-wrapper vit-wrapper mt-5">
+            <div class="container">
+                <div class="row fm-row align-items-stretch">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-header bg-lightblue">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="nm color--darkblue d-flex align-items-center">
+                                        <h5 class="mb-0">Height</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-desc">
+                                <div class="card-body">
+                                    <b>Date :</b> <span>Today , 8.00am</span>
+
+                                    <div class="chartBox mt-4 bg-lightblue">
+                                        <div class="chart-heading text-center">
+                                            <h4>cm</h4>
+                                            <span>Centimeter</span>
+                                        </div>
+
+
+                                        <div class="d-flex align-items-center justify-content-around text-center">
+                                            <div class="chart-number">
+                                                <h3 class="grp-heading text-center">151.3</h3>
+                                            </div>
+
+                                        </div>
+
+                                        <canvas id="ctx_height"></canvas>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="card-btn text-center">
+                                <button class="btn w-50">
+                                    Update
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-header bg-lightgreen">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="nm color-lightgreen d-flex align-items-center">
+                                        <h5 class="mb-0">Weight</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-desc">
+                                <div class="card-body">
+                                    <b>Date :</b> <span>Today , 8.00am</span>
+
+                                    <div class="chartBox mt-4 bg-lightgreen">
+                                        <div class="chart-heading text-center">
+                                            <h4 class="color-chart-green">Kg</h4>
+                                            <span>Kilogram</span>
+                                        </div>
+
+
+                                        <div class="d-flex align-items-center justify-content-around text-center">
+                                            <div class="chart-number">
+                                                <h3 class="grp-heading color-chart-green text-center">88</h3>
+                                            </div>
+
+                                        </div>
+
+                                        <canvas id="ctx_weight"></canvas>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="card-btn text-center">
+                                <button class="btn w-50">
+                                    Update
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-header bg-lightgreen">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="nm color-lightgreen d-flex align-items-center">
+                                        <h5 class="mb-0">BMI</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-desc">
+                                <div class="card-body">
+                                    <b>Date :</b> <span>Today , 8.00am</span>
+
+                                    <div class="chartBox mt-4 bg-lightgreen">
+                                        <div class="chart-heading text-center">
+                                            <h4 class="color-chart-green">kg/m<sup>2</sup></h4>
+                                            <span>weight in kg / Height in meters</span>
+                                        </div>
+
+
+                                        <div class="d-flex align-items-center justify-content-around text-center">
+                                            <div class="chart-number">
+                                                <h3 class="grp-heading color-chart-green text-center">19.5</h3>
+                                            </div>
+
+                                        </div>
+
+                                        <canvas id="ctx_bmi"></canvas>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="card-btn text-center">
+                                <button class="btn w-50">
+                                    Update
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-header bg-lightyellow">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="nm color-yellow d-flex align-items-center">
+
+                                        <h5 class="mb-0">
+                                            <strong class="color-red d-inline-block me-2"><i
+                                                    class="fas fa-exclamation-circle"></i> </strong>
+                                            BMR
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-desc">
+                                <div class="card-body">
+                                    <b class="color--darkblue">Date :</b> <span>Today , 8.00am</span>
+
+                                    <div class="chartBox mt-4 bg-lightyellow">
+                                        <div class="chart-heading text-center">
+                                            <h4 class="color-yellow">kacl</h4>
+                                            <span>Calories per day</span>
+                                        </div>
+
+
+                                        <div class="d-flex align-items-center justify-content-around text-center">
+                                            <div class="chart-number">
+                                                <h3 class="grp-heading color-yellow text-center">1000</h3>
+                                            </div>
+
+                                        </div>
+
+                                        <canvas id="ctx_bmr"></canvas>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="card-btn text-center">
+                                <button class="btn w-50">
+                                    Update
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-header bg-lightred">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="nm color-darkred d-flex align-items-center">
+
+                                        <h5 class="mb-0">
+                                            <strong class="color-red d-inline-block me-2"><i
+                                                    class="fas fa-exclamation-circle"></i> </strong>
+                                            Body Temperature
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-desc">
+                                <div class="card-body">
+                                    <b class="color--darkblue">Date :</b> <span>Today , 8.00am</span>
+
+                                    <div class="chartBox mt-4 bg-lightred">
+                                        <div class="chart-heading text-center">
+                                            <h4 class="color-red"><sup>0</sup>C</h4>
+                                            <span>Degrees Celcius</span>
+                                        </div>
+
+
+                                        <div class="d-flex align-items-center justify-content-around text-center">
+                                            <div class="chart-number">
+                                                <h3 class="grp-heading color-red text-center">38.9</h3>
+                                            </div>
+
+                                        </div>
+
+                                        <canvas id="ctx_body_temperature"></canvas>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="card-btn text-center">
+                                <button class="btn w-50">
+                                    Update
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="card">
+                            <div class="card-header bg-lightgreen">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="nm color-lightgreen d-flex align-items-center">
+
+                                        <h5 class="mb-0">
+                                            Blood Pressure
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-desc">
+                                <div class="card-body">
+                                    <b class="color--darkblue">Date :</b> <span>Today , 8.00am</span>
+
+                                    <div class="chartBox mt-4 bg-lightgreen">
+                                        <div class="chart-heading text-center">
+                                            <h4 class="color-chart-green">mmHg</h4>
+                                            
+                                        </div>
+
+
+                                        <div class="d-flex align-items-center justify-content-around text-center">
+                                            <div class="chart-number">
+                                                <span class="chart-number-label">Sys</span>
+                                                <h3 class="grp-heading color-lightgreen text-center">138</h3>
+                                            </div>
+
+                                            <div class="chart-number">
+                                                <span class="chart-number-label">Dia</span>
+                                                <h3 class="grp-heading color-chart-green  text-center">88</h3>
+                                            </div>
+
+                                        </div>
+
+                                        <canvas id="ctx_blood_pressure"></canvas>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="card-btn text-center">
+                                <button class="btn w-50">
+                                    Update
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/vitalChart.js"></script>
+</body>
+
+</html>

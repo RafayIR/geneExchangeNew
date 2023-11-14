@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet/less" type="text/css" href="../assets/less/all.less" />
+
+    <title>Allergies</title>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
+        </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+</head>
+
+<body class="hf-page">
+    <!-- ================ HEADER ==================== -->
+
+    <header>
+        <div class="dashboard--header desktop__show pt-2 pb-2">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-2 col-md-4">
+                        <div class="d-flex align-items-center justify-content-between header--left">
+                            <div class="header--logo">
+                                <img src="../../assets/img/logo-img/logo.png" alt="header logo">
+                            </div>
+                            <div class="menu--bar">
+                                <span>
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <div class="d-flex align-items-center justify-content-end header--right">
+                            <a href="#">
+                                <span class="pe-5">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                            </a>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gene Junction Gene
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-navbar ccms--dashboard navbar-wrapper">
+        <nav class="navbar navbar-expand-md">
+            <ul class="navbar-nav">
+                <li class="nav-item is-level-1">
+                    <a class="nav-link cat-1-link" aria-current="page" href="#">
+                        <div class="nav-item-logo">
+                            <img class="mobile__show" src="../assets/img/dashboard-img/mobiledashboard.png"
+                                alt="nav logo">
+                            <img class="desktop__show" src="../assets/img/ccms_dashboard-img/dashboard_button.png"
+                                alt="nav logo">
+                        </div>
+                        <span class="desktop__show">Dashboard</span>
+                    </a>
+                </li>
+
+
+                <li class="nav-item is-level-1 desktop__show">
+                    <a class="nav-link cat-1-link" href="#">
+                        <div class="nav-item-logo">
+                            <img src="../assets/img/ccms_dashboard-img/organisation.png" alt="nav logo">
+                        </div>
+                        Health Center
+                    </a>
+                </li>
+
+                <li class="nav-item is-level-1">
+                    <a class="nav-link cat-1-link" href="#">
+                        <div class="nav-item-logo hf-custom-w">
+                            <img src="../assets/img/ccms_dashboard-img/customer_management.png" alt="nav logo">
+                        </div>
+                        Customer Managemnet
+                    </a>
+                    <div class="sub--menu-wrapper is-level-2">
+                        <ul>
+                            <li class="nav-item is-item-2">
+                                <a class="nav-link" href="#">
+                                    <div class="nav-item-logo">
+                                    </div>
+                                    <span class="desktop__show">My Pateints</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item is-item-2">
+                                <a class="nav-link" href="#">
+                                    <div class="nav-item-logo">
+                                        <span class="notification--circle"></span>
+                                    </div>
+                                    <span class="desktop__show">Chat</span>
+                                </a>
+                            </li>
+
+
+                            <li class="nav-item is-item-2">
+                                <a class="nav-link" href="#">
+                                    <div class="nav-item-logo">
+                                        <span class="notification--circle"></span>
+                                    </div>
+                                    <span class="desktop__show">Promo Code</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item is-item-2">
+                                <a class="nav-link" href="#">
+                                    <div class="nav-item-logo">
+
+                                    </div>
+                                    <span class="desktop__show">Packages</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </li>
+
+
+                <li class="nav-item is-level-1">
+                    <a class="nav-link cat-1-link" href="#">
+                        <div class="nav-item-logo">
+                            <img src="../assets/img/ccms_dashboard-img/consult.png" alt="nav logo">
+                        </div>
+                        Consult
+                    </a>
+                </li>
+
+
+                <li class="nav-item is-level-1">
+                    <a class="nav-link cat-1-link" href="#">
+                        <div class="nav-item-logo">
+                            <img src="../assets/img/ccms_dashboard-img/vendors.png" alt="nav logo">
+                        </div>
+                        My Vendors
+                    </a>
+                </li>
+
+                <li class="nav-item is-level-1">
+                    <a class="nav-link cat-1-link" href="#">
+                        <div class="nav-item-logo">
+                            <img src="../assets/img/ccms_dashboard-img/premium_features.png" alt="nav logo">
+                        </div>
+                        Premium
+                    </a>
+                </li>
+
+
+                <li class="nav-item is-level-1">
+                    <a class="nav-link cat-1-link" href="#">
+                        <div class="nav-item-logo">
+                            <img src="../assets/img/ccms_dashboard-img/enterprise.png" alt="nav logo">
+                        </div>
+                        Enterprise
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ============== MAIN CONTENT ================= -->
+
+    <main class="hf-left">
+
+        <!-- ============== 1st SECTION ================== -->
+
+        <div class="fam-history-wrapper">
+            <div class="container">
+                <div class="fam-header">
+                    <div class="row fam-hd-row align-items-center">
+                        <div class="col-lg-6 col-md-6 d-flex flex-column">
+                            <div class="fam-heading">
+                                <h2>
+                                    <b>Allergies</b>
+                                </h2>
+                            </div>
+                            <div class="fam-details">
+                                <ul class="d-inline-flex">
+                                    <li>
+                                        <span>
+                                            Input by
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="icon-img">
+                                                <img src="../assets/img/hf-img/fm-hs1.png" alt="">
+                                            </span>
+                                            Consultant
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="icon-img">
+                                                <img src="../assets/img/hf-img/fm-hs2.png" alt="">
+                                            </span>
+                                            Pateint
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="history-btn text-center text-sm-end">
+                                <button class="btn btn-primary">
+                                    View Report
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============== 2nd SECTION ================== -->
+
+        <div class="al-wrapper mt-5">
+            <div class="container">
+                <div class="row al-row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <div class="card-top bg-lightblue">
+                                <div class="card-img">
+                                    <img src="../assets/img/hf-img/al-img-1.png" alt="allergic image">
+                                </div>
+                                <div class="card-img-info mt-4 d-flex align-items-center justify-content-between">
+                                    <h5 class="color--darkblue">Food Allergy</h5>
+                                    <div class="card-btn">
+                                        <button class="btn">
+                                            Add record
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-desc">
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <span class="d-inline-block me-2">
+                                                <img src="../assets/img/hf-img/fm-hs1.png" alt="">
+                                            </span>
+                                            <b>Father</b>
+                                        </div>
+                                        <div class="view">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-eye fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    View
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <b>19/01/2021</b>
+                                        </div>
+                                        <div class="view fm-edit">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-pen fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    Edit
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row color-yellow">Moderate Likely</div>
+                                    <div class="card-row">Diarroea</div>
+                                </div>
+                                <div class="card-desc">
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <span class="d-inline-block me-2">
+                                                <img src="../assets/img/hf-img/fm-hs1.png" alt="">
+                                            </span>
+                                            <b>Father</b>
+                                        </div>
+                                        <div class="view">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-eye fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    View
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <b>19/01/2021</b>
+                                        </div>
+                                        <div class="view fm-edit">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-pen fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    Edit
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row color-yellow">Moderate Likely</div>
+                                    <div class="card-row">Diarroea</div>
+                                </div>
+                                <div class="card-desc">
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <span class="d-inline-block me-2">
+                                                <img src="../assets/img/hf-img/fm-hs1.png" alt="">
+                                            </span>
+                                            <b>Father</b>
+                                        </div>
+                                        <div class="view">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-eye fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    View
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <b>19/01/2021</b>
+                                        </div>
+                                        <div class="view fm-edit">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-pen fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    Edit
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row color-yellow">Moderate Likely</div>
+                                    <div class="card-row">Diarroea</div>
+                                </div>
+                                <div class="card-btn">
+                                    <button class="btn w-100">
+                                        View all
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <div class="card-top bg-lightgreen">
+                                <div class="card-img">
+                                    <img src="../assets/img/hf-img/al-img-2.png" alt="allergic image">
+                                </div>
+                                <div class="card-img-info mt-4 d-flex align-items-center justify-content-between">
+                                    <h5 class="color-lightgreen">Environmental Allergy</h5>
+                                    <div class="card-btn">
+                                        <button class="btn">
+                                            Add record
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-desc">
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <span class="d-inline-block me-2">
+                                                <img src="../assets/img/hf-img/fm-hs1.png" alt="">
+                                            </span>
+                                            <b>Father</b>
+                                        </div>
+                                        <div class="view">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-eye fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    View
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <b>19/01/2021</b>
+                                        </div>
+                                        <div class="view fm-edit">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-pen fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    Edit
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row color-yellow">Moderate Likely</div>
+                                    <div class="card-row">Diarroea</div>
+                                </div>
+                                <div class="card-desc">
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <span class="d-inline-block me-2">
+                                                <img src="../assets/img/hf-img/fm-hs1.png" alt="">
+                                            </span>
+                                            <b>Father</b>
+                                        </div>
+                                        <div class="view">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-eye fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    View
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <b>19/01/2021</b>
+                                        </div>
+                                        <div class="view fm-edit">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-pen fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    Edit
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row color-yellow">Moderate Likely</div>
+                                    <div class="card-row">Diarroea</div>
+                                </div>
+                                <div class="card-desc">
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <span class="d-inline-block me-2">
+                                                <img src="../assets/img/hf-img/fm-hs1.png" alt="">
+                                            </span>
+                                            <b>Father</b>
+                                        </div>
+                                        <div class="view">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-eye fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    View
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <b>19/01/2021</b>
+                                        </div>
+                                        <div class="view fm-edit">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-pen fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    Edit
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row color-yellow">Moderate Likely</div>
+                                    <div class="card-row">Diarroea</div>
+                                </div>
+                                <div class="card-btn">
+                                    <button class="btn w-100">
+                                        View all
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <div class="card-top bg-lightpurple">
+                                <div class="card-img">
+                                    <img src="../assets/img/hf-img/al-img-3.png" alt="allergic image">
+                                </div>
+                                <div class="card-img-info mt-4 d-flex align-items-center justify-content-between">
+                                    <h5 class="color-lightpurple ">Medication Allergy</h5>
+                                    <div class="card-btn">
+                                        <button class="btn">
+                                            Add record
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-desc">
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <span class="d-inline-block me-2">
+                                                <img src="../assets/img/hf-img/fm-hs1.png" alt="">
+                                            </span>
+                                            <b>Father</b>
+                                        </div>
+                                        <div class="view">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-eye fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    View
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <b>19/01/2021</b>
+                                        </div>
+                                        <div class="view fm-edit">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-pen fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    Edit
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row color-yellow">Moderate Likely</div>
+                                    <div class="card-row">Diarroea</div>
+                                </div>
+                                <div class="card-desc">
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <span class="d-inline-block me-2">
+                                                <img src="../assets/img/hf-img/fm-hs1.png" alt="">
+                                            </span>
+                                            <b>Father</b>
+                                        </div>
+                                        <div class="view">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-eye fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    View
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <b>19/01/2021</b>
+                                        </div>
+                                        <div class="view fm-edit">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-pen fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    Edit
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row color-yellow">Moderate Likely</div>
+                                    <div class="card-row">Diarroea</div>
+                                </div>
+                                <div class="card-desc">
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <span class="d-inline-block me-2">
+                                                <img src="../assets/img/hf-img/fm-hs1.png" alt="">
+                                            </span>
+                                            <b>Father</b>
+                                        </div>
+                                        <div class="view">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-eye fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    View
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row d-flex justify-content-between align-items-center">
+                                        <div class="nm d-flex align-items-center">
+                                            <b>19/01/2021</b>
+                                        </div>
+                                        <div class="view fm-edit">
+                                            <a href="" class="vw-icon d-flex align-items-center">
+                                                <span class="fa-icon">
+                                                    <i class="fas fa-pen fw-3x"></i>
+                                                </span>
+                                                <p class="mb-0">
+                                                    Edit
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-row color-yellow">Moderate Likely</div>
+                                    <div class="card-row">Diarroea</div>
+                                </div>
+                                <div class="card-btn">
+                                    <button class="btn w-100">
+                                        View all
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+    <script src="../assets/js/index.js"></script>
+
+</body>
+
+</html>
