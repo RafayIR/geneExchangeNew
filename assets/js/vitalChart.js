@@ -279,7 +279,16 @@ new Chart(ctx_blood_pressure, {
             tension: 0.4,
             pointRadius: 0,
             borderColor: '#22c55e'
-        }]
+        },
+        {
+            label: 'SECOND_VALUE',
+            data: [20, 15, 25, 18, 20, 15, 22], 
+            borderWidth: 2.5,
+            tension: 0.4,
+            pointRadius: 0,
+            borderColor: '#408b86'
+        }
+    ]
     },
     options: {
         scales: {
