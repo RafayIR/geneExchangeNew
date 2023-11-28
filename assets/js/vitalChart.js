@@ -27,7 +27,7 @@ new Chart(ctx_height, {
                     drawTicks: false,
                     drawOnChartArea: false,
                     color: 'black',
-                    lineWidth: 1
+                    lineWidth: 4
                 }
             },
             y: {
@@ -45,7 +45,7 @@ new Chart(ctx_height, {
                 max: 30,
                 ticks: {
                     display: false,
-                    stepSize: 20
+                    stepSize: 15
                 }
             }
         },
@@ -273,7 +273,7 @@ new Chart(ctx_blood_pressure, {
     data: {
         labels: ['', '', '', '', '', ''],
         datasets: [{
-            label: 'WEIGHT',
+            label: 'Sys',
             data: [0, 3, 8, 5, 16, 11, 18],
             borderWidth: 2.5,
             tension: 0.4,
@@ -281,7 +281,7 @@ new Chart(ctx_blood_pressure, {
             borderColor: '#22c55e'
         },
         {
-            label: 'SECOND_VALUE',
+            label: '    Dia',
             data: [20, 15, 25, 18, 20, 15, 22], 
             borderWidth: 2.5,
             tension: 0.4,

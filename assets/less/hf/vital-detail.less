@@ -1,0 +1,182 @@
+.mh-f-page {
+
+    padding-bottom: 30px;
+
+    .site-heading {
+        color: #000;
+    }
+
+    .fs-card {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 16px;
+        color: #000;
+
+        .card-body {
+            border-bottom: 1px solid #ccc;
+
+
+
+            &.bg-lightpurple {
+                border-radius: 16px 16px 0 0;
+            }
+
+
+        }
+
+
+
+        .pt-detail {
+            color: #000;
+
+            ul {
+                display: inline-flex;
+                font-weight: 700;
+                margin-top: 20px;
+                gap: 20px;
+            }
+        }
+    }
+
+
+    .filters {
+        border-radius: 10px;
+
+        .filt-dropdown {
+
+            .dropdown {
+                width: 200px;
+            }
+
+            .dropdown-toggle {
+                width: 100%;
+                background: transparent;
+                color: #000;
+                font-size: 14px;
+                text-align: left;
+                border-radius: 8px;
+                border-color: #ccc;
+
+                &::after {
+                    position: absolute;
+                    right: 12px;
+                    top: 16px;
+                }
+            }
+
+            h4 {
+                color: #000;
+                margin-bottom: 0;
+                font-size: 18px;
+                font-weight: 800;
+            }
+
+            .fltr-btn {
+                background: #cddf47;
+                color: var(--color--darkblue);
+                font-weight: 800;
+                font-size: 14px;
+                width: 150px;
+            }
+
+        }
+
+        .ref-banner {
+            margin-top: 20px;
+            padding: 20px 16px;
+            background: #d3f3df;
+            margin-left: -16px;
+            margin-right: -16px;
+            column-gap: 10px;
+
+            .exl-mark {
+                font-size: 22px;
+
+                .fas {
+                    color: #d3f3df;
+                }
+            }
+
+            h3 {
+                margin-bottom: 0;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+
+            span {
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 1199.98px) {
+    .mh-f-page {
+
+        .hf-left {
+            margin-left: 65px;
+        }
+
+        .fs-card {
+            .pt-detail {
+                ul {
+                    li {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 991.98px) {
+    .mh-f-page {
+        padding-bottom: 60px;
+        .gl-wrapper {
+            .gl-wrapper-row {
+                row-gap: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 767.98px) {
+    .mh-f-page {
+        .hf-left {
+            margin-left: 0px;
+        }
+
+
+        .filters {
+
+            .filt-dropdown {
+
+                & > div {
+                    flex-wrap:  wrap;
+                    row-gap: 20px;
+                    
+
+                    .dropdown {
+                        width: 100%;
+                    }
+
+                    .flt-heading {
+                        width: 100%;
+                    }
+
+                    .btn-wrapper {
+                        width: 100%;
+                        text-align: right;
+                    }
+                }
+            }
+
+            .chart {
+                margin-top: 26px;
+            }
+        }
+
+
+    }
+}
