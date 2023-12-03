@@ -6,10 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
             stacked: false,
 
         },
+
         stroke: {
             curve: 'smooth',
             width: 2
         },
+
         dataLabels: {
             enabled: false
         },
@@ -42,12 +44,12 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         ],
 
-
         xaxis: {
             categories: ['31/08/57', '31/08/57', '31/08/57', '31/08/57', '31/08/57', '31/08/57',
                 '31/08/57', '31/08/57', '31/08/57', '31/08/57'],
 
         },
+
         yaxis: {
             labels: {
                 formatter: function (value) {
@@ -65,6 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
             
         },
+        
         legend: {
             show: true,
             position: 'top',
